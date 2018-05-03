@@ -1,0 +1,676 @@
+.shirt-ceremony {
+   display:-webkit-box;
+   display:flex;
+
+   height:740px;
+   min-height:740px;
+
+   color:#fff;
+   background-image:url('../img/holiday-product/landing.jpg');
+   background-position:center;
+   background-size:cover;
+
+   -webkit-box-align:center;
+   align-items:center;
+}
+@media (max-width: 660px) {
+   .shirt-ceremony {
+      height:calc(100vh - 100px);
+      min-height:0;
+   }
+}
+@media (max-width: 660px) and (orientation: landscape) {
+   .shirt-ceremony {
+      height:510px;
+      min-height:510px;
+   }
+}
+.shirt-ceremony__caption {
+   display:-webkit-box;
+   display:flex;
+   flex-direction:column;
+
+   max-width:420px;
+
+   text-align:center;
+
+   -webkit-box-orient:vertical;
+   -webkit-box-direction:normal;
+   -webkit-box-align:center;
+   align-items:center;
+}
+.shirt-ceremony__caption-wrapper {
+   display:-webkit-box;
+   display:flex;
+
+   width:100%;
+
+   -webkit-box-pack:end;
+   justify-content:flex-end;
+}
+@media (max-width: 660px) {
+   .shirt-ceremony__caption-wrapper {
+      -webkit-box-pack:center;
+      justify-content:center;
+   }
+}
+.shirt-ceremony__title-text {
+   font-size:18px;
+
+   letter-spacing:7px;
+   text-transform:uppercase;
+}
+.shirt-ceremony__title {
+   font-family:CochinItalic;
+   font-size:90px;
+   line-height:31px;
+
+   margin-bottom:22px;
+}
+.shirt-ceremony__subtitle {
+   font-family:CochinItalic;
+   font-size:56px;
+   line-height:51px;
+
+   margin-bottom:35px;
+}
+@media (max-width: 660px) {
+   .shirt-ceremony__subtitle {
+      margin-bottom:15px;
+   }
+}
+.shirt-ceremony__description {
+   font-size:18px;
+
+   margin-bottom:35px;
+}
+@media (max-width: 660px) {
+   .shirt-ceremony__description {
+      margin-bottom:27px;
+   }
+}
+.shirt-ceremony__btn {
+   font-size:18px;
+
+   min-width:230px;
+   margin-bottom:18px;
+   padding:15px 10px;
+
+   text-align:center;
+   text-decoration:none !important;
+
+   color:#fff;
+   border:1px solid #fff;
+}
+.shirt-ceremony__btn:focus {
+   color:#fff;
+}
+.shirt-ceremony__return {
+   position:absolute;
+   bottom:35px;
+   left:50%;
+
+   display:-webkit-box;
+   display:flex;
+
+   margin-left:-35px;
+
+   color:rgba(255,255,255,.75);
+
+   -webkit-box-align:center;
+   align-items:center;
+}
+.shirt-ceremony__return:focus {
+   color:#fff;
+}
+.shirt-ceremony__return:before {
+   font-family:FontAwesome;
+   font-size:14px;
+
+   display:inline-block;
+
+   width:16px;
+   height:12px;
+   margin-right:10px;
+
+   content:'';
+
+   color:#fff;
+   background-image:url('../img/holiday-product/holiday-product__arrow.png');
+   background-repeat:no-repeat;
+}
+.shirt-ceremony-step_overlay-two-column {
+   position:relative;
+   top:0;
+   left:0;
+
+   overflow:hidden;
+
+   height:100%;
+}
+@media (max-width: 768px) {
+   .shirt-ceremony-step_overlay-two-column {
+      overflow:visible;
+
+      min-height:740px;
+   }
+}
+.shirt-ceremony-step_overlay-two-column:before {
+   position:absolute;
+   z-index:2;
+   top:0;
+   left:0;
+
+   width:100%;
+   min-height:740px;
+   min-height:1006px;
+
+   content:'';
+
+   background-color:rgba(32,35,46,.9);
+}
+.shirt-ceremony-step_overlay-one-column {
+   position:relative;
+
+   overflow:hidden;
+}
+.shirt-ceremony-step_overlay-one-column .ceremony-popup__wrapper {
+   top:50%;
+
+   margin-top:-310px;
+}
+@media (max-width: 768px) {
+   .shirt-ceremony-step_overlay-one-column {
+      overflow:visible;
+
+      min-height:740px;
+   }
+}
+.shirt-ceremony-step_overlay-one-column:before {
+   position:absolute;
+   z-index:2;
+   top:0;
+   left:0;
+
+   width:100%;
+   height:100%;
+   min-height:740px;
+
+   content:'';
+
+   background-color:rgba(32,35,46,.9);
+}
+@media (max-width: 768px) {
+   .shirt-ceremony-step_overlay-one-column:before {
+      min-height:644px;
+   }
+}
+.shirt-ceremony-step__title {
+   font-family:CochinItalic;
+   font-size:50px;
+   line-height:1.2em;
+
+   margin-bottom:30px;
+
+   text-align:center;
+
+   color:#fff;
+}
+.shirt-ceremony-step__image-wrapper {
+   overflow:hidden;
+
+   height:740px;
+   height:740px;
+   min-height:740px;
+   padding:0;
+
+   background-size:cover;
+}
+@media (max-width: 768px) {
+   .shirt-ceremony-step__image-wrapper {
+      display:none;
+   }
+}
+.shirt-ceremony-step__image {
+   width:100%;
+   min-width:934px;
+}
+.shirt-ceremony-step__image-info {
+   display:none;
+}
+@media (max-width: 768px) {
+   .shirt-ceremony-step__image-info {
+      position:absolute;
+      top:0;
+      left:0;
+
+      display:block;
+
+      width:auto;
+      height:100%;
+   }
+}
+.shirt-ceremony-step__info {
+   position:relative;
+
+   display:-webkit-box;
+   display:flex;
+   flex-direction:column;
+
+   height:740px;
+   min-height:740px;
+
+   color:#fff;
+   background-color:#20232e;
+
+   -webkit-box-orient:vertical;
+   -webkit-box-direction:normal;
+   -webkit-box-align:center;
+   align-items:center;
+   -webkit-box-pack:center;
+   justify-content:center;
+}
+@media (max-width: 768px) {
+   .shirt-ceremony-step__info {
+      overflow:hidden;
+
+      height:calc(100vh - 100px);
+      min-height:0;
+   }
+}
+@media (max-width: 768px) and (orientation: landscape) {
+   .shirt-ceremony-step__info {
+      min-height:510px;
+   }
+}
+.shirt-ceremony-step__info-description {
+   z-index:1;
+
+   display:-webkit-box;
+   display:flex;
+   flex-direction:column;
+
+   -webkit-box-orient:vertical;
+   -webkit-box-direction:normal;
+   -webkit-box-align:center;
+   align-items:center;
+}
+.shirt-ceremony-step__reload {
+   position:static;
+   top:calc(50% + 540px);
+
+   display:-webkit-box;
+   display:flex;
+
+   width:400px;
+
+   color:#fff;
+
+   -webkit-box-align:center;
+   align-items:center;
+   -webkit-box-pack:center;
+   justify-content:center;
+}
+@media (max-width: 768px) {
+   .shirt-ceremony-step__reload {
+      width:auto;
+   }
+}
+.shirt-ceremony-step__reload-text {
+   font-size:18px;
+
+   z-index:2;
+
+   cursor:pointer;
+   text-transform:lowercase;
+}
+.ceremony-popup {
+   position:relative;
+   z-index:3;
+
+   display:-webkit-box;
+   display:flex;
+   flex-direction:column;
+
+   width:100%;
+   max-width:400px;
+   height:auto;
+   min-height:540px;
+   padding:30px;
+
+   text-align:center;
+
+   background-color:#fff;
+   box-shadow:0 0 6px 0 #e5e5e5;
+
+   -webkit-box-orient:vertical;
+   -webkit-box-direction:normal;
+   -webkit-box-pack:justify;
+   justify-content:space-between;
+}
+@media (max-width: 768px) {
+   .ceremony-popup {
+      max-width:350px;
+      min-height:470px;
+      margin:auto;
+      padding:10px;
+   }
+}
+.ceremony-popup_double {
+   flex-direction:row;
+
+   max-width:804px;
+   margin-left:-201px;
+   padding:0;
+
+   -webkit-box-orient:horizontal;
+   -webkit-box-direction:normal;
+}
+@media (max-width: 768px) {
+   .ceremony-popup_double {
+      flex-direction:column;
+
+      height:auto;
+      margin:auto;
+
+      -webkit-box-orient:vertical;
+      -webkit-box-direction:normal;
+      -webkit-box-pack:start;
+      justify-content:flex-start;
+      ax-width:804px;
+   }
+}
+@media (max-width: 660px) {
+   .ceremony-popup_double .ceremony-popup__img-block {
+      height:200px;
+   }
+}
+@media (max-width: 660px) {
+   .ceremony-popup_double .ceremony-popup__img {
+      max-width:200px;
+      margin-left:-100px;
+   }
+}
+.ceremony-popup__wrapper {
+   position:absolute;
+   top:50%;
+   left:50%;
+
+   width:100%;
+   margin-top:-270px;
+   margin-left:-200px;
+}
+@media (max-width: 768px) {
+   .ceremony-popup__wrapper {
+      top:0;
+      left:0;
+
+      width:calc(100% - 40px);
+      margin-top:20px;
+      margin-right:20px;
+      margin-left:20px;
+   }
+}
+.ceremony-popup__block {
+   display:-webkit-box;
+   display:flex;
+   flex-direction:column;
+
+   width:50%;
+   padding:30px;
+
+   -webkit-box-orient:vertical;
+   -webkit-box-direction:normal;
+   -webkit-box-pack:justify;
+   justify-content:space-between;
+}
+@media (max-width: 768px) {
+   .ceremony-popup__block {
+      width:100%;
+      padding:10px;
+   }
+}
+.ceremony-popup__block_left {
+   border-right:2px solid #000;
+}
+@media (max-width: 768px) {
+   .ceremony-popup__block_left {
+      border:none;
+   }
+}
+.ceremony-popup__block_right {
+   border-left:2px solid #000;
+}
+@media (max-width: 768px) {
+   .ceremony-popup__block_right {
+      border:none;
+   }
+}
+.ceremony-popup__title {
+   font-size:28px;
+
+   margin-bottom:10px;
+}
+@media (max-width: 768px) {
+   .ceremony-popup__title {
+      font-size:18px;
+   }
+}
+.ceremony-popup__subtitle {
+   font-size:16px;
+
+   margin-bottom:18px;
+
+   color:rgba(84,89,105,.75);
+}
+@media (max-width: 768px) {
+   .ceremony-popup__subtitle {
+      font-size:14px;
+   }
+}
+.ceremony-popup__price > .top-product__price {
+   font-size:22px;
+
+   margin-bottom:20px;
+}
+.ceremony-popup__btn {
+   display:-webkit-box;
+   display:flex;
+   flex-direction:column;
+
+   width:100%;
+   padding:18px;
+
+   color:#fff;
+   background-color:#000;
+
+   -webkit-box-orient:vertical;
+   -webkit-box-direction:normal;
+}
+.ceremony-popup__btn:hover, .ceremony-popup__btn:focus {
+   text-decoration:none;
+
+   color:#fff;
+}
+.ceremony-popup__btn-title {
+   font-family:brandonBold;
+   font-size:15px;
+   line-height:12px;
+
+   margin-bottom:4px;
+
+   text-transform:uppercase;
+}
+.ceremony-popup__btn-subtitle {
+   font-size:14px;
+   line-height:12px;
+}
+.ceremony-popup__img-block {
+   position:relative;
+
+   display:block;
+   overflow:hidden;
+
+   width:100%;
+   max-width:290px;
+   height:270px;
+   margin-right:auto;
+   margin-bottom:30px;
+   margin-left:auto;
+}
+@media (max-width: 768px) {
+   .ceremony-popup__img-block {
+      margin-bottom:10px;
+   }
+}
+.ceremony-popup__img {
+   position:absolute;
+   left:50%;
+
+   display:block;
+
+   max-width:200px;
+   margin:auto;
+   margin-left:-100px;
+}
+.ceremony-popup__separator {
+   position:absolute;
+   top:56%;
+   left:50%;
+
+   display:-webkit-box;
+   display:flex;
+
+   width:60px;
+   height:60px;
+   margin-left:-30px;
+
+   border:4px solid #000;
+   border-radius:60px;
+   background-color:#fff;
+
+   -webkit-box-align:center;
+   align-items:center;
+   -webkit-box-pack:center;
+   justify-content:center;
+}
+@media (max-width: 768px) {
+   .ceremony-popup__separator {
+      display:none;
+   }
+}
+/*______________________________ preloader ______________________________*/
+@-webkit-keyframes uil-reload-css {
+   0% {
+      -webkit-transform:rotate(0deg);
+              transform:rotate(0deg);
+   }
+   50% {
+      -webkit-transform:rotate(180deg);
+              transform:rotate(180deg);
+   }
+   100% {
+      -webkit-transform:rotate(360deg);
+              transform:rotate(360deg);
+   }
+}
+@-webkit-keyframes uil-reload-css {
+   0% {
+      -webkit-transform:rotate(0deg);
+              transform:rotate(0deg);
+   }
+   50% {
+      -webkit-transform:rotate(180deg);
+              transform:rotate(180deg);
+   }
+   100% {
+      -webkit-transform:rotate(360deg);
+              transform:rotate(360deg);
+   }
+}
+@-webkit-keyframes uil-reload-css {
+   0% {
+      -webkit-transform:rotate(0deg);
+              transform:rotate(0deg);
+   }
+   50% {
+      -webkit-transform:rotate(180deg);
+              transform:rotate(180deg);
+   }
+   100% {
+      -webkit-transform:rotate(360deg);
+              transform:rotate(360deg);
+   }
+}
+.uil-reload-css {
+   position:relative;
+   z-index:3;
+
+   width:52px;
+   height:84px;
+
+   cursor:pointer;
+   -webkit-transform:scale(.46);
+           transform:scale(.46);
+}
+.uil-reload-css > div {
+   position:absolute;
+   top:20px;
+   left:5px;
+
+   display:block;
+
+   width:45px;
+   height:45px;
+
+   -webkit-animation:uil-reload-css 1s linear infinite;
+           animation:uil-reload-css 1s linear infinite;
+
+   border:4px solid #fff;
+   border-top:4px solid rgba(0,0,0,0);
+   border-right:4px solid #fff;
+   border-bottom:4px solid #fff;
+   border-radius:100px;
+}
+.uil-reload-css > div:after {
+   display:block;
+
+   width:0;
+   height:0;
+
+   content:' ';
+   -webkit-transform:translate(-7px, 0) rotate(25deg);
+           transform:translate(-7px, 0) rotate(25deg);
+
+   border-width:0 10px 10px 10px;
+   border-style:solid;
+   border-color:transparent transparent #fff transparent;
+}
+@-webkit-keyframes uil-reload-css {
+   0% {
+      -webkit-transform:rotate(0deg);
+              transform:rotate(0deg);
+   }
+   50% {
+      -webkit-transform:rotate(180deg);
+              transform:rotate(180deg);
+   }
+   100% {
+      -webkit-transform:rotate(360deg);
+              transform:rotate(360deg);
+   }
+}
+@keyframes uil-reload-css {
+   0% {
+      -webkit-transform:rotate(0deg);
+              transform:rotate(0deg);
+   }
+   50% {
+      -webkit-transform:rotate(180deg);
+              transform:rotate(180deg);
+   }
+   100% {
+      -webkit-transform:rotate(360deg);
+              transform:rotate(360deg);
+   }
+}

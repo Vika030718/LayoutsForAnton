@@ -1,0 +1,149 @@
+/* page: accessoires.html
+_______________________________________________*/
+/* block: accessoires
+_______________________________________________*/
+.accessoires__item {
+   overflow:hidden;
+
+   margin-bottom:$doubleGap;
+}
+.accessoires__img {
+   width:100%;
+}
+.accessoires__img:hover {
+   -webkit-transform:scale(1.03, 1.03);
+           transform:scale(1.03, 1.03);
+}
+.accessoires__main-block {
+   display:-webkit-box;
+   display:flex;
+}
+@media (max-width: $lg) {
+   .accessoires__main-block {
+      display:block;
+   }
+}
+/* block: description
+_______________________________________________*/
+.description {
+   position:relative;
+
+   display:-webkit-box;
+   display:flex;
+   flex-direction:column;
+
+   -webkit-box-orient:vertical;
+   -webkit-box-direction:normal;
+   justify-content:space-around;
+}
+.description__img {
+   display:none;
+
+   width:auto;
+   margin-bottom:5px;
+}
+@media (min-width: $lg) {
+   .description__img {
+      display:block;
+   }
+}
+.description__title {
+   font-family:cochinBoldItalic, sans-serif;
+   font-size:26px;
+   font-style:italic;
+
+   position:relative;
+
+   padding-bottom:26px;
+
+   text-align:center;
+}
+.description__title:after {
+   position:absolute;
+   bottom:13px;
+   left:50%;
+
+   width:38px;
+   height:2px;
+   margin:0 0 0 -19px;
+
+   content:'';
+
+   background:#000;
+}
+.description__subtitle {
+   font-family:cochinBoldItalic, sans-serif;
+   font-size:16px;
+
+   padding-bottom:15px;
+
+   text-align:center;
+}
+.description__text {
+   font-family:CochinItalic, sans-serif;
+   font-size:16px;
+
+   padding-bottom:12px;
+
+   text-align:center;
+}
+/* block: top-img
+_______________________________________________*/
+.top-img {
+   position:relative;
+
+   padding-bottom:30px;
+}
+@media (max-width: $lg) {
+   .top-img {
+      display:none;
+   }
+}
+.top-img__list {
+   font-family:CochinItalic;
+   font-size:20px;
+
+   position:absolute;
+   top:0;
+
+   width:100%;
+
+   color:$light-font-color;
+}
+@media (max-width: $lg) {
+   .top-img__list {
+      display:none;
+   }
+}
+.top-img__item {
+   position:absolute;
+}
+.top-img__item:after {
+   position:absolute;
+   bottom:-7px;
+   left:50%;
+
+   width:26px;
+   height:1px;
+   margin:0 0 0 -13px;
+
+   content:'';
+
+   background:$light-font-color;
+}
+.top-img__item_tie {
+   top:133px;
+   left:113px;
+}
+.top-img__item_mes {
+   top:26px;
+   left:274px;
+}
+.top-img__item_socks {
+   top:40px;
+   left:597px;
+}
+.top-img__item_cufflinks {
+   top:78px;
+   left:773px;
+}

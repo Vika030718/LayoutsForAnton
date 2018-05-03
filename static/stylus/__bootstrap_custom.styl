@@ -1,0 +1,95 @@
+/* bootstrap modified classes
+_______________________________________________*/
+.col-xxs
+   @media(max-width: $xs)
+      text-align: center
+      width: 100%
+.collapse_user-menu
+   padding-right: 0;
+   @media(min-width: $lg)
+      width: 100%
+.dropdown-menu
+   border-radius: 0
+   border: none
+   min-width: 0
+   padding: 0
+   -webkit-box-shadow: 0 0px 12px rgba(0,0,0,0.175);
+   box-shadow: 0 0px 12px rgba(0,0,0,0.175);
+.dropdown:hover .submenu
+   @media(min-width: $lg)
+      display: block
+.breadcrumb
+   margin-bottom: 0
+   padding: 8px 0 25px 0;
+   &_listing
+      background-color: transparent;
+      padding: 15px 0;
+      &:before
+         position: absolute
+         height: 1px;
+         width: 170px;
+         background-color: $separator-color
+         content: ""
+         top: 0
+         @media(max-width: $md)
+            width: 0
+      .breadcrumb__item
+         color: #555a69
+   &_search
+      background-color: transparent;
+      padding: 15px 0;
+      display: inline-block
+      .breadcrumb__item
+         color: #555a69
+.breadcrumb__item
+   font-size: 14px;
+   color: rgba(85, 90, 105, 0.5);
+   transition: color .2s ease-out
+   &:hover
+      color: #000000!important
+.breadcrumb>li+li:before
+   content: "/";
+   color: rgba(85, 90, 105, 0.5);
+.form-control:focus
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+a:hover, a:focus
+  outline: none!important
+  color: #000000
+/* menu
+_______________________________________________*/
+
+@media (max-width: 992px)
+   .navbar-header
+        float: none;
+   .navbar-left,.navbar-right
+        float: none !important;
+   .navbar-toggle
+        display: block;
+   .navbar-collapse
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+   .navbar-fixed-top
+      top: 0;
+      border-width: 0 0 1px;
+   .navbar-collapse.collapse
+        display: none!important;
+   .navbar-nav
+        float: none!important;
+    margin-top: 7.5px;
+   .navbar-nav>li
+        float: none;
+   .navbar-nav>li>a
+        padding-top: 10px;
+        padding-bottom: 10px;
+   .collapse.in
+      display:block !important;
+/* aligment
+_______________________________________________*/   
+.text-right
+  justify-content: flex-end;
+.text-center
+  justify-content: center;
+.text-lef
+  justify-content: left;

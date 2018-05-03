@@ -1,0 +1,496 @@
+* {
+   box-sizing:border-box;
+}
+ol, ul {
+   list-style:none outside none;
+}
+p {
+   line-height:1.2em;
+}
+html, body, div, h1, h2, h3, h4, h5, h6, p, blockquote, pre, img, ins, dl, dt, dd, ol, ul, li, form, label, table, tbody, tfoot, thead, tr, th, td {
+   line-height:1.2em;
+
+   margin:0;
+   padding:0;
+
+   border:0;
+   outline:0;
+   background:transparent;
+}
+a {
+   transition:background-color .2s ease-in-out, border-color .2s ease-in-out, color .2s ease-in-out;
+   text-decoration:none;
+
+   color:#000;
+}
+h1, h2, h3, h4, h5, h6 {
+   font-family:inherit;
+   font-weight:500;
+   line-height:1.1;
+
+   color:inherit;
+}
+.fa {
+   font:normal normal normal 14px/1 FontAwesome;
+   font-size:inherit;
+
+   display:inline-block;
+
+   text-rendering:auto;
+   -webkit-font-smoothing:antialiased;
+   -moz-osx-font-smoothing:grayscale;
+}
+.fa-instagram:before {
+   content:'\f16d';
+}
+.fa-tumblr:before {
+   content:'\f173';
+}
+.fa-facebook-f:before, .fa-facebook:before {
+   content:'\f09a';
+}
+.fa-google-plus:before {
+   content:'\f0d5';
+}
+a:hover {
+   color:inherit;
+}
+.mail-body {
+   font-family:arial;
+
+   padding-top:0;
+
+   background-color:#f5f6f8;
+}
+.mail-top {
+   font-size:13px;
+
+   max-width:570px;
+   margin:auto;
+   padding:13px 0;
+
+   text-align:right;
+
+   color:rgba(0,0,0,.749);
+}
+.mail-menu {
+   display:-webkit-box;
+   display:flex;
+
+   margin-top:20px;
+   padding:0 45px 30px 45px;
+
+   border-bottom:1px solid #ebebeb;
+
+   -webkit-box-pack:justify;
+   justify-content:space-between;
+}
+@media (max-width: 660px) {
+   .mail-menu {
+      padding:0 10px 10px 10px;
+   }
+}
+.mail-menu__link {
+   font-size:12px;
+
+   padding:0 15px;
+
+   text-transform:uppercase;
+}
+@media (max-width: 660px) {
+   .mail-menu__link {
+      padding:0 5px;
+   }
+}
+.mail-menu__link_last {
+   font-family:'Times New Roman', Times, serif;
+   font-size:14px;
+   font-style:italic;
+
+   text-transform:none;
+}
+.mail {
+   max-width:570px;
+   margin:auto;
+   padding-bottom:240px;
+}
+@media (max-width: 660px) {
+   .mail {
+      padding-bottom:40px;
+   }
+}
+.mail__logo {
+   text-align:center;
+}
+.mail__head {
+   padding:26px 30px 40px 30px;
+
+   background-color:#fff;
+}
+@media (max-width: 660px) {
+   .mail__head {
+      padding:16px 10px 20px 10px;
+   }
+}
+.mail__name {
+   font-family:'Times New Roman', Times, serif;
+   font-size:26px;
+   font-style:italic;
+
+   margin-bottom:15px;
+   padding-top:30px;
+
+   text-align:center;
+}
+.mail__title {
+   font-size:15px;
+   line-height:1.5em;
+
+   max-width:390px;
+   margin:15px auto 28px auto;
+   padding:0 20px;
+
+   text-align:center;
+}
+.mail__accent {
+   font-weight:bold;
+}
+.mail__description {
+   font-size:13px;
+   line-height:1.4em;
+   line-height:1.7em;
+
+   padding:0 45px;
+
+   text-align:center;
+
+   color:rgba(0,0,0,.749);
+}
+.mail__body {
+   padding:0 25px 30px 30px;
+
+   border-top:1px solid #ebebeb;
+   background-color:#fff;
+}
+.mail__logo {
+   max-width:170px;
+   margin:auto;
+}
+.mail-status__head {
+   font-size:14px;
+
+   position:relative;
+
+   display:-webkit-box;
+   display:flex;
+
+   padding:33px 0 28px;
+
+   -webkit-box-pack:justify;
+   justify-content:space-between;
+}
+.mail-status__head:before {
+   font-family:fontAwesome;
+   font-size:27px;
+
+   position:absolute;
+   top:50%;
+
+   display:-webkit-box;
+   display:flex;
+
+   width:30px;
+   height:30px;
+   margin-top:-15px;
+
+   content:'\f107';
+
+   border-radius:30px;
+
+   -webkit-box-pack:center;
+   justify-content:center;
+   -webkit-box-align:center;
+   align-items:center;
+}
+.mail-status__head_done:before {
+   background-color:#89d885;
+}
+.mail-status__head_done .orders__status {
+   color:#69c365;
+}
+.mail-status__head_wait:before {
+   background-color:#f6b76d;
+}
+.mail-status__head_wait .orders__status {
+   color:#ee9d3e;
+}
+.mail-status__head-left {
+   padding-left:45px;
+
+   -webkit-box-flex:0;
+   flex:0 1 70%;
+}
+.mail-status__name {
+   font-size:14px;
+
+   display:inline-block;
+
+   color:#000;
+}
+.mail-status__client {
+   color:rgba(0,0,0,.75);
+}
+.mail-status__date {
+   display:inline-block;
+
+   color:rgba(0,0,0,.75);
+}
+.mail-item {
+   font-size:13px;
+
+   position:relative;
+
+   display:-webkit-box;
+   display:flex;
+
+   border-top:1px solid #ebebeb;
+   background-color:#fff;
+
+   -webkit-box-pack:justify;
+   justify-content:space-between;
+}
+@media (max-width: 660px) {
+   .mail-item {
+      flex-direction:column;
+
+      -webkit-box-orient:vertical;
+      -webkit-box-direction:normal;
+   }
+}
+.mail-item__img {
+   padding:18px 15px 18px 0;
+
+   -webkit-box-flex:0;
+   flex:0 0 86px;
+}
+@media (max-width: 660px) {
+   .mail-item__img {
+      border-bottom:1px solid #ebebeb;
+   }
+}
+.mail-item__description {
+   display:-webkit-box;
+   display:flex;
+   flex-direction:column;
+
+   padding:18px 0 18px 0;
+
+   -webkit-box-flex:1;
+   flex:1 0 auto;
+   -webkit-box-orient:vertical;
+   -webkit-box-direction:normal;
+   -webkit-box-pack:justify;
+   justify-content:space-between;
+}
+@media (max-width: 660px) {
+   .mail-item__description {
+      padding:15px 0;
+   }
+}
+.mail-item__price {
+   display:-webkit-box;
+   display:flex;
+
+   padding:18px 0 18px 0;
+
+   color:#000;
+}
+@media (max-width: 660px) {
+   .mail-item__price {
+      padding:0 0 10px 0;
+   }
+}
+.mail-item__title {
+   font-size:13px;
+}
+.mail-item__accent {
+   margin-top:5px;
+
+   color:rgba(0,0,0,.75) !important;
+}
+.mail-item__link {
+   margin-left:10px;
+
+   text-decoration:underline;
+
+   color:rgba(0,0,0,.5) !important;
+}
+.mail-total {
+   font-size:13px;
+
+   padding:20px 0 0 0;
+
+   border-top:1px solid #ebebeb;
+   background-color:#fff;
+}
+.mail-total td {
+   padding-bottom:8px;
+
+   color:#848383;
+}
+.mail-total__final {
+   padding-top:16px;
+   padding-bottom:18px !important;
+
+   text-transform:uppercase;
+
+   color:#000 !important;
+}
+.mail-total__table {
+   width:100%;
+
+   text-align:right;
+}
+.mail-bottom {
+   font-size:13px;
+
+   display:-webkit-box;
+   display:flex;
+
+   border-top:1px solid #ebebeb;
+   border-bottom:1px solid #ebebeb;
+   background-color:#fff;
+}
+@media (max-width: 660px) {
+   .mail-bottom {
+      flex-direction:column;
+
+      -webkit-box-orient:vertical;
+      -webkit-box-direction:normal;
+   }
+}
+.mail-bottom__item {
+   padding:25px 30px 30px 30px;
+
+   border-right:1px solid #ebebeb;
+
+   -webkit-box-flex:0;
+   flex:0 0 33.33%;
+}
+@media (max-width: 660px) {
+   .mail-bottom__item {
+      padding:15px 30px 15px 30px;
+
+      border-right:none;
+      border-bottom:1px solid #ebebeb;
+   }
+}
+.mail-bottom__item:nth-last-child(1) {
+   border-right:none;
+   border-bottom:none;
+}
+.mail-bottom__title {
+   margin-bottom:25px;
+
+   color:#000;
+}
+@media (max-width: 660px) {
+   .mail-bottom__title {
+      margin-bottom:15px;
+   }
+}
+.mail-bottom__link {
+   line-height:1.7em;
+
+   margin-bottom:5px;
+
+   color:#555a69;
+}
+.mail-bottom__list {
+   margin-bottom:10px;
+}
+.mail-bottom__phone {
+   color:#93959a;
+}
+.mail-more {
+   display:-webkit-box;
+   display:flex;
+
+   margin-bottom:40px;
+   padding-top:30px;
+   padding-bottom:40px;
+
+   background-color:#fafafb;
+   box-shadow:0 25px 48px -29px #ccc;
+
+   -webkit-box-pack:center;
+   justify-content:center;
+}
+.mail-more__btn {
+   font-size:12px;
+
+   display:inline-block;
+
+   width:auto !important;
+   padding:20px 60px;
+
+   text-transform:uppercase;
+
+   border:1px solid #000;
+   border-radius:0;
+}
+.mail-footer {
+   text-align:center;
+}
+.mail-footer__title {
+   font-family:'Times New Roman', Times, serif;
+   font-size:28px;
+   font-style:italic;
+
+   margin-bottom:15px;
+}
+.mail-footer__subtitle {
+   font-family:'Times New Roman', Times, serif;
+   font-size:16px;
+   font-style:italic;
+   line-height:1.3em;
+
+   margin-top:15px;
+   margin-bottom:25px;
+   padding-bottom:35px;
+
+   border-bottom:1px solid #ebebeb;
+}
+.mail-footer__copyright {
+   font-size:11px;
+
+   margin-top:30px;
+}
+/* block: social
+_______________________________________________*/
+.social {
+   font-size:22px;
+
+   color:#000;
+}
+.social__item {
+   position:relative;
+
+   display:inline-block;
+}
+.social__link {
+   display:inline-block;
+
+   height:25px;
+   margin-right:15px;
+
+   text-align:center;
+
+   color:inherit;
+}
+.social__icon {
+   transition:color .2s ease-out;
+}
+.social__icon:hover {
+   color:#000;
+}

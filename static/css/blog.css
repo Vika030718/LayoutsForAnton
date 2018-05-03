@@ -1,0 +1,536 @@
+@font-face {
+   font-family:brandonRegular;
+
+   src:url('../font/BrandonText-Regular.woff');
+}
+@font-face {
+   font-family:brandonMedium;
+
+   src:url('../font/BrandonText-Medium.otf');
+}
+@font-face {
+   font-family:brandonBlack;
+
+   src:url('../font/BrandonText-Black.woff');
+}
+@font-face {
+   font-family:brandonBold;
+
+   src:url('../font/BrandonText-Bold.woff');
+}
+@font-face {
+   font-family:CochinItalic;
+
+   src:url('../font/Cochin-Italic.woff');
+}
+@font-face {
+   font-family:CochinBold;
+
+   src:url('../font/Cochin-Bold.woff');
+}
+@font-face {
+   font-family:cochinBoldItalic;
+
+   src:url('../font/Cochin-Bold-Italic.woff');
+}
+@font-face {
+   font-family:cochinRegular;
+
+   src:url('../font/Cochin-Regular.woff');
+}
+@font-face {
+   font-family:francoisOne;
+
+   src:url('../font/FrancoisOne.woff');
+}
+.blog__wrapper {
+   max-width:1030px;
+   margin:auto;
+}
+.blog__wrapper img {
+   width:100%;
+   max-width:100%;
+}
+.blog__title {
+   position:relative;
+
+   margin-top:0;
+   margin-bottom:30px;
+
+   text-align:center;
+}
+@media (max-width: 768px) {
+   .blog__title {
+      margin-top:30px;
+   }
+}
+.blog__title:after {
+   position:absolute;
+   bottom:50%;
+   left:0;
+
+   width:100%;
+   height:1px;
+
+   content:'';
+
+   background-color:rgba(0,0,0,.15);
+}
+@media (max-width: 768px) {
+   .blog__title:after {
+      width:0;
+   }
+}
+.blog__title-text {
+   font-family:CochinItalic;
+   font-size:60px;
+
+   position:relative;
+   z-index:2;
+
+   display:inline-block;
+
+   margin:0;
+   padding:0 25px;
+
+   text-align:center;
+
+   background-color:#fff;
+}
+@media (max-width: 768px) {
+   .blog__title-text {
+      font-size:30px;
+
+      padding:0 5px;
+   }
+}
+.blog__return, .blog__category {
+   font-size:16px;
+
+   position:relative;
+   z-index:2;
+   top:-13px;
+
+   display:inline-block;
+
+   margin:0;
+   padding:0 25px;
+
+   text-align:center;
+
+   background-color:#fff;
+}
+@media (max-width: 768px) {
+   .blog__return, .blog__category {
+      top:0;
+   }
+}
+.blog__return {
+   left:-20%;
+
+   padding:0 10px 0 25px;
+}
+@media (max-width: 768px) {
+   .blog__return {
+      left:0;
+   }
+}
+.blog__return:before {
+   font-family:fontAwesome;
+   font-size:18px;
+
+   position:absolute;
+   left:13px;
+
+   content:'\f104';
+}
+.blog__category {
+   right:-20%;
+
+   padding:0 25px 0 10px;
+}
+@media (max-width: 768px) {
+   .blog__category {
+      right:0;
+   }
+}
+.blog__category:before {
+   font-family:fontAwesome;
+   font-size:18px;
+
+   position:absolute;
+   top:0;
+   right:8px;
+
+   content:'\f107';
+}
+.blog__photo-title {
+   font-size:13px;
+
+   margin-top:25px;
+   margin-bottom:5px;
+}
+.blog__photo-subtitle {
+   font-size:13px;
+
+   margin-top:0;
+   margin-bottom:10px;
+
+   color:#979797;
+}
+.blog__photo-price {
+   font-size:13px;
+}
+.story {
+   padding:50px 0 170px;
+}
+@media (max-width: 768px) {
+   .story {
+      padding:50px 0 20px;
+   }
+}
+.story__subtitle {
+   font-family:CochinItalic;
+   font-size:20px;
+
+   margin-bottom:50px;
+
+   text-decoration:underline;
+
+   color:rgba(0,0,0,.5);
+}
+.story__img-block {
+   overflow:hidden;
+
+   width:100%;
+   height:360px;
+   margin-bottom:120px;
+}
+@media (max-width: 768px) {
+   .story__img-block {
+      height:auto;
+      margin-bottom:30px;
+   }
+}
+.story__description {
+   position:absolute;
+   bottom:20px;
+   left:50%;
+
+   width:370px;
+   height:160px;
+   margin-left:-185px;
+   padding:30px 60px;
+
+   background-color:#fff;
+}
+@media (max-width: 768px) {
+   .story__description {
+      left:0;
+
+      width:100%;
+      width:100%;
+      height:auto;
+      margin-right:auto;
+      margin-left:auto;
+      padding:15px 15px 30px;
+      padding:15px 25px 15px;
+
+      background-color:rgba(255,255,255,.75);
+   }
+}
+.story__description_main {
+   width:500px;
+   margin-left:-225px;
+}
+@media (max-width: 768px) {
+   .story__description_main {
+      width:100%;
+      margin-left:auto;
+   }
+}
+.story__item {
+   position:relative;
+
+   margin-bottom:20px;
+}
+.story__name {
+   font-size:18px;
+
+   margin-top:0;
+   margin-bottom:15px;
+
+   text-transform:uppercase;
+}
+.story__text {
+   font-family:CochinItalic;
+   font-size:18px;
+
+   margin-bottom:15px;
+}
+.story__link {
+   font-family:CochinItalic;
+   font-size:18px;
+}
+.article {
+   padding:50px 0 170px;
+}
+@media (max-width: 768px) {
+   .article {
+      padding:50px 0 20px;
+   }
+}
+.article__close {
+   position:absolute;
+   top:20px;
+   right:20px;
+}
+.article__top {
+   position:relative;
+
+   display:-webkit-box;
+   display:flex;
+   flex-direction:column;
+
+   height:270px;
+
+   background:url('../img/temp/article__bg.jpg');
+
+   -webkit-box-orient:vertical;
+   -webkit-box-direction:normal;
+   -webkit-box-align:center;
+   align-items:center;
+   -webkit-box-pack:center;
+   justify-content:center;
+}
+.article__top-subtitle {
+   font-size:14px;
+
+   text-transform:uppercase;
+
+   color:#fff;
+}
+.article__top-title {
+   font-size:22px;
+
+   margin-top:10px;
+
+   text-transform:uppercase;
+
+   color:#fff;
+}
+.article__inner-wrapper {
+   max-width:860px;
+   margin:auto;
+}
+.article__img-block {
+   position:relative;
+
+   overflow:hidden;
+
+   width:100%;
+   margin-bottom:50px;
+}
+@media (max-width: 768px) {
+   .article__img-block {
+      height:auto;
+   }
+}
+.article__img-subtext {
+   margin-bottom:60px;
+   padding-left:50px;
+
+   text-align:left;
+
+   color:#000;
+}
+.article__description {
+   position:absolute;
+   bottom:30px;
+   left:50%;
+
+   width:70%;
+   margin-left:-35%;
+   padding:25px;
+
+   background-color:#fff;
+}
+@media (max-width: 768px) {
+   .article__description {
+      left:auto;
+
+      width:100%;
+      margin-right:auto;
+      margin-left:auto;
+      padding:15px 15px 30px;
+
+      background-color:rgba(255,255,255,.75);
+   }
+}
+.article__name {
+   font-size:11px;
+
+   margin-top:0;
+   margin-bottom:7px;
+
+   text-transform:uppercase;
+}
+.article__text {
+   font-family:CochinItalic;
+   font-size:18px;
+
+   margin-bottom:15px;
+}
+.article__link {
+   font-family:CochinItalic;
+   font-size:18px;
+}
+.article__tags {
+   font-size:8px;
+
+   text-transform:uppercase;
+
+   color:#b1b1b1;
+}
+.article__subtext {
+   font-family:CochinItalic;
+   font-size:24px;
+
+   max-width:600px;
+   margin-top:60px;
+   margin-right:auto;
+   margin-bottom:70px;
+   margin-left:auto;
+
+   color:#747474;
+}
+.article__subtitle {
+   font-size:24px;
+
+   margin-top:50px;
+   margin-bottom:30px;
+   padding-left:50px;
+
+   text-align:left;
+}
+.article__paragraph {
+   font-size:18px;
+
+   margin-bottom:50px;
+   padding-left:50px;
+
+   text-align:left;
+
+   color:#747474;
+}
+.article__text-right {
+   margin-bottom:0;
+   padding-top:30px;
+   padding-left:0;
+}
+.article__text-left {
+   margin-bottom:0;
+   padding-top:30px;
+   padding-left:0;
+}
+.article__social {
+   display:-webkit-box;
+   display:flex;
+
+   margin-top:90px;
+   padding-top:30px;
+   padding-bottom:30px;
+
+   border-top:1px solid #ccc;
+
+   -webkit-box-pack:center;
+   justify-content:center;
+   -webkit-box-align:center;
+   align-items:center;
+}
+.article__social-title {
+   font-size:16px;
+
+   margin-right:20px;
+   margin-bottom:5px;
+}
+.article__list {
+   margin-bottom:75px;
+
+   text-align:left;
+
+   color:#747474;
+}
+.article__list-item {
+   display:-webkit-box;
+   display:flex;
+
+   padding:15px 0;
+
+   -webkit-box-align:center;
+   align-items:center;
+}
+.article__list-item:before {
+   height:15px;
+   padding-right:20px;
+
+   content:url('../img/arrow__article.png');
+}
+.article__title-text {
+   font-size:24px;
+
+   position:relative;
+   z-index:2;
+
+   display:inline-block;
+
+   margin:0;
+   padding:0 25px;
+
+   text-align:center;
+
+   background-color:#fff;
+}
+/*______________________________ preloader ______________________________*/
+.cssload-container {
+   width:100%;
+   height:49px;
+
+   text-align:center;
+}
+.cssload-speeding-wheel {
+   width:49px;
+   height:49px;
+   margin:0 auto;
+
+   -webkit-animation:cssload-spin 575ms infinite linear;
+      -moz-animation:cssload-spin 575ms infinite linear;
+       -ms-animation:cssload-spin 575ms infinite linear;
+        -o-animation:cssload-spin 575ms infinite linear;
+           animation:cssload-spin 575ms infinite linear;
+
+   border:3px solid #000;
+   border-right-color:transparent;
+   border-left-color:transparent;
+   border-radius:50%;
+}
+@-webkit-keyframes cssload-spin {
+   100% {
+      -webkit-transform:rotate(360deg);
+              transform:rotate(360deg);
+   }
+}
+@-webkit-keyframes cssload-spin {
+   100% {
+      -webkit-transform:rotate(360deg);
+              transform:rotate(360deg);
+              transform:rotate(360deg);
+   }
+}
+@keyframes cssload-spin {
+   100% {
+      -webkit-transform:rotate(360deg);
+              transform:rotate(360deg);
+              transform:rotate(360deg);
+   }
+}

@@ -1,0 +1,423 @@
+@font-face {
+   font-family:brandonRegular;
+
+   src:url('../font/BrandonText-Regular.woff');
+}
+@font-face {
+   font-family:brandonMedium;
+
+   src:url('../font/BrandonText-Medium.otf');
+}
+@font-face {
+   font-family:brandonBlack;
+
+   src:url('../font/BrandonText-Black.woff');
+}
+@font-face {
+   font-family:brandonBold;
+
+   src:url('../font/BrandonText-Bold.woff');
+}
+@font-face {
+   font-family:CochinItalic;
+
+   src:url('../font/Cochin-Italic.woff');
+}
+@font-face {
+   font-family:CochinBold;
+
+   src:url('../font/Cochin-Bold.woff');
+}
+@font-face {
+   font-family:cochinBoldItalic;
+
+   src:url('../font/Cochin-Bold-Italic.woff');
+}
+@font-face {
+   font-family:cochinRegular;
+
+   src:url('../font/Cochin-Regular.woff');
+}
+@font-face {
+   font-family:francoisOne;
+
+   src:url('../font/FrancoisOne.woff');
+}
+.guarantees-header {
+   position:relative;
+
+   display:-webkit-box;
+   display:flex;
+   overflow:hidden;
+   flex-direction:column;
+
+   height:380px;
+   margin:0 15px;
+   padding:0 10px;
+
+   text-align:center;
+
+   color:#fff;
+   background-image:url('../img/guarantees-header.jpg');
+   background-repeat:no-repeat;
+   background-position:center;
+   background-size:cover;
+
+   -webkit-box-pack:center;
+   justify-content:center;
+   -webkit-box-align:center;
+   align-items:center;
+   -webkit-box-orient:vertical;
+   -webkit-box-direction:normal;
+}
+.guarantees-header__title {
+   font-family:CochinItalic;
+   font-size:55px;
+
+   margin-bottom:15px;
+}
+@media (max-width: 660px) {
+   .guarantees-header__title {
+      font-size:42px;
+   }
+}
+.guarantees-header__subtitle {
+   font-family:CochinItalic;
+   font-size:22px;
+
+   margin-bottom:50px;
+}
+@media (max-width: 660px) {
+   .guarantees-header__subtitle {
+      font-size:22px;
+   }
+}
+.guarantees-header__btn {
+   position:absolute;
+   bottom:0;
+
+   width:100px;
+   height:100px;
+   margin-bottom:-50px;
+
+   -webkit-transform:rotate(90deg);
+           transform:rotate(90deg);
+
+   border-radius:100px;
+   background-color:#f3f2f7;
+   background-image:url('../img/arrow_return.svg');
+   background-repeat:no-repeat;
+   background-position:28px center;
+   background-size:23%;
+}
+.guarantees-info {
+   margin:0 15px;
+   padding:70px 0 70px 0;
+
+   background-color:#f4f4f4;
+   background-color:#f3f2f7;
+}
+@media (max-width: 768px) {
+   .guarantees-info {
+      padding:30px 0 30px 0;
+   }
+}
+.guarantees-info__title {
+   font-family:CochinItalic;
+   font-size:26px;
+
+   position:relative;
+
+   margin-bottom:25px;
+   padding-left:60px;
+}
+.guarantees-info__title:before {
+   position:absolute;
+   top:50%;
+   left:0;
+
+   width:46px;
+   height:40px;
+   margin-top:-20px;
+
+   content:'';
+
+   background-image:url('../img/guarantees-title-icon.png');
+}
+@media (max-width: 768px) {
+   .guarantees-info__title {
+      font-size:22px;
+   }
+}
+.guarantees-info__text {
+   font-size:18px;
+   line-height:1.4em;
+
+   margin-bottom:25px;
+}
+@media (max-width: 768px) {
+   .guarantees-info__text {
+      font-size:14px;
+
+      margin-bottom:15px;
+   }
+}
+.guarantees-info__list {
+   font-size:16px;
+
+   color:#747474;
+}
+.guarantees-info__item {
+   position:relative;
+
+   margin-bottom:15px;
+   padding-left:35px;
+}
+.guarantees-info__item:before {
+   font-family:fontAwesome;
+
+   position:absolute;
+   left:0;
+
+   content:'\f00c';
+
+   color:#007c6f;
+}
+.guarantees-info__item-no {
+   position:relative;
+}
+.guarantees-info__item-no:before {
+   content:'\f00d';
+
+   color:#902141;
+}
+.guarantees-info__left-block {
+   display:-webkit-box;
+   display:flex;
+
+   margin-top:20px;
+
+   -webkit-box-align:center;
+   align-items:center;
+   -webkit-box-pack:center;
+   justify-content:center;
+}
+.guarantees-info__left-block img {
+   width:100%;
+   max-width:348px;
+}
+.guarantees-contact {
+   display:-webkit-box;
+   display:flex;
+
+   padding:35px 15px;
+
+   -webkit-box-pack:center;
+   justify-content:center;
+   -webkit-box-align:center;
+   align-items:center;
+}
+@media (max-width: 768px) {
+   .guarantees-contact {
+      flex-direction:column;
+
+      padding-bottom:10px;
+
+      -webkit-box-orient:vertical;
+      -webkit-box-direction:normal;
+   }
+}
+.guarantees-contact__title {
+   font-family:CochinItalic;
+   font-size:36px;
+
+   margin-right:40px;
+}
+@media (max-width: 768px) {
+   .guarantees-contact__title {
+      margin-right:0;
+      margin-bottom:10px;
+   }
+}
+.contact-item {
+   font-size:16px;
+
+   margin-top:5px;
+   margin-right:15px;
+   margin-bottom:5px;
+   padding:15px 30px;
+
+   color:#747474;
+   border:1px solid #000;
+   border-radius:25px;
+}
+@media (max-width: 768px) {
+   .contact-item {
+      margin-top:10px;
+      margin-right:0;
+   }
+}
+.contact-item__accent {
+   color:#000;
+}
+.guarantees-bottom {
+   position:relative;
+
+   margin:0 15px 30px 15px;
+   padding-top:50px;
+
+   color:#fff;
+   background-image:url('../img/shop__info-block.jpg');
+}
+.guarantees-bottom:before {
+   position:absolute;
+   z-index:0;
+   top:0;
+
+   width:100%;
+   height:100%;
+
+   content:'';
+
+   background-color:rgba(32,41,49,.549);
+}
+.guarantees-bottom__text {
+   line-height:1.4em;
+}
+.guarantees-bottom__title {
+   font-family:CochinItalic;
+   font-size:36px;
+
+   position:relative;
+   z-index:2;
+
+   margin-bottom:50px;
+   padding:0 10px;
+
+   text-align:center;
+}
+@media (max-width: 768px) {
+   .guarantees-bottom__title {
+      font-size:30px;
+   }
+}
+.guarantees-bottom__left-block {
+   width:100%;
+   max-width:600px;
+   padding-right:70px;
+
+   text-align:right;
+
+   border-right:1px solid rgba(255,255,255,.2);
+}
+@media (max-width: 768px) {
+   .guarantees-bottom__left-block {
+      max-width:none;
+      margin-bottom:15px;
+      padding-right:15px;
+      padding-left:15px;
+
+      text-align:left;
+
+      border-right:none;
+   }
+}
+.guarantees-bottom__right-block {
+   max-width:530px;
+   padding-left:70px;
+}
+@media (max-width: 768px) {
+   .guarantees-bottom__right-block {
+      max-width:none;
+      padding-right:15px;
+      padding-left:15px;
+   }
+}
+.guarantees-bottom__footer {
+   font-size:18px;
+   line-height:1.2em;
+
+   position:relative;
+   z-index:2;
+
+   margin-top:40px;
+   padding:50px 15px 40px 15px;
+
+   color:#fff;
+   background-color:rgba(40,52,65,.51);
+}
+@media (max-width: 768px) {
+   .guarantees-bottom__footer {
+      font-size:14px;
+
+      padding:20px 10px;
+   }
+}
+.guarantees-bottom__footer-text {
+   width:100%;
+   max-width:890px;
+   margin:auto;
+}
+.guarantees-bottom__body {
+   position:relative;
+   z-index:2;
+
+   display:-webkit-box;
+   display:flex;
+
+   -webkit-box-pack:center;
+   justify-content:center;
+}
+@media (max-width: 768px) {
+   .guarantees-bottom__body {
+      font-size:14px;
+
+      flex-direction:column;
+
+      padding:0 10px;
+
+      -webkit-box-orient:vertical;
+      -webkit-box-direction:normal;
+   }
+}
+.guarantees-bottom__address {
+   position:relative;
+
+   display:inline-block;
+
+   margin-top:20px;
+   padding-left:50px;
+}
+.guarantees-bottom__address:before {
+   position:absolute;
+   top:0;
+   left:0;
+
+   width:33px;
+   height:45px;
+
+   content:'';
+
+   background-image:url('../img/shop-info__address.png');
+}
+.guarantees-bottom__address-title {
+   margin-bottom:15px;
+}
+.guarantees-bottom__list {
+   margin-top:20px;
+   margin-bottom:25px;
+}
+.guarantees-bottom__item {
+   position:relative;
+
+   margin-bottom:7px;
+   padding-left:35px;
+}
+.guarantees-bottom__item:before {
+   font-family:fontAwesome;
+
+   position:absolute;
+   left:0;
+
+   content:'\f00c';
+}

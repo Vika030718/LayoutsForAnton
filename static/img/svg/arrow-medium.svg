@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="36px" viewBox="0 0 60 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow-medium</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="arrow-medium" fill-rule="nonzero" fill="#000000">
+            <g id="Page-1">
+                <path d="M59.75056,17.3103681 L43.75036,0.310418095 C43.36306,-0.0937819055 42.70116,-0.0966819055 42.32826,0.263418095 C41.94926,0.629318095 41.92146,1.30101809 42.28126,1.68551809 L56.68766,16.9979681 L1,16.9979681 C0.4477,16.9979681 -7.10542736e-15,17.4456681 -7.10542736e-15,17.9979681 C-7.10542736e-15,18.5502681 0.4477,18.9979681 1,18.9979681 L56.68766,18.9979681 L42.28126,34.3104681 C41.92116,34.6949681 41.94336,35.3725681 42.32826,35.7325681 C42.71286,36.0925681 43.33176,36.1014681 43.75036,35.6855681 L59.75056,18.6855681 C60.13086,18.2175681 60.03086,17.6439681 59.75056,17.3103681 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

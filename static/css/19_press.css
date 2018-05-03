@@ -1,0 +1,270 @@
+.press__item {
+   min-height:230px;
+   margin-top:10px;
+   padding:20px 20px 40px;
+
+   border:1px solid #000;
+}
+.press__title {
+   font-family:brandonBold;
+   font-size:16px;
+
+   text-transform:uppercase;
+}
+.press__subtitle {
+   font-family:cochinBoldItalic;
+   font-size:16px;
+
+   position:relative;
+
+   display:inline-block;
+
+   padding-bottom:20px;
+}
+.press__subtitle:after {
+   position:absolute;
+   bottom:0;
+   left:0;
+
+   width:20px;
+   height:3px;
+
+   content:'';
+
+   background:#000;
+}
+.press__description {
+   font-size:16px;
+   line-height:20px;
+
+   padding-top:20px;
+   padding-bottom:20px;
+}
+.press__date {
+   font-family:cochinBoldItalic;
+
+   position:relative;
+
+   padding-left:22px;
+
+   color:#898989;
+}
+.press__date:before {
+   position:absolute;
+   left:8px;
+
+   content:'|';
+}
+.press__more {
+   line-height:40px;
+
+   position:absolute;
+   bottom:0;
+   left:50%;
+
+   width:40px;
+   height:40px;
+   margin-left:-20px;
+
+   text-align:center;
+
+   background-color:#000;
+}
+.press__more-link {
+   display:block;
+}
+.press__more-link:hover {
+   background-color:$hover-main-color;
+}
+.press__advertising {
+   display:-webkit-box;
+   display:flex;
+   flex-direction:column;
+
+   min-height:230px;
+   margin-top:10px;
+
+   text-align:center;
+
+   -webkit-box-orient:vertical;
+   -webkit-box-direction:normal;
+   -webkit-box-pack:center;
+   justify-content:center;
+}
+.press__advertising-title {
+   font-family:brandonBold;
+   font-size:23px;
+
+   position:relative;
+
+   margin-bottom:40px;
+
+   text-transform:uppercase;
+}
+.press__advertising-title:after {
+   position:absolute;
+   bottom:0;
+   bottom:-20px;
+   left:50%;
+
+   width:20px;
+   height:3px;
+   margin-left:-10px;
+
+   content:'';
+
+   background:#000;
+}
+.article__top {
+   margin-bottom:10px;
+   padding-top:30px;
+   padding-right:18px;
+   padding-bottom:20px;
+   padding-left:18px;
+
+   text-align:center;
+
+   background-image:url('../img/footer_services_bg.jpg');
+}
+.article__wrapper {
+   margin-top:30px;
+}
+.article__top-title {
+   font-family:brandonBold;
+   font-size:20px;
+
+   position:relative;
+
+   margin-bottom:20px;
+
+   text-transform:uppercase;
+}
+.article__top-title:after {
+   position:absolute;
+   bottom:-20px;
+   left:50%;
+
+   width:20px;
+   height:3px;
+   margin-left:-10px;
+
+   content:'';
+
+   background:#000;
+}
+.article__block {
+   overflow:hidden;
+
+   padding-top:15px;
+   padding-bottom:15px;
+
+   border-top:1px solid #000;
+}
+.article__subtitle {
+   font-family:cochinBoldItalic;
+   font-size:23px;
+
+   display:inline-block;
+}
+.article__subtitle:after {
+   position:absolute;
+   bottom:-10px;
+   left:0;
+   left:5px;
+
+   width:80px;
+   height:4px;
+
+   content:'';
+
+   background:#000;
+}
+.article__date {
+   font-family:cochinBoldItalic;
+   font-size:23px;
+
+   position:relative;
+   bottom:-1px;
+
+   padding-left:22px;
+
+   color:#898989;
+}
+.article__date:before {
+   position:absolute;
+   top:0;
+   left:8px;
+
+   content:'|';
+}
+.article__img {
+   float:left;
+
+   margin-right:20px;
+   margin-bottom:10px;
+}
+@media (max-width: $xs) {
+   .article__img {
+      display:block;
+      float:none;
+
+      margin-right:auto;
+      margin-left:auto;
+   }
+}
+.article__description {
+   font-family:brandonBold;
+   font-size:16px;
+
+   margin-bottom:20px;
+
+   text-align:justify;
+}
+.article__text {
+   padding-bottom:20px;
+
+   text-align:justify;
+}
+.article__author {
+   font-family:brandonBold;
+   font-size:16px;
+}
+.article__top-item {
+   font-family:brandonBold;
+   font-size:15px;
+
+   padding-top:20px;
+
+   text-transform:uppercase;
+}
+.article__top-subtitle {
+   font-family:cochinBoldItalic;
+   font-size:16px;
+   line-height:16px;
+
+   display:block;
+}
+.article__top-subtitle:hover {
+   cursor:pointer;
+   text-decoration:underline;
+}
+.article__btn-pdf {
+   border:1px solid #000;
+}
+.article__steps-btn {
+   font-family:francoisOne;
+   font-size:14px;
+
+   display:block;
+
+   height:100%;
+   margin-top:20px;
+   padding-top:15px;
+   padding-bottom:15px;
+
+   text-align:center;
+   text-transform:uppercase;
+
+   color:#000;
+   background-color:#fff;
+}

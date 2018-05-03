@@ -1,0 +1,182 @@
+.press
+   &__item
+      padding: 20px 20px 40px;
+      border: 1px solid #000
+      margin-top: 10px;
+      min-height: 230px
+   &__title
+      text-transform: uppercase;
+      font-size: 16px;
+      font-family: brandonBold
+   &__subtitle
+      font-size: 16px;
+      position: relative
+      font-family: cochinBoldItalic
+      display: inline-block;
+      padding-bottom: 20px
+      &:after
+         content: "";
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         width: 20px;
+         height: 3px;
+         background: #000;
+   &__description
+      font-size: 16px;
+      line-height: 20px;
+      padding-top: 20px
+      padding-bottom: 20px
+   &__date
+      padding-left: 22px;
+      color: #898989;
+      font-family: cochinBoldItalic
+      position: relative;
+      &:before
+         position: absolute
+         content: "|"
+         left: 8px
+   &__more
+      width: 40px
+      height: 40px
+      background-color: #000000
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      margin-left: -20px
+      text-align: center;
+      line-height: 40px
+   &__more-link
+      display: block
+      &:hover
+         background-color: $hover-main-color
+   &__advertising
+      text-align: center;
+      min-height: 230px
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+   &__advertising-title
+      font-size: 23px;
+      font-family: brandonBold
+      text-transform: uppercase
+      margin-bottom: 40px;
+      position: relative
+      &:after
+         content: "";
+         position: absolute;
+         bottom: 0;
+         left: 50%;
+         width: 20px;
+         height: 3px;
+         margin-left: -10px;
+         background: #000;
+         bottom: -20px
+.article
+   &__top
+      background-image: url("../img/footer_services_bg.jpg")
+      padding-top: 30px
+      padding-bottom: 20px
+      padding-left: 18px;
+      padding-right: 18px;
+      text-align: center
+      margin-bottom: 10px
+   &__wrapper
+      margin-top: 30px
+   &__top-title
+      font-size: 20px;
+      text-transform: uppercase;
+      font-family: brandonBold
+      position: relative
+      margin-bottom: 20px;
+      &:after
+         content: "";
+         position: absolute;
+         bottom: -20px;
+         left: 50%;
+         width: 20px;
+         height: 3px;
+         margin-left: -10px;
+         background: #000;
+   &__block
+      border-top: 1px solid #000
+      padding-top: 15px
+      padding-bottom: 15px
+      overflow: hidden;
+   &__subtitle
+      display: inline-block
+      font-size: 23px;
+      font-family: cochinBoldItalic
+      &:after
+         content: "";
+         position: absolute;
+         bottom: -10px;
+         left: 0;
+         width: 80px;
+         height: 4px;
+         background: #000;
+         left: 5px;
+   &__date
+      padding-left: 22px;
+      color: #898989;
+      font-family: cochinBoldItalic
+      position: relative;
+      font-size: 23px;
+      bottom: -1px;
+      &:before
+         position: absolute
+         content: "|"
+         left: 8px
+         top: 0;
+   &__img
+      float: left;
+      margin-right: 20px;
+      margin-bottom: 10px
+      @media(max-width: $xs)
+         margin-left: auto;
+         margin-right: auto;
+         display: block;
+         float: none;
+   &__description
+      font-family: brandonBold
+      font-size: 16px;
+      margin-bottom: 20px
+      text-align: justify;
+   &__text
+      text-align: justify;
+      padding-bottom: 20px
+   &__author
+      font-family: brandonBold
+      font-size: 16px;
+   &__top-item
+      font-size: 15px;
+      text-transform: uppercase;
+      font-family: brandonBold
+      padding-top: 20px;
+   &__top-subtitle
+      font-family: cochinBoldItalic
+      font-size: 16px;
+      line-height: 16px;
+      display: block;
+      &:hover
+         text-decoration: underline
+         cursor: pointer
+   &__btn-pdf
+      border: 1px solid #000000
+   &__steps-btn
+      color: #000000
+      display: block
+      height: 100%;
+      background-color: #ffffff
+      margin-top: 20px
+      padding-top: 15px
+      padding-bottom: 15px
+      text-align: center;
+      font-family: francoisOne
+      text-transform: uppercase
+      font-size: 14px
+
+
+
+

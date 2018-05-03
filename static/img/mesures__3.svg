@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="360px" height="370px" viewBox="0 0 360 370" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>CHEMISE-seule</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="CHEMISE-seule" transform="translate(0.000000, 1.000000)">
+            <g id="Fond" transform="translate(77.000000, 51.000000)" stroke="#000000">
+                <path d="M65.5,2 C42.1666667,6.66666667 24.8333333,11.3333333 13.5,16 C2.16666667,20.6666667 -1.83333333,48.3333333 1.5,99 C5.83333333,136.333333 8,165.5 8,186.5 C8,207.5 6.16666667,242.666667 2.5,292 C25.8333333,293.333333 42.1666667,295.5 51.5,298.5 C61.3889415,301.678588 82.7571128,316.796437 106.5,317 C128.881268,317.191889 151.035122,302.279781 161,298.5 C170.666667,294.833333 187.5,292.666667 211.5,292 L208.5,241.5 C206.5,161.166667 207.166667,114 210.5,100 C213.833333,86 209,58 196,16 C183.666667,10.6666667 165.333333,6 141,2 C128.939485,0.0174496218 116.969943,0.517297377 104.5,0.5 C96.0403643,0.488265422 83.0403643,0.988265422 65.5,2 Z" id="Path-5" stroke-width="1.7" fill="#FDFDFD"></path>
+                <path d="M97.75,19 L97.75,316" id="Path-11" stroke-width="1.5"></path>
+                <path d="M113.75,19 L113.75,316" id="Path-11-Copy" stroke-width="1.5"></path>
+            </g>
+            <g id="Col" transform="translate(147.000000, 18.000000)" fill="#FDFDFD" stroke="#000000" stroke-width="1.5">
+                <ellipse id="Oval-2" cx="37" cy="33" rx="32" ry="19"></ellipse>
+                <path d="M1.40957176,13 L0,35.25 L23,55 C25.6434217,38.1098039 29.0220592,28.4431373 33.1359124,26 C37.2497657,23.5568627 26.6743188,19.2235294 1.40957176,13 Z" id="Path-2"></path>
+                <path d="M40.4095718,13 L39,35.25 L62.5,55 C64.8100884,38.1098039 68.0220592,28.4431373 72.1359124,26 C76.2497657,23.5568627 65.6743188,19.2235294 40.4095718,13 Z" id="Path-2-Copy" transform="translate(56.000000, 34.000000) scale(-1, 1) translate(-56.000000, -34.000000) "></path>
+                <ellipse id="Oval" cx="36.5" cy="13" rx="34.5" ry="13"></ellipse>
+                <path d="M36.2676394,25.9997113 C37.485147,25.9970839 38.6833748,25.976549 39.8572451,25.9392349 C38.7525698,25.9794326 37.6326591,26 36.5,26 C36.4224865,26 36.3450327,25.9999037 36.2676394,25.9997113 Z M9.41422206,21.05274 C4.7713037,18.838402 2,16.0411509 2,13 C2,5.82029825 17.4461761,0 36.5,0 C55.5538239,0 71,5.82029825 71,13 C71,16.4579734 67.4169616,19.6006069 61.5735302,21.9295124 C62.4984065,21.3239773 63,20.6750057 63,20 C63,16.6862915 50.9116882,14 36,14 C21.0883118,14 9,16.6862915 9,20 C9,20.3591577 9.1420062,20.7109448 9.41422206,21.05274 Z" id="Combined-Shape"></path>
+            </g>
+            <g id="Boutons" transform="translate(180.000000, 57.000000)" fill="#FDFDFD" stroke="#000000">
+                <circle id="Oval-2-Copy" cx="3" cy="3" r="3"></circle>
+                <circle id="Oval-2-Copy-2" cx="3" cy="33" r="3"></circle>
+                <circle id="Oval-2-Copy-3" cx="3" cy="73" r="3"></circle>
+                <circle id="Oval-2-Copy-4" cx="3" cy="112" r="3"></circle>
+                <circle id="Oval-2-Copy-5" cx="3" cy="151" r="3"></circle>
+                <circle id="Oval-2-Copy-6" cx="3" cy="191" r="3"></circle>
+                <circle id="Oval-2-Copy-7" cx="3" cy="230" r="3"></circle>
+            </g>
+            <g id="Manche-gauche" transform="translate(0.000000, 66.000000)">
+                <path d="M89,4 C60.6666667,8.33333333 35,28.6666667 12,65 C-11,101.333333 0.5,112.333333 46.5,98 L72,89.5 C81,85.1666667 86.6666667,77 89,65 C91.3333333,53 91.3333333,32.6666667 89,4 Z" id="Path-7" fill="#FFFFFF"></path>
+                <path d="" id="Path-8" stroke="#979797"></path>
+                <path d="M18.5,67.5 C53.1666667,27.5 75.8333333,6.16666667 86.5,3.5 C97,14.5 93,51 86.5,71.5 C74.5,92.5 82,86 45.5,111" id="Path-9" stroke="#000000" stroke-width="1.5"></path>
+            </g>
+            <g id="Manche-gauche-Copy" transform="translate(313.500000, 119.500000) scale(-1, 1) translate(-313.500000, -119.500000) translate(267.000000, 64.000000)">
+                <path d="M89,4 C60.6666667,8.33333333 35,28.6666667 12,65 C-11,101.333333 0.5,112.333333 46.5,98 L73,92 C81.3333333,86 86.6666667,77 89,65 C91.3333333,53 91.3333333,32.6666667 89,4 Z" id="Path-7" fill="#FFFFFF"></path>
+                <path d="" id="Path-8" stroke="#979797"></path>
+                <path d="M18.5,67.5 C53.1666667,27.5 75.8333333,6.16666667 86.5,3.5 C97,14.5 93,51 86.5,71.5 C74.5,92.5 82,86 45.5,111" id="Path-9" stroke="#000000" stroke-width="1.5"></path>
+            </g>
+            <g id="trzit" transform="translate(79.000000, 148.000000)" stroke-width="1.5">
+                <path d="M0,5.5 C29,11.8333333 98.5,12.8333333 208.5,8.5" id="Path-10" stroke="#8C00FF"></path>
+                <polyline id="Path-12" stroke="#8734FF" points="7.5 16 0.5 5.5 12.5 0"></polyline>
+                <polyline id="Path-12-Copy" stroke="#8734FF" transform="translate(202.250000, 9.750000) scale(-1, 1) translate(-202.250000, -9.750000) " points="206 17.5 196.5 8.5 208 2"></polyline>
+            </g>
+            <g id="trzit-copy" transform="translate(84.000000, 237.000000)" stroke-width="1.5">
+                <path d="M1,5.5 C24,11.8333333 90.5,12.8333333 200.5,8.5" id="Path-10" stroke="#8C00FF"></path>
+                <polyline id="Path-12" stroke="#8734FF" points="7.5 16 0.5 5.5 12.5 0"></polyline>
+                <polyline id="Path-12-Copy" stroke="#8734FF" transform="translate(195.250000, 9.750000) scale(-1, 1) translate(-195.250000, -9.750000) " points="199 17.5 189.5 8.5 201 2"></polyline>
+            </g>
+            <g id="trzit-copy-2" transform="translate(79.000000, 331.000000)" stroke-width="1.5">
+                <path d="M0,5.5 C29,11.8333333 98.5,12.8333333 208.5,8.5" id="Path-10" stroke="#8C00FF"></path>
+                <polyline id="Path-12" stroke="#8734FF" points="7.5 16 0.5 5.5 12.5 0"></polyline>
+                <polyline id="Path-12-Copy" stroke="#8734FF" transform="translate(202.250000, 9.750000) scale(-1, 1) translate(-202.250000, -9.750000) " points="206 17.5 196.5 8.5 208 2"></polyline>
+            </g>
+            <ellipse id="Oval-4" stroke="#8734FF" stroke-width="1.5" cx="183" cy="17.5" rx="31" ry="9.5"></ellipse>
+            <polyline id="Path-12-Copy-2" stroke="#8734FF" stroke-width="1.5" transform="translate(183.750000, 8.250000) scale(-1, 1) translate(-183.750000, -8.250000) " points="188.5 16.5 179 7.5 188.5 0"></polyline>
+        </g>
+    </g>
+</svg>

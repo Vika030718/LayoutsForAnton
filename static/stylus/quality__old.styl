@@ -1,0 +1,115 @@
+.quality-header
+	display: flex;
+	background-image: url("../img/quality-header.jpg");
+	background-repeat: no-repeat
+	background-size: cover;
+	height: 380px;
+	color: #ffffff;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	margin: 0 15px;
+	background-position: center;
+	padding: 0 10px;
+	&__title
+		font-size: 55px;
+		margin-bottom: 15px;
+		font-family: CochinItalic
+		@media(max-width: $sm)
+			font-size: 42px
+	&__subtitle
+		font-size: 22px;
+		font-family: CochinItalic
+		margin-bottom: 50px;
+		@media(max-width: $sm)
+			font-size: 22px
+	&__btn
+		background-image: url("../img/arrow_return.svg");
+		background-color: #ffffff
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		bottom: 0;
+		margin-bottom: -50px;
+		border-radius: 100px;
+		background-repeat: no-repeat
+		transform: rotate(90deg);
+		background-position: 28px center;
+		background-size: 23%;
+.quality-item
+	padding: 90px 0;
+	@media(max-width: $lg)
+		padding: 30px 0;
+	@media(max-width: $md)
+		padding: 10px 0;
+	&_bottom
+		padding: 0 0 90px 0;
+		max-width: calc(1060px + (100% - 1060px)/2)
+		@media(max-width: $lg)
+			padding-bottom: 40px;
+		@media(max-width: $md)
+			padding-bottom: 30px;
+	&__title
+		font-size: 26px;
+		margin-bottom: 15px;
+		padding-top: 50px;
+		@media(max-width: $lg)
+			padding-top: 0;
+		@media(max-width: $md)
+			padding-top: 20px;
+			font-size: 24px;
+	&__title_bottom
+		padding-top: 30%;
+		@media(max-width: $lg)
+			padding-top: 0;
+		@media(max-width: $md)
+			padding-top: 15px;
+	&__subtitle
+		font-size: 20px;
+		font-family: CochinItalic
+		margin-bottom: 40px;
+		@media(max-width: $md)
+			margin-bottom: 15px;
+			font-size: 18px;
+	&__text
+		color: #747474
+		font-size: 18px;
+		line-height: 1.3em;
+		max-width: 340px;
+		@media(max-width: $md)
+			font-size: 16px;
+			margin-bottom: 15px;
+			max-width: none;
+	&__img
+		width: 100%;
+.quality-banner		
+	color: #ffffff
+	background-image: url("../img/quality-banner.jpg");
+	height: 620px;
+	margin: 0 15px;
+	background-repeat: no-repeat
+	background-size: cover;
+	background-position: center;
+	@media(max-width: $md)
+		height: 520px;
+		margin-top: 20px;
+	&__title
+		font-size: 26px;
+		margin-bottom: 15px;
+	&__subtitle
+		font-size: 20px;
+		font-family: CochinItalic
+		margin-bottom: 40px;
+	&__text
+		font-size: 18px;
+		line-height: 1.3em;
+		max-width: 350px;
+	&__body
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		height: 100%;
+		padding: 0 15px;

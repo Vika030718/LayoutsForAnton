@@ -1,0 +1,427 @@
+@font-face {
+   font-family:brandonRegular;
+
+   src:url('../font/BrandonText-Regular.woff');
+}
+@font-face {
+   font-family:brandonMedium;
+
+   src:url('../font/BrandonText-Medium.otf');
+}
+@font-face {
+   font-family:brandonBlack;
+
+   src:url('../font/BrandonText-Black.woff');
+}
+@font-face {
+   font-family:brandonBold;
+
+   src:url('../font/BrandonText-Bold.woff');
+}
+@font-face {
+   font-family:CochinItalic;
+
+   src:url('../font/Cochin-Italic.woff');
+}
+@font-face {
+   font-family:CochinBold;
+
+   src:url('../font/Cochin-Bold.woff');
+}
+@font-face {
+   font-family:cochinBoldItalic;
+
+   src:url('../font/Cochin-Bold-Italic.woff');
+}
+@font-face {
+   font-family:cochinRegular;
+
+   src:url('../font/Cochin-Regular.woff');
+}
+@font-face {
+   font-family:francoisOne;
+
+   src:url('../font/FrancoisOne.woff');
+}
+.shop-header {
+   position:relative;
+
+   display:-webkit-box;
+   display:flex;
+   overflow:hidden;
+   flex-direction:column;
+
+   height:380px;
+   margin:0 15px;
+   padding:0 10px;
+
+   text-align:center;
+
+   color:#fff;
+   background-image:url('../img/shop-header.jpg');
+   background-repeat:no-repeat;
+   background-position:center;
+   background-size:cover;
+
+   -webkit-box-pack:center;
+   justify-content:center;
+   -webkit-box-align:center;
+   align-items:center;
+   -webkit-box-orient:vertical;
+   -webkit-box-direction:normal;
+}
+.shop-header__title {
+   font-family:CochinItalic;
+   font-size:55px;
+
+   margin-bottom:15px;
+}
+@media (max-width: 660px) {
+   .shop-header__title {
+      font-size:42px;
+   }
+}
+.shop-header__subtitle {
+   font-family:CochinItalic;
+   font-size:22px;
+
+   margin-bottom:50px;
+}
+@media (max-width: 660px) {
+   .shop-header__subtitle {
+      font-size:22px;
+   }
+}
+.shop-header__btn {
+   position:absolute;
+   bottom:0;
+
+   width:100px;
+   height:100px;
+   margin-bottom:-50px;
+
+   -webkit-transform:rotate(90deg);
+           transform:rotate(90deg);
+
+   border-radius:100px;
+   background-color:#f3f2f7;
+   background-image:url('../img/arrow_return.svg');
+   background-repeat:no-repeat;
+   background-position:28px center;
+   background-size:23%;
+}
+.shop-info {
+   margin:0 15px;
+   padding:75px 0 60px 0;
+
+   background-color:#f4f4f4;
+}
+@media (max-width: 768px) {
+   .shop-info {
+      padding:30px 0 30px 0;
+   }
+}
+.shop-info__title {
+   font-family:CochinItalic;
+   font-size:26px;
+
+   margin-bottom:35px;
+
+   text-align:right;
+}
+@media (max-width: 768px) {
+   .shop-info__title {
+      font-size:22px;
+
+      text-align:center;
+   }
+}
+.shop-info__text {
+   font-size:18px;
+   line-height:1.4em;
+
+   padding-left:20px;
+
+   text-align:right;
+}
+@media (max-width: 768px) {
+   .shop-info__text {
+      font-size:14px;
+
+      margin-bottom:15px;
+
+      text-align:center;
+   }
+}
+.shop-info__accent {
+   color:#747474;
+}
+.shop-info__box-left {
+   padding:0 30px 0 80px;
+}
+@media (max-width: 768px) {
+   .shop-info__box-left {
+      padding:0 15px;
+   }
+}
+.shop-info__box-right {
+   padding:0 30px;
+}
+.shop-info__block {
+   padding:20px 0;
+
+   border-bottom:1px solid #d5cddd;
+}
+.shop-info__block:nth-child(1) {
+   padding-top:0;
+}
+.shop-info__contacts {
+   position:relative;
+
+   padding:20px 0 20px 36px;
+}
+@media (max-width: 768px) {
+   .shop-info__contacts {
+      font-size:14px;
+   }
+}
+.shop-info__contact {
+   padding-bottom:10px;
+}
+.shop-info__address {
+   font-size:20px;
+
+   position:relative;
+
+   padding-left:50px;
+}
+.shop-info__address:before {
+   position:absolute;
+   top:50%;
+   left:0;
+
+   width:33px;
+   height:45px;
+   margin-top:-22px;
+
+   content:'';
+
+   background-image:url('../img/shop-info__address.png');
+}
+@media (max-width: 768px) {
+   .shop-info__address {
+      font-size:16px;
+   }
+}
+.shop-info__time {
+   padding-top:1px;
+   padding-right:50px;
+   padding-bottom:1px;
+
+   color:#000;
+}
+.shop-info__time-table {
+   font-size:16px;
+
+   color:#747474;
+}
+@media (max-width: 768px) {
+   .shop-info__time-table {
+      font-size:14px;
+   }
+}
+.shop-info__transport-title {
+   font-size:18px;
+}
+@media (max-width: 768px) {
+   .shop-info__transport-title {
+      font-size:16px;
+   }
+}
+.shop-info__transport-metro, .shop-info__transport-bus, .shop-info__transport-parking {
+   font-size:16px;
+
+   position:relative;
+
+   margin-top:18px;
+   padding-left:36px;
+}
+.shop-info__transport-metro:before, .shop-info__transport-bus:before, .shop-info__transport-parking:before {
+   position:absolute;
+   top:50%;
+   left:0;
+
+   width:26px;
+   height:26px;
+   margin-top:-13px;
+
+   content:'';
+
+   background-image:url('../img/shop-info__address.png');
+   background-repeat:no-repeat;
+}
+@media (max-width: 768px) {
+   .shop-info__transport-metro, .shop-info__transport-bus, .shop-info__transport-parking {
+      font-size:14px;
+
+      margin-top:10px;
+   }
+}
+.shop-info__transport-metro:before {
+   background-image:url('../img/shop-info-icon.png');
+   background-position:0 0;
+}
+.shop-info__transport-bus:before {
+   background-image:url('../img/shop-info-icon.png');
+   background-position:-26px 0;
+}
+.shop-info__transport-parking:before {
+   background-image:url('../img/shop-info-icon.png');
+   background-position:-51px 0;
+}
+.shop-info__chat:before {
+   position:absolute;
+   top:30px;
+   left:0;
+
+   width:26px;
+   height:26px;
+   margin-top:-13px;
+
+   content:'';
+
+   background-image:url('../img/shop-info-icon.png');
+   background-repeat:no-repeat;
+   background-position:-75px 0;
+}
+.shop-banner {
+   height:620px;
+
+   color:#fff;
+   background-image:url('../img/shop__info-block.jpg');
+   background-repeat:no-repeat;
+   background-position:center;
+   background-size:cover;
+}
+@media (max-width: 992px) {
+   .shop-banner {
+      height:420px;
+      margin-top:20px;
+   }
+}
+@media (max-width: 768px) {
+   .shop-banner {
+      height:auto;
+   }
+}
+.shop-banner__title {
+   font-size:26px;
+
+   margin-top:20px;
+   margin-bottom:15px;
+}
+@media (max-width: 1200px) {
+   .shop-banner__title {
+      font-size:22px;
+
+      margin-top:80px;
+   }
+}
+@media (max-width: 768px) {
+   .shop-banner__title {
+      font-size:20px;
+   }
+}
+.shop-banner__subtitle {
+   font-family:CochinItalic;
+   font-size:20px;
+
+   margin-bottom:40px;
+}
+@media (max-width: 768px) {
+   .shop-banner__subtitle {
+      margin-bottom:15px;
+   }
+}
+.shop-banner__text {
+   font-size:18px;
+   line-height:1.3em;
+
+   max-width:350px;
+}
+@media (max-width: 1200px) {
+   .shop-banner__text {
+      font-size:16px;
+   }
+}
+@media (max-width: 992px) {
+   .shop-banner__text {
+      font-size:14px;
+   }
+}
+@media (max-width: 768px) {
+   .shop-banner__text {
+      margin-bottom:15px;
+   }
+}
+.shop-banner__body {
+   position:relative;
+
+   display:-webkit-box;
+   display:flex;
+   flex-direction:column;
+
+   height:100%;
+   padding:0 15px;
+
+   -webkit-box-pack:center;
+   justify-content:center;
+   -webkit-box-orient:vertical;
+   -webkit-box-direction:normal;
+}
+@media (max-width: 1200px) {
+   .shop-banner__body {
+      -webkit-box-pack:start;
+      justify-content:flex-start;
+   }
+}
+.shop-advert {
+   display:-webkit-box;
+   display:flex;
+
+   -webkit-box-pack:justify;
+   justify-content:space-between;
+}
+@media (max-width: 768px) {
+   .shop-advert {
+      flex-direction:column;
+
+      -webkit-box-orient:vertical;
+      -webkit-box-direction:normal;
+   }
+}
+.shop-advert__block {
+   font-size:26px;
+
+   margin-bottom:35px;
+   padding:90px 10px;
+
+   text-align:center;
+
+   background-color:#f4f4f4;
+
+   -webkit-box-flex:0;
+   flex:0 1 49%;
+}
+@media (max-width: 768px) {
+   .shop-advert__block {
+      font-size:18px;
+
+      margin-bottom:10px;
+   }
+}
+.shop-advert__link {
+   font-size:16px;
+
+   text-decoration:underline;
+}

@@ -1,0 +1,45 @@
+.contacts__btn {
+   display:block;
+
+   max-width:145px;
+   margin:auto;
+}
+@media (max-width: $md) {
+   .contacts__btn {
+      max-width:100%;
+   }
+}
+.contacts__note {
+   font-size:12px;
+
+   display:block;
+
+   max-width:115px;
+   margin:auto;
+}
+@media (max-width: $md) {
+   .contacts__note {
+      max-width:100%;
+   }
+}
+.contacts__help {
+   font-size:16px;
+
+   margin-top:20px;
+}
+.contacts__help-description {
+   font-family:cochinBoldItalic, sans-serif;
+   font-style:italic;
+
+   padding-top:15px;
+   padding-bottom:15px;
+
+   text-align:center;
+}
+.contacts__help-subdescription {
+   font-family:CochinItalic, sans-serif;
+
+   padding-bottom:30px;
+
+   text-align:center;
+}

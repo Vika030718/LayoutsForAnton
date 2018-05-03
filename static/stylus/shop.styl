@@ -1,0 +1,225 @@
+@require '__variables'
+@require '__fonts'
+
+.shop-header
+	display: flex;
+	background-image: url("../img/shop-header.jpg");
+	background-repeat: no-repeat
+	background-size: cover;
+	height: 380px;
+	color: #ffffff;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	margin: 0 15px;
+	background-position: center;
+	padding: 0 10px;
+	&__title
+		font-size: 55px;
+		margin-bottom: 15px;
+		font-family: CochinItalic
+		@media(max-width: $sm)
+			font-size: 42px
+	&__subtitle
+		font-size: 22px;
+		font-family: CochinItalic
+		margin-bottom: 50px;
+		@media(max-width: $sm)
+			font-size: 22px
+	&__btn
+		background-image: url("../img/arrow_return.svg");
+		background-color: #f3f2f7;
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		bottom: 0;
+		margin-bottom: -50px;
+		border-radius: 100px;
+		background-repeat: no-repeat
+		transform: rotate(90deg);
+		background-position: 28px center;
+		background-size: 23%;
+.shop-info
+	padding: 75px 0 60px 0;
+	background-color: #f4f4f4;
+	margin: 0 15px;
+	@media(max-width: $md)
+		padding: 30px 0 30px 0;
+	&__title
+		font-size: 26px;
+		font-family: CochinItalic;
+		margin-bottom:35px;
+		text-align: right
+		@media(max-width: $md)
+			text-align: center
+			font-size: 22px;
+	&__text
+		font-size: 18px;
+		text-align: right;
+		padding-left: 20px;
+		line-height: 1.4em;
+		@media(max-width: $md)
+			text-align: center
+			margin-bottom: 15px;
+			font-size: 14px
+	&__accent
+		color: #747474;
+	&__box-left
+		padding: 0 30px 0 80px;
+		@media(max-width: $md)
+			padding: 0 15px;
+	&__box-right
+		padding: 0 30px;
+	&__block
+		padding: 20px 0;
+		border-bottom: 1px solid #d5cddd
+		&:nth-child(1)
+			padding-top: 0px;
+	&__contacts
+		padding: 20px 0 20px 36px;
+		position: relative
+		@media(max-width: $md)
+			font-size: 14px;
+	&__contact
+		padding-bottom:10px;
+	&__address
+		padding-left: 50px;
+		position: relative;
+		font-size: 20px;
+		&:before
+			content: ""
+			background-image: url("../img/shop-info__address.png");
+			left: 0;
+			top: 50%;
+			margin-top: -22px;
+			width: 33px;
+			height: 45px;
+			position: absolute
+		@media(max-width: $md)
+			font-size: 16px;
+	&__time
+		padding-right: 50px;
+		padding-top: 1px;
+		padding-bottom: 1px;
+		color: #000000
+	&__time-table
+		font-size: 16px;
+		color: #747474
+		@media(max-width: $md)
+			font-size: 14px;
+	&__transport-title
+		font-size: 18px;
+		@media(max-width: $md)
+			font-size: 16px;
+	&__transport-metro,
+	&__transport-bus,
+	&__transport-parking
+		position: relative
+		padding-left: 36px;
+		font-size: 16px;
+		margin-top: 18px;
+		&:before
+			content: ""
+			background-image: url("../img/shop-info__address.png");
+			left: 0;
+			top: 50%;
+			margin-top: -13px;
+			width: 26px;
+			height: 26px;
+			background-repeat: no-repeat;
+			position: absolute;
+		@media(max-width: $md)
+			font-size: 14px;
+			margin-top: 10px;
+	&__transport-metro
+		&:before
+			background-image: url("../img/shop-info-icon.png");
+			background-position: 0 0
+	&__transport-bus
+		&:before
+			background-image: url("../img/shop-info-icon.png");
+			background-position: -26px 0
+	&__transport-parking
+		&:before
+			background-image: url("../img/shop-info-icon.png");
+			background-position: -51px 0
+	&__chat
+		&:before
+			background-image: url("../img/shop-info-icon.png");
+			background-position: -75px 0
+			content: ""
+			left: 0;
+			top: 30px;
+			margin-top: -13px;
+			width: 26px;
+			height: 26px;
+			background-repeat: no-repeat;
+			position: absolute;
+.shop-banner
+	color: #ffffff
+	background-image: url("../img/shop__info-block.jpg");
+	height: 620px;
+	background-repeat: no-repeat
+	background-size: cover;
+	background-position: center;
+	@media(max-width: $lg)
+		height: 420px;
+		margin-top: 20px;
+	@media(max-width: $md)
+		height: auto;
+	&__title
+		font-size: 26px;
+		margin-bottom: 15px;
+		margin-top: 20px;
+		@media(max-width: $xl)
+			margin-top: 80px;
+			font-size: 22px;
+		@media(max-width: $md)
+			font-size: 20px;	
+	&__subtitle
+		font-size: 20px;
+		font-family: CochinItalic
+		margin-bottom: 40px;
+		@media(max-width: $md)
+			margin-bottom: 15px;
+	&__text
+		font-size: 18px;
+		line-height: 1.3em;
+		max-width: 350px;
+		@media(max-width: $xl)	
+			font-size: 16px;
+		@media(max-width: $lg)
+			font-size: 14px;
+		@media(max-width: $md)
+			margin-bottom: 15px;
+	&__body
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		height: 100%;
+		padding: 0 15px;
+		position: relative
+		@media(max-width: $xl)
+			justify-content: flex-start;
+.shop-advert
+	display: flex;
+	justify-content: space-between;
+	@media(max-width: $md)
+		flex-direction: column;
+	&__block
+		background-color:#f4f4f4
+		padding:90px 10px;
+		text-align: center;
+		font-size: 26px;
+		margin-bottom: 35px;
+		flex: 0 1 49%;
+		@media(max-width: $md)
+			margin-bottom: 10px;
+			font-size: 18px;
+	&__link
+		font-size: 16px;
+		text-decoration: underline
+	

@@ -1,0 +1,1050 @@
+@require '__variables'
+@require '__fonts'
+ 
+body 
+   background-color: $background-color
+   color: $main-font-color
+   font-family: brandonRegular, sans-serif
+   line-height: 1.5em
+   font-size: 16px
+   padding-top: 143px;
+   @media(max-width: $lg)
+      padding-top: $headerMobileHeight;
+/* block: bootstrap 
+_______________________________________________*/
+.dropdown-menu
+   box-shadow: 0 0 12px rgba(0,0,0,.175);
+   padding-top: 0;
+   border: none;
+.dropdown-menu a
+   padding-left: 0;
+.dropdown:hover .submenu 
+    display: block;
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6
+   font-family: inherit;
+   font-weight: 500;
+   line-height: 1.1;
+   color: inherit;
+a.btn
+   background-image: none!important;
+   box-shadow: none!important;
+   padding-top: 15px!important;
+   padding-bottom: 15px!important;
+   text-shadow: none!important;
+   &_dark
+      color: #ffffff!important
+      &:hover
+         background-color: $hover-main-color!important;
+p
+   font-family: brandonRegular, sans-serif
+   line-height: 1.2em;
+   margin-bottom: 0px;
+body 
+   background-color: $background-color
+   color: $main-font-color
+   font-family: brandonRegular, sans-serif!important
+   line-height: 1.2em
+   font-size: 16px
+.wrapper
+   max-width: 1240px;
+   margin-left: auto;
+   margin-right: auto
+.text-right
+   justify-content: flex-end;
+.text-center
+   justify-content: center;
+a, a:focus
+   color: #000000;
+ol, ul
+   list-style: none outside none;
+   margin: 0;
+   padding: 0;
+   border: 0;
+   outline: 0;
+input
+   margin-bottom: 0;
+input:focus, textarea:focus
+   border: 1px solid #838491!important;
+   box-shadow: none!important
+input.search__input
+   border: none!important;
+.dropdown-menu li > a:hover, .dropdown-menu .active > a, .dropdown-menu .active > a:hover
+   color: #000000;
+   background-color: transparent!important;
+.link
+   text-decoration: underline;
+   color: rgba(0,0,0,.5);
+/*______________________________ scrollbar ______________________________*/
+::-webkit-scrollbar
+   width: 6px;
+   height: 6px;
+::-webkit-scrollbar-thumb
+    background-color: #cccccc
+    border-radius: 4px;
+   
+/* block: logo
+_______________________________________________*/
+.logo
+   height: auto
+   &__img
+      max-width: 190px
+      width: 100%
+      @media(max-width: $lg)
+         display: none;
+   &__img_mobile
+      max-width: 175px;
+      width: 100%;
+   &__wrapper_mobile
+      width: 100%;
+      max-width: 175px;
+   &_print
+      margin: auto;
+      display: block;
+      padding-top: 40px;
+      padding-bottom: 20px;
+   &__img_onscroll
+      display: none;
+      max-width: 100px
+      width: 100px
+/* header
+_______________________________________________*/
+.menu
+   display: flex
+   justify-content: space-between
+   margin: 0!important
+   width: 100%
+   @media(max-width: $lg)
+      flex-direction: column;
+      padding-bottom: 15px;
+      padding-top: 15px;
+   &__link
+      display: inline-block
+      padding-bottom: 12px!important;
+      padding-top: 12px!important;
+      text-transform: uppercase
+      @media(max-width: $lg)
+         padding-bottom: 3px!important;
+         padding-top: 3px!important;
+         transition: none
+         width: 100%
+         text-align: center;
+   &__item
+      padding: 0 20px;
+      position: static
+      font-size: 13px;
+      @media(max-width: $lg)
+         display: block
+         padding: 0;
+         width: 100%;
+         font-family: brandonBold
+         background-color: #ffffff;
+   &__item-top
+      @media(max-width: $lg)
+         padding: 30px 25px!important;
+         border-bottom: 1px solid $separator-color
+         font-size: 16px;
+   &__item_jornal
+      font-family: CochinItalic
+      font-size: 18px;
+      text-transform: lowercase
+      @media(max-width: $lg)
+         font-size: 23px;
+         font-family: cochinBoldItalic
+   &__item_help
+      font-size: 12px;
+      @media(max-width: $lg)
+         font-family: brandonBold;
+         font-size: 16px;
+   &__item_shop
+      font-size: 13px;
+      @media(max-width: $lg)
+         display: none
+   &__list
+      border-right: 1px solid $separator-color
+      padding: 30px 30px 0;
+      flex: 1 1 auto;
+      margin-bottom: 15px;
+      @media(max-width: $lg)
+         display: none;
+         padding:0;
+         border-right: none
+         margin: 0
+   &__list-body
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+   &__sublist
+      display: flex;
+      flex-direction: column
+      justify-content: center
+   &__list_last
+      border-right: none
+   &__list_accessories
+      flex-direction: column;
+      justify-content: space-between;
+      @media(min-width: $lg)
+         display: flex;
+   &__list_sets
+      flex: 0 0 110px;
+   &__column
+      padding-top: 30px;
+      padding-bottom: 15px;
+      display: flex;
+      flex-direction: column;
+      min-height: 0!important;
+      @media(max-width: $lg)
+         padding: 0;
+.user-menu
+   display: inline-block
+   @media(max-width: $lg)
+      display: block
+      padding-bottom: 15px
+      padding-top: 15px
+   &__item
+      color: #000000
+      display: inline-block
+      float: none
+      line-height: 30px;
+      margin: 0 !important
+      @media(max-width: $lg)
+         display: block
+         line-height: 20px
+         text-align: left
+   &__link
+      font-size: 12px
+      padding: 15px 10px
+      color: #000000;
+      transition: none;
+      text-transform: uppercase
+      z-index: 10;
+      position: relative;
+      @media(max-width:$lg)
+         display: block;
+         font-size: 14px
+         padding: 3px 0
+         text-transform: uppercase
+         text-align: center;
+   &__link_submenu
+      padding: 6px!important
+      &:hover
+         @media(max-width: $lg)
+            font-weight: bold;
+      @media(max-width: $lg)
+         padding-left: 15px!important
+         text-transform: none!important
+   &__link_submenu.link-active
+      @media(max-width: $lg)
+         background-color: rgba(240, 240, 240, 0);
+         font-weight: bold;
+   &__link_lang
+      @media(min-width: $lg)
+         padding: 8px 28px 8px 6px
+         &:after
+            color: #000000
+            content: "\f107";
+            font-family: FontAwesome
+            font-size: 17px
+            margin-left: 6px;
+            position: absolute;
+            text-decoration: none!important;
+   &__link_lang.link-active
+      &:after
+         content: "\f106";
+         font-family: fontAwesome;
+   &__lang
+      padding: 20px 18px;
+      margin-top: 30px;
+      &:before
+         position: absolute
+         top: -17px
+         right: 8px;
+         width: 0; 
+         height: 0; 
+         border-left: 17px solid transparent;
+         border-right: 17px solid transparent;
+         border-bottom: 17px solid rgba(206, 206, 206, 0.31);
+         content: ''
+      &:after
+         position: absolute
+         top: -15px
+         right: 10px;
+         width: 0; 
+         height: 0; 
+         border-left: 15px solid transparent;
+         border-right: 15px solid transparent;
+         border-bottom: 15px solid #ffffff;
+         content: ''
+.mobile
+   display: none
+   @media(max-width: $lg)
+      display: block
+   &__header
+      align-items: center;
+      border-bottom: 1px solid $separator-color
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 10px
+      padding-top: 10px
+      &:after,
+      &:before
+         content: none!important
+   &__icon
+      background-color: #000000
+      border-radius: 0
+      border: 1px solid $separator-color
+      color: #fff
+      float: right;
+      font-size: 20px
+      height: 40px
+      line-height: 20px;
+      margin-bottom: 8px;
+      margin-left: 5px
+      margin-right: 0
+      margin-top: 8px;
+      padding: 9px 10px;
+      position: relative;
+      text-align: center
+      transition: background-color 0.1s ease-in-ou
+      width: 40px
+      &:hover
+         cursor: pointer
+   &__icon
+      .fa
+         color: #fff
+         font-size: 20px
+   &__icon-lang
+      font-size: 16px;
+   &__head
+      padding-bottom: 15px
+      padding-top: 15px
+   &__link
+      font-size: 16px
+   &__logo
+      max-width: 120px
+   &__menu-lang.navbar-collapse.collapse
+      @media(min-width: $lg)
+         display: none!important;
+.submenu
+   width: 100%
+   text-transform: none
+   margin-top: 0;
+   box-shadow: none;
+   top: 45px;
+   background: transparent;
+   @media(max-width: $lg)
+      display: block
+   @media(max-width: $lg)
+      width: 100%
+      position: static;
+   &__top-line
+      padding: 30px;
+      background: transparent;
+      @media(max-width: $lg)
+         display: none;
+   &__title
+      color: #000
+      font-size: 13px;
+      font-weight: normal;
+      line-height: 19px;
+      padding: 0;
+      white-space: normal
+      border-right: 1px solid $separator-color;
+      text-transform: uppercase
+      padding-left: 30px
+      position: relative
+      @media(max-width: $lg)
+         font-size: 16px;
+         flex: 1 100%;
+         text-align: center;
+         padding: 30px 25px!important;
+         border-bottom: 1px solid $separator-color;
+         border-right: none
+         text-align: left
+         font-family: brandonBold
+         cursor: pointer;
+         &:hover
+            text-decoration: underline
+         &:after
+            font-family: fontAwesome
+            position: absolute
+            content: "\f105"
+            font-size: 34px;
+            right: 15px;
+   &__title_active
+      background-color: #f5f6f8;
+      padding-left: 70px!important;
+      &:after
+         font-family: fontAwesome
+         position: absolute
+         content: "\f104"
+         font-size: 34px;
+         left: 30px;
+   &__title_last
+      border-right: none;
+   &__title_style
+      @media(max-width: $lg)
+         border-top: 1px solid #000;
+         margin-top: 10px;
+         padding-top: 10px!important;
+   &__style
+      display: inline-block
+      padding-top: 8px
+      position: relative
+      @media(max-width: $lg)
+         width: 33%;
+   &__style-wrapper
+      @media(max-width: $lg)
+         display: flex;
+         flex-flow: row wrap;
+         justify-content: space-between
+   &__img-block
+      background-image: url("../img/submenu__img.jpg");
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      overflow: hidden;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      @media(max-width: $lg)
+         display : none;
+   &__img-wrapper
+      padding: 0;
+   &__img-caption
+      text-transform: uppercase;
+      font-size: 14px;
+      margin-bottom: 10px;
+      color: #ffffff
+   &__img-title
+      font-family: CochinItalic;
+      font-size: 50px;
+      line-height: 1em;
+      padding-bottom: 20px;
+      color: #ffffff
+      text-align: center;
+      max-width: 310px;
+   &__img-btn
+      width: 100%;
+      max-width: 200px;
+      margin-bottom: 10px;
+      padding-right: 10px;
+      color: #fff!important;
+      border: 1px solid #fff;
+   &__link
+      font-size: 14px;
+      line-height: 2em;
+      color: #6a6a6a
+      position: relative
+      .num
+         margin-left: 2px;
+         @media(min-width: $lg)
+            position: absolute;
+            right: -36px;
+            width: 30px;
+            top: -4px;
+         @media(max-width: $lg)
+            color: #000000!important
+      @media(max-width: $lg)
+         text-align: left
+         display: block;
+         padding: 25px 30px!important;
+         border-bottom: 1px solid #ccc;
+         font-family: brandonRegular, sans-serif
+         color: #000000
+         &:hover, &:focus
+            text-decoration: none;
+   &__link_last
+      margin-top: 30px;
+      display: inline-block;
+      color: #000000
+      @media(max-width: $lg)
+         margin-top: 0
+         display: block;
+         font-family: brandonBold, sans-serif
+      .num
+         color: #000000
+         @media(min-width: $lg)
+            top: 1px;
+   &__annotation
+      height: 79px;
+      position: absolute;
+      text-align: center;
+      top: 156px;
+      width: 100%;
+      @media(max-width: $lg)
+         height: 65px
+         position: static
+   &__subtitle
+      background: #020100;
+      color: #fff;
+      display: inline-block;
+      font-family: FrancoisOne, sans-serif;
+      font-size: 14px;
+      line-height: 19px;
+      padding: 1px 12px;
+      text-transform: uppercase;
+      @media(max-width: $lg)
+         display: block;
+         padding: 2px 0;
+   &__author
+      background: #ffffff;
+      color: #000000;
+      font-family: BrandonTextRegular, sans-serif;
+      font-size: 11px;
+      height: 100%
+      line-height: 13px;
+      margin: 0 auto;
+      padding: 17px 20px 0;
+      text-transform: uppercase;
+      width: 120px;
+      @media(max-width: $lg)
+         font-size: 10px
+         height: auto
+         padding: 15px 0 0;
+         width: 100%
+   &__line
+      display: flex;
+      position: relative
+      box-shadow: 0 0 12px rgba(0,0,0,.175);
+      background-color: #ffffff
+      &:before
+         position: absolute
+         top: -17px
+         left: calc( 41.66666667% - 190px - 2px);
+         width: 0; 
+         height: 0; 
+         border-left: 17px solid transparent;
+         border-right: 17px solid transparent;
+         border-bottom: 17px solid rgba(206, 206, 206, 0.31);
+         content: ''
+      &:after
+         position: absolute
+         top: -15px
+         left:  calc( 41.66666667% - 190px );
+         width: 0; 
+         height: 0; 
+         border-left: 15px solid transparent;
+         border-right: 15px solid transparent;
+         border-bottom: 15px solid #ffffff;
+         content: ''
+      @media(max-width: $lg)
+         flex-direction: column;
+         box-shadow: none;
+         &:before
+            display: none
+          &:after
+             display: none
+.header
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 3;
+   background-color: #ffffff;
+   margin-left: 0;
+   height: $headerheight
+   @media(max-width: $lg)
+      position: fixed;
+      width:100%;
+      height: 100%;
+      background-color: #ffffff
+      overflow: auto;
+      padding-bottom: 100px;
+      top: $headerMobileHeight;
+      margin-left: -100%;
+      z-index: 4;
+      background-color: #f5f6f8
+   &_onscroll
+      transition: margin-top .2s ease-in-out
+      z-index:4;
+      @media(min-width: $lg)
+         margin-top: -32px;
+         height: 82px;
+         background-color: rgba(255, 255, 255, 0.85);
+         .logo__img_onscroll
+            display: block;
+         .logo__img
+            display: none;
+         .search
+            margin-top: -10px;
+         .menu__item
+            padding: 4px 20px;
+         .header__cart
+            position: absolute;
+            right: 0;
+            bottom: -40px;
+            // z-index: 3;
+         .submenu__top-line
+            padding: 10px!important;
+   &_active
+      margin-left: 0;
+   &__separator
+      border-top: none
+      @media(max-width: $lg)
+         border-top: 1px solid $separator-color
+   &__navbar
+      margin-bottom: 0
+      position: relative
+   &__search
+      font-size: 24px
+      &:hover
+         cursor: pointer
+      @media(max-width: $lg)
+         padding-bottom: 15px
+         padding-top: 0
+         padding-top: 15px
+   &__search-icon
+      vertical-align: middle
+      line-height: 25px;
+      font-size: 14px;
+      @media(max-width: $lg)
+         line-height: 16px;
+   &__input
+      background: none;
+      border-radius: 0;
+      border: 2px solid transparent
+      color: #888888
+      font-size: 12px;
+      font-style: italic;
+      max-width: 200px
+      padding: 2px 5px;
+      vertical-align: middle
+      width: 100%
+      @media(max-width: $lg)
+         border: 1px solid $separator-color
+         height: 40px
+         max-width: none
+         width: calc(100% - 46px)
+   &__link
+      display: block
+      font-size: 12px
+      padding: 3px
+      @media(max-width: $lg)
+         text-align: left
+      &:hover
+         background-color: $hover-mobile-color!important
+   &__head
+      display: flex;
+      margin: 0;
+      padding-bottom: 15px
+      position: relative
+      @media(max-width: $lg)
+         flex-direction: column;
+         padding-bottom: 0;
+   &__mobile-links
+      display: flex;
+      flex-direction: column;
+      margin-left: -15px;
+      margin-right: -15px;
+      background-color: #f5f6f8
+      @media(max-width: $lg)
+         min-height: 330px;
+   &__mobile-link
+      font-family: brandonBold;
+      font-size: 16px;
+      padding: 25px !important;
+      text-transform: uppercase;
+      text-align: left;
+      border-bottom: 1px solid $separator-color
+      align-items: center;
+      display: none;
+      @media(max-width: $lg)
+         display: flex;
+   &__mobile-icon-wrapper
+      max-width: 40px;
+      padding-right: 10px;
+      max-height: 30px;
+   &__mobile-icon
+      width: auto;
+      max-height: 29px;
+      height: 100%;
+      width: 23px;
+   &__logout
+      height: 12px;
+      line-height: 0;
+      img
+         width: 12px;
+         height: 12px;
+         @media(max-width: $lg)
+            margin-right: 3px;
+.header-mobile
+   display: none
+   padding: 30px 15px;
+   align-items: center;
+   justify-content: space-between;
+   border-bottom: 1px solid rgba(0,0,0,.15);
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 4;
+   background-color: #ffffff;
+   font-size: 44px;
+   height: $headerMobileHeight
+   @media(max-width: $lg)
+      display: flex;
+   &__icon
+      max-width: 38px;
+      width: 100%;
+      padding: 0 5px;
+      min-height: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   &__icon_profile
+      min-height: 28px;
+   &__icon-menu-close
+      display: none
+      min-height: 28px;
+   &__item
+      flex: 1 1 33.33%;
+      display: flex;
+      align-items: center;
+   &__cart
+      position: relative
+   &__num
+      width: 20px;
+      height: 20px;
+      background-color : #000000;
+      position: absolute   
+      right: 0;
+      top: 50%;
+      border-radius: 20px;
+      font-size: 9px;
+      color  : #ffffff;
+      text-align: center;
+      line-height: 20px;
+      font-family: brandonBold
+   
+.menu-open
+   .header-mobile__icon-menu
+      display: none
+   .header-mobile__icon-menu-close
+      display: block
+.head
+   &__item
+      display: flex;
+      align-items: center;
+      position: static;
+      text-transform: uppercase
+      @media(max-width: $lg)
+         text-align: left;
+         flex-direction: column;
+         align-items: flex-start;
+         padding: 0;
+         margin-right: -15px;
+         margin-left: -15px;
+.top-line
+   @media(max-width: $lg)
+      padding: 30px 24px!important;
+      border-bottom: 1px solid $separator-color;
+      background-color: #f5f6f8;
+   &__order
+      font-size: 12px
+      text-transform: uppercase
+      border-right: 1px solid $separator-color     
+      padding-right: 10px;
+      margin-right: 10px  
+      line-height: 1em  
+      @media(max-width: $lg)
+         border-right: none
+         font-size: 16px;
+         font-family: brandonBold;
+   &__shops
+      font-size: 12px
+      line-height: 1em  
+      color: #646464
+      @media(max-width: $lg)
+         display: none
+   &__text
+      display: flex;
+      padding-top: 15px;
+      @media(max-width: $lg)
+         flex-direction: column;
+         padding-top: 0;
+         margin-left: -15px;
+.cart-popup
+   min-width: 300px;
+   width: 100%;
+   margin-top: 30px;
+   &:before
+      position: absolute
+      top: -17px
+      right: 28px;
+      width: 0; 
+      height: 0; 
+      border-left: 17px solid transparent;
+      border-right: 17px solid transparent;
+      border-bottom: 17px solid rgba(206, 206, 206, 0.31);
+      content: ''
+   &:after
+      position: absolute
+      top: -15px
+      right: 30px;
+      width: 0; 
+      height: 0; 
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-bottom: 15px solid #ffffff;
+      content: ''
+   &__caption
+      font-size: 14px;
+      font-family: brandonBold;
+      text-transform: uppercase;
+      padding: 20px;
+      margin: 0;
+   &__item
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #f5f6f8;
+      margin-bottom: 1px;
+   &__title
+      font-size: 13px
+      text-transform: uppercase;
+      line-height: 1.2em;
+      padding-left: 10px;
+   &__price
+      font-size: 14px
+      text-transform: uppercase;
+   &__total
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 20px 10px 80px;
+      background-color: #f5f6f8;
+      margin-bottom: 1px;
+      align-items: center;
+   &__mod
+      text-decoration: underline
+      color: rgba(0, 0, 0, 0.75);
+      text-transform: none;
+      display: block;
+      padding-top: 6px;
+   &__img
+      width: 60px;
+   &__link
+      padding-left: 70px!important;
+   &__btns
+      padding: 20px;
+/* footer
+_______________________________________________*/
+.footer
+   border-top: 1px solid $separator-color
+   &__bottom
+      padding: 50px 0;
+      @media(max-width: $md)
+         padding: 0;
+   &__title
+      font-size: 16px;
+      text-transform: uppercase;
+      font-family: brandonBold
+   &__link
+      font-size: 13px;
+   &__line
+      position: relative;
+      @media(max-width: $md)
+         border-bottom: 1px solid $separator-color
+         padding: 30px 20px;
+   &__block
+      margin-top: 20px;
+      display: none;
+      @media(min-width: $md)   
+         display: block!important   
+   &__arrow
+      @media(max-width: $md)
+         &:hover:after
+            cursor: pointer
+         &:after
+            font-family: fontAwesome;
+            position: absolute;
+            font-size: 20px;
+            right: 20px;
+            margin-top: -11px;
+            content: '\f107';
+            width: 30px;
+            height : 30px;
+            top  : 40px;
+   &__arrow_up
+      @media(max-width: $md)
+         &:after
+            content: '\f106';   
+.services
+   &__title
+      font-size: 16px;
+      text-transform: uppercase;
+      margin-bottom: 7px;
+      text-align: center;
+   &__subtitle
+      font-size: 14px;
+   &__item
+      display: flex;
+      height: 245px;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border-right: 1px solid $separator-color
+      @media(max-width: $md)
+         border-right: none
+         border-bottom: 1px solid $separator-color
+         height: 190px;
+   &__item:nth-last-child(1)
+      border-right: none
+      border-bottom: none
+.contact-us
+   background-color: #ebedf0;
+   padding: 65px 0;
+   &__title
+      font-size: 22px;
+      margin-bottom: 25px;
+      text-align: center;
+   &__description   
+      font-family: CochinItalic
+      margin: 25px auto 0 auto;
+      font-size: 20px;
+      text-align: center;
+      max-width: 360px;
+      padding: 0 15px;
+      @media(max-width: $md)
+         max-width: none;
+.email
+   display: flex;
+   &__input
+      padding-left: 20px;
+      height: 50px;
+      border: 1px solid $separator-color
+      border-right: none
+      min-width: 210px;
+      font-size: 14px;
+      @media(max-width: 1150px)
+         min-width: 100px;
+   &__input:focus
+      border-right: none!important
+   &_bottom
+      margin-top: 15px;
+      margin-bottom: 35px;
+      @media(max-width: $md)
+         margin-bottom: 0;
+   &__btn
+      border: 1px solid $separator-color
+      max-width: 55px;
+      font-size: 18px;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #ffffff;
+/* block: search
+_______________________________________________*/
+.search
+   box-shadow: 0 0 30px -5px #ccc;
+   padding-left: 25px;
+   position: absolute;
+   width: 100%;
+   z-index: 2;
+   top: 50%;
+   margin-top: -20px;
+   background-color: #fff;
+   @media(max-width: $lg)
+      bottom: 348px;
+      top: auto!important;
+   &__input
+      width: 100%;
+      height: 49px;
+      border: none!important;
+      box-shadow: none!important;
+      padding: 0;
+   &__link
+      width: 70px;
+      text-align: center;
+      border-left: 1px solid $separator-color
+      padding: 10px 0;
+      font-size: 26px;
+   &__form
+      display: flex; 
+      margin-bottom: 0px;        
+/* block: social
+_______________________________________________*/
+.social
+   color: #000000;
+   font-size: 22px
+   &_product
+      color: #5d6a79;
+      font-size: 16px
+      margin-bottom: 25px;
+   &__item
+      display: inline-block
+      position: relative
+   &__link
+      display: inline-block
+      height: 25px;
+      margin-right: 15px;
+      text-align: center
+      color: inherit   
+   &__icon
+      transition: color .2s ease-out
+      &:hover
+         color: #000000   
+/* block: btn
+_______________________________________________*/
+.btn
+   border-radius: 0
+   display: inline-block;
+   text-decoration: none;
+   width: 100%
+   font-size: 15px;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   width: 100%
+   line-height: 1em;
+   background-color: transparent
+   @media (max-width: $xs)
+      font-size: 14px;
+   &:hover
+      color: inherit
+      background-color: inherit
+   &_dark
+      background-color: #000000;
+      color: #ffffff
+      text-transform: uppercase
+      transition: color .2s ease-out, background-color .2s ease-out, border-color .2s ease-out
+      &:hover
+         background-color: $hover-main-color
+         color: #ffffff
+   &_transperent
+      background-color: transparent
+      border: 1px solid #000;
+      text-transform: uppercase
+      transition: color .2s ease-out, background-color .2s ease-out, border-color .2s ease-out
+      &:hover
+         color: $hover-main-color
+         border-color: $hover-main-color
+   &_cart
+      margin-bottom: 15px;
+/* block: search
+_______________________________________________*/
+.search
+   box-shadow: 0 0 30px -5px #ccc;
+   padding-left: 25px;
+   position: absolute;
+   width: 100%;
+   z-index: 2;
+   top: 50%;
+   margin-top: -20px;
+   background-color: #fff;
+   &__input
+      width: 100%;
+      height: 49px;
+      border: none!important;
+      box-shadow: none!important;
+   &__input:focus
+      border: none!important
+   &__link
+      width: 70px;
+      text-align: center;
+      border-left: 1px solid $separator-color
+      padding: 10px 0;
+      font-size: 26px;
+   &__form
+      display: flex;

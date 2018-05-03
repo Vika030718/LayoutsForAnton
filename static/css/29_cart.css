@@ -1,0 +1,81 @@
+.cart__btn {
+   width:100%;
+
+   background-color:#6b6b6b;
+}
+.cart__caption {
+   margin-top:20px;
+}
+.cart__clean {
+   font-family:FrancoisOne;
+   font-size:12px;
+
+   display:inline-block;
+
+   margin-bottom:30px;
+
+   text-decoration:underline !important;
+}
+.cart__input {
+   height:40px;
+}
+.total {
+   font-size:15px;
+
+   margin-bottom:15px;
+   padding-top:20px;
+   padding-right:20px;
+   padding-bottom:20px;
+   padding-left:20px;
+
+   border-right:1px solid #000;
+   border-bottom:1px solid #000;
+   border-left:1px solid #000;
+   background-image:url('../img/footer_services_bg.jpg');
+}
+.total__table {
+   margin-top:20px;
+   padding-top:20px;
+   padding-bottom:20px;
+
+   border-top:1px solid #000;
+   border-bottom:1px solid #000;
+}
+.total__grand {
+   font-family:brandonBold;
+   font-size:15px;
+
+   display:-webkit-box;
+   display:flex;
+
+   padding-top:20px;
+   padding-bottom:20px;
+
+   text-transform:uppercase;
+
+   border-bottom:1px solid #000;
+
+   -webkit-box-align:center;
+   align-items:center;
+   -webkit-box-pack:justify;
+   justify-content:space-between;
+}
+.total__btn {
+   font-size:21px;
+
+   width:100%;
+   margin-top:20px;
+}
+.cupon__title {
+   font-family:francoisOne;
+   font-size:15px;
+
+   padding-bottom:20px;
+}
+.cupon__form {
+   margin-top:30px;
+   margin-bottom:15px;
+   padding-bottom:15px;
+
+   border-bottom:1px solid #000;
+}

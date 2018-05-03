@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <title>Chemises sur mesure | Swann & Oscar</title>
+    <link rel="stylesheet" href="lib/css/font-awesome.min.css">
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/normalize.css">
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="static/css/custom.css">
+    <link rel="stylesheet" href="static/css/headerFooterResponsive.css">
+    <script src="lib/js/jquery-1.12.3.min.js"></script>
+    <script src="lib/js/bootstrap.min.js"></script>
+    <script src="static/js/main.js"></script>
+</head>
+
+<body>
+    <div class="header-mobile">
+        <div class="header-mobile__item header-mobile__icon-toggle">
+            <img class="header-mobile__icon header-mobile__icon-menu" src="static/img/icon-menu.png" alt="Open menu">
+            <img class="header-mobile__icon header-mobile__icon-menu-close" src="static/img/icon-menu-close.png" alt="Open menu">
+        </div>
+        <div class="header-mobile__item text-center">
+            <img class="logo__img_mobile" src="static/img/logo-mobile.svg" alt="logo">
+        </div>
+        <div class="header-mobile__item text-right">
+            <img class="header-mobile__icon header-mobile__icon_profile" src="static/img/icon-user.png" alt="My profile">
+            <div class="header-mobile__cart">
+                <img class="header-mobile__icon" src="static/img/icon-cart.png" alt="Cart">
+                <span class="header-mobile__num">2</span>
+            </div>
+        </div>
+    </div>
+    <header class="header">
+        <p style="color: red">Hidden popups: 1. Link - "En savoir plus";</p>
+        <div class="wrapper">
+            <nav class="header__navbar">
+                <div class="search hide">
+                    <form id="search_mini_form" class="search__form">
+                        <input id="search" type="text" autocomplete="off" name="q" value="" class="search__input" placeholder="Votre recherche">
+                        <div id="search_autocomplete" class="search-autocomplete" style="display: none;"></div>
+                        <a href="javascript:void(0);" onclick="$('#search_mini_form').submit();" class="search__link header__search-submit"><span class="fa fa-search fa-flip-horizontal"></span></a>
+                        <a href="javascript:void(0);" class="search__link header__search-close"><img src="https://swann-staging.iressources.com/skin/frontend/so/default/redesign/img/icon-menu-close.png" alt=""></a>
+                    </form>
+                </div>
+                <div class="container-fluid">
+                    <div class="row top-line">
+                        <div class="col-md-6 col-xs-12">
+                            <div class="top-line__text">
+                                <p class="top-line__order">Chemises sur mesure</p>
+                                <a class="top-line__shops" href="">Notre boutique</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <div class="text-right navbar-collapse collapse collapse_user-menu header__separator">
+                                <ul class="user-menu">
+                                    <li class="navbar-nav user-menu__item">
+                                        <div class="dropdown">
+                                            <a class="user-menu__link user-menu__link_lang dropdown-toggle" data-toggle="dropdown" href="#">fr</a>
+                                            <ul class="dropdown-menu dropdown-menu-right user-menu__lang">
+                                                <li class="current">
+                                                    <a class="user-menu__link user-menu__link_submenu" href="">France</a>
+                                                </li>
+                                                <li>
+                                                    <a class="user-menu__link user-menu__link_submenu" href="">Other Countries</a>
+                                                </li>
+                                                <li>
+                                                    <a class="user-menu__link user-menu__link_submenu" href="">Belgique</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="navbar-nav user-menu__item">
+                                        <div class="dropdown">
+                                            <a class="user-menu__link" href="">Connexion</a>
+                                        </div>
+                                    </li>
+                                    <li class="navbar-nav user-menu__item header__cart">
+                                        <div class="dropdown">
+                                            <a class="user-menu__link user-menu__link_lang dropdown-toggle" data-toggle="dropdown" href="#">Mon panier - <span class="so_top_basket_num">0</span></a>
+                                            <div class="dropdown-menu dropdown-menu-right cart-popup">
+                                                <h2 class="cart-popup__caption">Mon panier</h2>
+                                                <div class="cart-popup__total">
+                                                    <span class="cart-popup__title">Total</span>
+                                                    <span class="cart-popup__price"><span class="price">0,00&nbsp;€</span></span>
+                                                </div>
+                                                <div class="cart-popup__btns">
+                                                    <a class="btn btn_dark btn_cart" href="">
+                                                        <p>Voir mon panier</p>
+                                                    </a>
+                                                    <a class="btn btn_transperent" href="" style="display:none;">
+                                                        <p>Finaliser ma commande</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row header__head">
+                        <div class="col-md-5 head__item text-right">
+                            <div class="menu__item dropdown">
+                                <a class="menu__link menu__item  dropdown-toggle menu__item_shop" data-toggle="dropdown" href="javascript:void(0);">Shop</a>
+                                <ul class="dropdown-menu submenu">
+                                    <li class="submenu__top-line"></li>
+                                    <li class="submenu__line">
+                                        <div class="col-md-3 menu__column">
+                                            <div class="dropdown-header submenu__title">Sélectionnez un tissu</div>
+                                            <ul class="menu__list">
+                                                <li>
+                                                    <a class="submenu__link" href="">
+                                        Best sellers<span class="num">(24)</span>
+                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="submenu__link" href="">
+                                        Nouveautés<span class="num">(21)</span>
+                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="submenu__link" href="">
+                                        Ventes privilèges<span class="num">(28)</span>
+                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="submenu__link" href="">
+                                        Repassage facile<span class="num">(29)</span>
+                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="submenu__link" href="">
+                                                    Uni<span class="num">(155)</span>
+                                                </a>
+                                                </li>
+                                                <li>
+                                                    <a class="submenu__link" href="">
+                                                    Rayé<span class="num">(111)</span>
+                                                </a>
+                                                </li>
+                                                <li>
+                                                    <a class="submenu__link" href="">
+                                                    Carreaux<span class="num">(91)</span>
+                                                </a>
+                                                </li>
+                                                <li>
+                                                    <a class="submenu__link" href="">
+                                                    Motif<span class="num">(31)</span>
+                                                </a>
+                                                </li>
+                                                <li>
+                                                    <a class="submenu__link submenu__link_last" href="">
+                                    Tous les tissus                                    <span class="num">(391)</span>
+                                </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3 menu__column">
+                                            <div class="dropdown-header submenu__title">Créer depuis un modèle</div>
+                                            <ul class="menu__list">
+                                                <li>
+                                                    <a class="submenu__link" href="">
+                                    Casual                                </a>
+                                                </li>
+                                                <li>
+                                                    <a class="submenu__link" href="">
+                                    Fancy                                </a>
+                                                </li>
+                                                <li>
+                                                    <a class="submenu__link" href="">
+                                    Intemporel                                </a>
+                                                </li>
+                                                <li>
+                                                    <a class="submenu__link" href="">
+                                    Cérémonie                                </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3 menu__column">
+                                            <div class="dropdown-header submenu__title submenu__title_last">Coffrets cadeaux</div>
+                                            <ul class="menu__list menu__list_last menu__list_sets">
+                                                <li>
+                                                    <a class="submenu__link" href="">
+                                    Acheter un coffret                                </a>
+                                                </li>
+                                                <li>
+                                                    <a class="submenu__link" href="">
+                                    Utiliser mon coffret                                </a>
+                                                </li>
+                                            </ul>
+                                            <div class="dropdown-header submenu__title submenu__title_last">Accessoires</div>
+                                            <ul class="menu__list menu__list_last menu__list_accessories">
+                                                <li class="menu__list-body">
+                                                    <ul class="menu__sublist_accessories">
+                                                        <li> <a class="submenu__link" href="">Cravates</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a class="submenu__link submenu__link_last" href="">
+                                    Tous les accessoires                                </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3 submenu__img-wrapper">
+                                            <div class="submenu__img-block">
+                                                <div class="submenu__img-caption">Sélection</div>
+                                                <div class="submenu__img-title">Casual shirts</div>
+                                                <a class="btn submenu__img-btn" href="">
+                                Créer une chemise                            </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a class="menu__item menu__item_jornal menu__item-top" href="/blog/">Le Journal</a>
+                        </div>
+                        <div class="col-md-2 head__item text-center">
+                            <a href="https://swann-staging.iressources.com/" title="Swann &amp; Oscar">
+                        <img class="logo__img" src="https://swann-staging.iressources.com/skin/frontend/so/default/images/logo.svg" alt="Swann &amp; Oscar">
+                        <img class="logo__img_onscroll" src="https://swann-staging.iressources.com/skin/frontend/so/default/redesign/img/logo-mobile.svg" alt="Swann &amp; Oscar">
+                     </a>
+                        </div>
+                        <div class="col-md-5 head__item text-left">
+                            <a href="" class="menu__item menu__item-top menu__item_help">Aide</a>
+                            <a href="" class="menu__item menu__item-top">A propos</a>
+                            <a href="" class="menu__item menu__item-top">
+                        <span class="header__search-icon fa fa-search fa-flip-horizontal"></span>
+                     </a>
+                        </div>
+                    </div>
+                    <div class="header__mobile-links">
+                        <a href="" class="header__mobile-link">
+                            <div class="header__mobile-icon-wrapper">
+                                <img class="header__mobile-icon" src="" alt="">
+                            </div>
+                            Connexion </a>
+                        <a href="" class="header__mobile-link">
+                            <div class="header__mobile-icon-wrapper">
+                                <img class="header__mobile-icon" src="https://swann-staging.iressources.com/skin/frontend/so/default/redesign/img/icon-cart.png" alt="">
+                            </div>
+                            Mon panier </a>
+                        <a href="" class="header__mobile-link">
+                            <div class="header__mobile-icon-wrapper">
+                                <img class="header__mobile-icon" src="https://swann-staging.iressources.com/skin/frontend/so/default/redesign/img/icon-place.png" alt="">
+                            </div>
+                            Notre boutique </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="cart">
+        <div class="wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4 col-md-push-8">
+                        <h2 class="cart__summary-title">Récapitulatif <i class="fa fa-lock" aria-hidden="true"></i></h2>
+                        <div class="cart-summary">
+                            <table class="cart-summary__table">
+                                <tr class="cart-summary__row">
+                                    <td>Sous total <span class="cart-summary__accent">(TTC)</span></td>
+                                    <td align="right">999,00 €</td>
+                                </tr>
+                                <tr class="cart-summary__row">
+                                    <td colspan="2" class="cart-summary__accent">Vous avez un code réduction. <a href="" class="cart-summary__link">Cliquez ici</a></td>
+                                </tr>
+                                <tr class="cart-summary__row">
+                                    <td colspan="2" class="cart-summary__accent">Vous avez un code
+                                        <br>réduction. <a href="" class="cart-summary__link"> Cliquez ici</a></td>
+                                </tr>
+                                <tr class="cart-summary__row">
+                                    <td>VBon d’achat <span class="cart-summary__accent">de 10,00 €</span>
+                                        <br><span class="cart-summary__accent-small">Bon n°6544 valable jusqu’au 28/10/2017 </span></td>
+                                    <td align="right"><a type="button" href="" class="cart-summary__link">Utiliser</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="cart-summary__text"> Vous avez un code
+                                        <br>réduction. </td>
+                                    <td align="right"><a type="button" href="" class="cart-summary__btn">Supprimer</a></td>
+                                </tr>
+                                <tr class="cart-summary__row">
+                                    <td>
+                                        <input type="text" class="input cart-summary__input" placeholder="Renseigner le code ici">
+                                    </td>
+                                    <td align="right"><a type="button" href="" class="cart-summary__btn">Appliquer</a></td>
+                                </tr>
+                                <tr class="cart-summary__row">
+                                    <td>
+                                        <div>Frais de livraison</div>
+                                        <div class="cart-summary__offer">Offerts dès 300 €</div>
+                                    </td>
+                                    <td align="right">9,90 €</td>
+                                </tr>
+                                <tr class="cart-summary__row">
+                                    <td>
+                                        <span>Taxe (20%) <i class="cart-summary__icon fa fa-question-circle" aria-hidden="true"></i></span>
+                                    </td>
+                                    <td align="right">200,00 €</td>
+                                </tr>
+                                <tr class="cart-summary__total">
+                                    <td>
+                                        <span>Total</span>
+                                    </td>
+                                    <td align="right">979,00 €</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <a class="btn btn_dark" href="">
+                                            <p>Valider mon panier</p>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <p class="cart-summary__text text-center">TVA non applicable aux commandes livrées en dehors de l'UE</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="cart-payment">
+                            <div class="cart-payment__item">
+                                <a class="cart-payment__text" href="">Continuer mes achats</a>
+                                <a class="cart-payment__text" href="">Sauvegarder mon panier</a>
+                                <a class="cart-payment__text" href="">Vider ce panier</a>
+                            </div>
+                            <div class="cart-payment__item">
+                                <img src="static/img/temp/cart__payment5.png" alt="" class="cart-payment__img">
+                                <img src="static/img/temp/cart__payment4.png" alt="" class="cart-payment__img">
+                                <img src="static/img/temp/cart__payment3.png" alt="" class="cart-payment__img">
+                                <img src="static/img/temp/cart__payment2.png" alt="" class="cart-payment__img">
+                                <img src="static/img/temp/cart__payment1.png" alt="" class="cart-payment__img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-md-pull-4">
+                        <h2 class="cart__title">Mon panier <span class="cart__title-accent">(4 articles)</span></h2>
+                        <div class="cart-small">
+                            <div class="cart-small__body">
+                                <div class="col-md-3">
+                                    <div class="cart-small__img">
+                                        <a href="">
+                                 <img src="static/img/temp/cart__small-img.jpg" alt="">
+                              </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-9 cart-small__main">
+                                    <div class="cart-small__description">
+                                        <h2 class="cart-small__title">Chemise Popeline rayé bleu Chemise Popeline rayé bleu Chemise Popeline rayé bleu</h2>
+                                        <span class="cart-small__subtitle">Fils double retors</span>
+                                        <div class="cart-small__error error">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+                                    </div>
+                                    <p class="remove">Supprimer</p>
+                                    <div class="cart-price__block">
+                                        358,00 €
+                                    </div>
+                                    <div class="cart-number">
+                                        <span class="cart-number__qty">Qté</span>
+                                        <div class="select__wrapper cart-number__select">
+                                            <select class="select cart-number__select">
+                                                <option value="volvo">2</option>
+                                            </select>
+                                            <p class="error-text">Ceci est un champ obligatoire</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-big">
+                            <div class="order-more order-more_cart">
+                                <div class="row">
+                                    <div class="order-more__body">
+                                        <div class="col-md-5">
+                                            <div>
+                                                <img class="order-more__big-img" src="static/img/temp/account__tissue-big.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7 order-more__block">
+                                            <div class="order-more__description">
+                                                <h2 class="order-more__title">Chemise Popeline rayé bleu Chemise Popeline rayé bleu Chemise Popeline rayé bleu Chemise Popeline rayé bleu</h2>
+                                                <ul class="order-list">
+                                                    <li class="order-list__item"><span class="order-list__parametrs">Tissu :</span>Popeline carreaux bleu</li>
+                                                    <li class="order-list__item"><span class="order-list__parametrs">Col :</span> Petit Col Positano, Col Baleine Amovible, Col Souple</li>
+                                                    <li class="order-list__item"><span class="order-list__parametrs">Poignet :</span>Poignet Demi-Lune</li>
+                                                    <li class="order-list__item"><span class="order-list__parametrs">Finitions :</span>Sans Gorge, Dos Sans Plis d'Aisance, Bas Liquette, Dos sans chevron</li>
+                                                    <li class="order-list__item"><span class="order-list__parametrs">Poche :</span>Sans poche, Sans Epaulettes</li>
+                                                    <li class="order-list__item"><span class="order-list__parametrs">Bouton :</span>Bouton Nacre, Boutonnière Ton sur Ton</li>
+                                                    <li class="order-list__item"><span class="order-list__parametrs">Broderie chemise :</span>Pas de broderie Pas de broderie Pas de broderie</li>
+                                                    <li class="order-list__item"><span class="order-list__parametrs">Message col :</span>Pas de message Pas de message Pas de Message Pas de message </li>
+                                                    <li class="order-list__item"><span class="order-list__parametrs">Doublure :</span>Sans Doublure Sans Doublure Sans Doublure Sans Doublure Sans Doublure </li>
+                                                </ul>
+                                                <div class="cart-price__block">
+                                                    <span class="cart-price__total">
+                                        <span class="cart-price">
+                                         <span class="price">136,00 €</span>
+                                                    </span>
+                                                    </span>
+                                                    <span class="cart-price__number cart-price__subtotal">
+                                        <span class="cart-price">
+                                        (2 x <span class="price">68,00 €</span>)
+                                                    </span>
+                                                    </span>
+                                                </div>
+                                                <div class="cart-number">
+                                                    <span class="cart-number__qty">Qté</span>
+                                                    <div class="select__wrapper cart-number__select">
+                                                        <select class="select">
+                                                            <option value="volvo">2</option>
+                                                        </select>
+                                                        <p class="error-text">Ceci est un champ obligatoire</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="order-actions ">
+                                            <div class="order-actions__client">
+                                                <p class="order-actions__client-text">Patron : </p>
+                                                <p class="order-actions__client-text">Alex2016</p>
+                                                <a href="" class="order-actions__link">Voir</a>
+                                            </div>
+                                            <div class="order-actions__tags">
+                                                <p class="remove">Supprimer</p>
+                                                <p class="order-actions__tag">Modifier</p>
+                                                <p class="order-actions__tag">Dupliquer</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-big__bottom">
+                                <div class="order-info">
+                                    <div class="order-info__block">
+                                        <i class="fa fa-scissors order-info__icon" aria-hidden="true"></i>
+                                        <p class="order-info__title">Patron utilisé :</p>
+                                        <p class="order-info__subtitle">Nomdupatron</p>
+                                        <p class="order-info__date">modifié le 15/05/2017</p>
+                                    </div>
+                                    <div class="order-info__block">
+                                        <p class="order-info__link">Modifier ce patron</p>
+                                    </div>
+                                </div>
+                                <div class="order-detail">
+                                    <div class="order-detail__item">
+                                        <span class="order-detail__data">Encolure</span>
+                                        <span class="order-detail__data">37</span>
+                                    </div>
+                                    <div class="order-detail__item">
+                                        <span class="order-detail__data">Poitrine</span>
+                                        <span class="order-detail__data">37</span>
+                                    </div>
+                                    <div class="order-detail__item">
+                                        <span class="order-detail__data">Taille</span>
+                                        <span class="order-detail__data">37</span>
+                                    </div>
+                                    <div class="order-detail__item">
+                                        <span class="order-detail__data">Bassin</span>
+                                        <span class="order-detail__data">37</span>
+                                    </div>
+                                    <div class="order-detail__item">
+                                        <span class="order-detail__data">Manche droite</span>
+                                        <span class="order-detail__data">37</span>
+                                    </div>
+                                    <div class="order-detail__item">
+                                        <span class="order-detail__data">Manche gauche</span>
+                                        <span class="order-detail__data">37</span>
+                                    </div>
+                                    <div class="order-detail__item">
+                                        <span class="order-detail__data">Poignet droit</span>
+                                        <span class="order-detail__data">37</span>
+                                    </div>
+                                    <div class="order-detail__item">
+                                        <span class="order-detail__data">Poignet gauche</span>
+                                        <span class="order-detail__data">37</span>
+                                    </div>
+                                    <div class="order-detail__item">
+                                        <span class="order-detail__data">Carrure</span>
+                                        <span class="order-detail__data">37</span>
+                                    </div>
+                                    <div class="order-detail__item">
+                                        <span class="order-detail__data">Dos</span>
+                                        <span class="order-detail__data">37</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="sartor">
+                                        <div class="sartor__block">
+                                            <div class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" name="value44" id="value1">
+                                                <label class="checkbox__label sartor__label" for="value1">Recevoir la lettre Swann &amp; Oscar</label>
+                                            </div>
+                                            <span class="sartor__info">(+XX€ par chemise)</span>
+                                            <a href="" class="sartor__link" data-toggle="modal" data-target="#sartorModal">En savoir plus</a>
+                                        </div>
+                                        <div class="sartor__price">
+                                            <p>26,00 €</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-small">
+                            <div class="cart-small__body">
+                                <div class="col-md-3">
+                                    <div class="cart-small__img">
+                                        <a href="">
+                                 <img src="static/img/temp/cart__small-img.jpg" alt="">
+                              </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-9 cart-small__main">
+                                    <div class="cart-small__description">
+                                        <h2 class="cart-small__title">Chemise Popeline rayé bleu</h2>
+                                        <span class="cart-small__subtitle">Fils double retors</span>
+                                    </div>
+                                    <p class="remove">Supprimer</p>
+                                    <!--                            <div class="cart-sale">
+                              <div class="cart-sale__discount">-50%</div>
+                              <div class="cart-sale__price-block">
+                                 <div class="cart-sale__old">358,00 €</div>
+                                 <div class="cart-sale__price">148,00 €</div>
+                              </div>
+                           </div> -->
+                                    <div class="cart-sale">
+                                        <div class="cart-sale__discount">-50%</div>
+                                        <div class="price-box">
+                                            <span class="old-price">
+                                      <span class="price">73,33 €</span>
+                                            </span>
+                                            <span class="special-price">
+                                      <span class="price">56,67 €</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="cart-number">
+                                        <span class="cart-number__qty">Qté</span>
+                                        <div class="select__wrapper cart-number__select">
+                                            <select class="select">
+                                                <option value="volvo">2</option>
+                                            </select>
+                                            <p class="error-text">Ceci est un champ obligatoire</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="cart__subtitle">Ces accessoires peuvent vous plaire</h3>
+                        <div class="accessory">
+                            <div class="row">
+                                <div class="accessory__item col-sm-4">
+                                    <img src="static/img/temp/accessory__1.jpg" alt="" class="accessory__img">
+                                    <h4 class="accessory__title">Cravate marron et cachemire</h4>
+                                    <div class="accessory__price">120 €</div>
+                                    <a type="button" href="" class="accessory__btn">Ajouter au panier</a>
+                                </div>
+                                <div class="accessory__item col-sm-4">
+                                    <img src="static/img/temp/accessory__1.jpg" alt="" class="accessory__img">
+                                    <h4 class="accessory__title">Cravate marron et cachemire</h4>
+                                    <div class="accessory__price">120 €</div>
+                                    <a type="button" href="" class="accessory__btn">Ajouter au panier</a>
+                                </div>
+                                <div class="accessory__item col-sm-4">
+                                    <img src="static/img/temp/accessory__1.jpg" alt="" class="accessory__img">
+                                    <h4 class="accessory__title">Cravate marron et cachemire</h4>
+                                    <div class="accessory__price">120 €</div>
+                                    <a type="button" href="" class="accessory__btn">Ajouter au panier</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="sartorModal" tabindex="-1" role="dialog" aria-labelledby="sartorModal" style="display: none;">
+        <div class="modal-dialog sartor-modal" role="document">
+            <div class="modal-content">
+                <button type="button" class="close modal-popup__close" data-dismiss="modal" aria-label="Close"><span class="modal-popup__close-text">Fermer</span><img src="static/img/icon-menu-close.png" alt=""></button>
+                <div class="sartor-modal__body">
+                    <div class="sartor-modal__header">
+                        <h1 class="sartor-modal__title">Les chemises sartorial <br> Swann &amp; Oscar</h1>
+                    </div>
+                    <div class="sartor-modal__description">
+                        <h2 class="sartor-modal__main-title">une chemise confectionnée par une seule personne</h2>
+                        <p class="sartor-modal__text sartor-modal__wrapper">Votre chemise est montée par l’une de nos 2 meilleures couturières. </p>
+                        <p class="sartor-modal__text sartor-modal__wrapper">Il nous faut presque deux fois plus de temps pour monter une chemise avec les finitions Sartorial. En quoi est-ce que cela consiste ? </p>
+                        <p class="sartor-modal__subtext sartor-modal__wrapper">cliquez sur les zoom pour plus d’informations</p>
+                        <div class="sartor-modal__description-bottom">
+                            <div class="sartor-modal__img-wrapper">
+                                <span class="sartor-modal__button">couture de bouton de col invisible</span>
+                                <span class="sartor-modal__col">montage de col</span>
+                                <span class="sartor-modal__patterns">pattern  matching</span>
+                                <span class="sartor-modal__shoulder">emmanchure  décalée</span>
+                                <span class="sartor-modal__top-seam">couture 8  points au cm</span>
+                                <span class="sartor-modal__seam">couture <br> anglaise</span>
+                                <span class="sartor-modal__bottom">hirondelle <br> de renfort</span>
+                                <span class="sartor-modal__hem">ourlet <br> ”mouchoir”</span>
+                                <span class="sartor-modal__sleeve">manche <br> en forme </span>
+                                <img src="static/img/sartor-modal-main-img.png" class="sartor-modal__img" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quality-item index__wrapper text-center">
+                        <div class="row quality-item__main-body">
+                            <div class="col-sm-5  col-sm-push-7 text-left quality-item__info-block">
+                                <h2 class="quality-item__second-title">L'emmanchure décalée</h2>
+                                <p class="sartor-modal__text">Notre chemise classique est montée d'un seul geste continu entre la couture de coté et la couture de la manche.</p>
+                                <p class="sartor-modal__text">C'est la raison pour laquelle les deux coutures, qui se rejoignent sous l'aisselle, sont alignées. La couture d'emmanchure décalée que nous vous proposons sur notre finition Sartorial correspond à un montage bien plus complexe mais aussi plus long.</p>
+                                <p class="sartor-modal__text">Il présente le gros avantage de pouvoir monter la manche de manière décalée dans l'emmanchure de la chemise et donc en étant beaucoup plus en harmonie avec l'arrondi du bras. Cela permet d'avoir une manche qui ne tourne pas ou très peu sur le haut du bras entre l'épaule et l'intérieur du biceps.</p>
+                            </div>
+                            <div class="col-sm-7  col-sm-pull-5">
+                                <img class="quality-item__img" src="static/img/quality-banner__item-5.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quality-item index__wrapper">
+                        <div class="row quality-item__main-body">
+                            <div class="col-sm-5 quality-item__info-block">
+                                <h2 class="quality-item__second-title text-right">L’ourlet « mouchoir » </h2>
+                                <p class="sartor-modal__text sartor-modal__text-right">L'ourlet mouchoir, comme son nom l'indique, est un ourlet plus fin, plus délicat qui nécessite un savoir-faire bien particulier, un geste habile pour réussir à rabattre et coudre de manière régulière un tout petit retour de tissu de 3mm au bas de la chemise.</p>
+                                <p class="sartor-modal__text sartor-modal__text-right">Ce type d'ourlet est plus agréable à porter dans un pantalon car la sensation de la chemise dans le pantalon s'efface encore un peu plus en limitant l'épaisseur autour des hanches.</p>
+                            </div>
+                            <div class="col-sm-7">
+                                <img class="quality-item__img" src="static/img/quality-banner__item-4.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quality-banner">
+                        <div class="quality-banner__body index__wrapper">
+                            <h1 class="quality-banner__title">Nombre de points <br>au centimètre</h1>
+                            <p class="quality-banner__text quality-banner__text_first">Sur notre chemise classique la couture est réalisée avec 6 points au centimètre là où notre chemise Sartorial en compte 8. C'est un travail plus long qui permet aussi aux coutures de la chemise d'être plus raffinées. C'est une des premières caractéristiques d'une belle chemise.</p>
+                        </div>
+                    </div>
+                    <div class="quality-item index__wrapper text-center">
+                        <div class="row quality-item__main-body">
+                            <div class="col-sm-5 text-left col-sm-push-7  quality-item__info-block">
+                                <h2 class="quality-item__second-title ">Couture anglaise</h2>
+                                <p class="sartor-modal__text">Contrairement à la couture à double aiguille qui permet de coudre deux pans de chemise en une seule fois, la couture anglaise utilisée pour coudre les flans et les manches de la chemise, se réalise en 2 étape, une couture sur l'envers rabattue à 5mm et une couture sur l'endroit surpiquée à 4mm. </p>
+                                <p class="sartor-modal__text">Cette technique permet d'avoir une couture plate, nette et solide. Cette couture à aiguille simple est plus raffinée mais aussi plus longue à réaliser.</p>
+                            </div>
+                            <div class="col-sm-7 col-sm-pull-5 ">
+                                <img class="quality-item__img" src="static/img/quality-banner__item-2.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quality-item index__wrapper text-center">
+                        <div class="row quality-item__main-body">
+                            <div class="col-sm-5 text-left quality-item__block">
+                                <h2 class="quality-item__second-title text-right">Hirondelle de renfort</h2>
+                                <p class="sartor-modal__text sartor-modal__text-right">'hirondelle de renfort, contrairement à ce que l'on peut souvent entendre, n'a pas réellement pour but de renforcer la couture de la chemise à cet endroit. </p>
+                                <p class="sartor-modal__text sartor-modal__text-right">Elle est avant tout esthétique surtout s'il vous arrive de porter votre chemise sortie du pantalon. C'est une jolie manière de finir les coutures anglaises des pans avant et arrière de la chemise.</p>
+                            </div>
+                            <div class="col-sm-7">
+                                <img class="quality-item__img" src="static/img/quality-banner__item-3.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quality-banner quality-banner_second">
+                        <div class="quality-banner__body index__wrapper">
+                            <h1 class="quality-item__second-title">Montage de col</h1>
+                            <p class="quality-banner__text quality-banner__text_second">La découpe et le montage du col sont des points clés pour une chemise. Lorsqu'un pied de col est découpée en forme, il remonte sur l'avant à l'endroit du boutonnage, ce qui lui permet de mieux porter les pointes de col et donc d'avoir une meilleure tenue.</p>
+                            <p class="quality-banner__text quality-banner__text_second">Les pointes de cols sont quant à elles coupées de manière plus ou moins arrondies entre le rabat arrière et les pointes du col. Cette courbe que l'on donne ainsi au rabat du col permet de mieux épouser la forme de l'épaule, d'être moins contraint, et donc de mieux se tenir.</p>
+                            <p class="quality-banner__text quality-banner__text_second">Dans tous les cas, vous pourrez jouer sur l'épaisseur des triplures et le fait de thermocoller ou non les cols de vos chemises afin d'avoir une tenue de cols très droite et très formelle ou au contraire plus souple, roulant et donc plus sport.</p>
+                        </div>
+                    </div>
+                    <div class="quality-item index__wrapper text-center">
+                        <div class="row quality-item__main-body">
+                            <div class="col-sm-5 col-sm-push-7 text-left quality-item__info-block">
+                                <h2 class="quality-item__second-title">Couture du bouton de col invisible</h2>
+                                <p class="sartor-modal__text">La couture du bouton de votre col n'est pas visible sur l'envers.</p>
+                                <p class="sartor-modal__text">En effet le bouton est cousu avant le montage du col. La couture est donc dissimulée à l'intérieur du pied de col.</p>
+                                <p class="sartor-modal__text">Un détail encore une fois mais qui permet d'avoir un col plus joli lorsqu'il est ouvert, le pied ne présentant en effet aucune aspérité sur l'envers.</p>
+                            </div>
+                            <div class="col-sm-7 col-sm-pull-5">
+                                <img class="quality-item__img" src="static/img/quality-banner__item-8.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quality-item index__wrapper text-center">
+                        <div class="row quality-item__main-body">
+                            <div class="col-sm-5 text-left quality-item__info-block">
+                                <h2 class="quality-item__second-title text-right">Pattern matching</h2>
+                                <p class="sartor-modal__text sartor-modal__text-right">C'est l'art de savoir aligner les motifs d'un tissu. Lorsque vous réalisez votre chemise avec des tissus à rayures ou avec des carreaux nous pouvons en effet aligner ces motifs afin qu'ils coïncident là où les différentes pièces de la chemise ce rejoignent, notamment au niveau du montage des épaules et de l'empiècement du dos.</p>
+                                <p class="sartor-modal__text sartor-modal__text-right">C'est un travail qui se prépare dès la coupe du tissu afin d'anticiper le montage à venir. Lors de l'assemblage il s'agit enfin de respecter parfaitement le patronage de coupe afin de ne pas "manger" le motifs dans la couture ce qui risquerait de ne plus permettre leur alignement.</p>
+                                <p class="sartor-modal__text sartor-modal__text-right">Cet alignement se joue au millimètre près et n'a pas d'autres but qu'un raffinement esthétique.</p>
+                            </div>
+                            <div class="col-sm-7">
+                                <img class="quality-item__img" src="static/img/quality-banner__item-6.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quality-item index__wrapper text-center">
+                        <div class="row quality-item__main-body">
+                            <div class="col-sm-5 col-sm-push-7 text-left quality-item__info-block">
+                                <h2 class="quality-item__second-title">Manche en forme</h2>
+                                <p class="sartor-modal__text">La finition Sartorial vous permet également d'avoir une manche coupée et montée "en forme".</p>
+                                <p class="sartor-modal__text">Il y a un peu plus de tissu à l'arrière du bras de manière à avoir une manche de chemise qui épouse mieux la courbe naturelle de votre coude. </p>
+                                <p class="sartor-modal__text">La manche et la patte de manche subissent moins de tension lorsque le bras est plié surtout sur des manches bienajustées.</p>
+                            </div>
+                            <div class="col-sm-7 col-sm-pull-5">
+                                <img class="quality-item__img" src="static/img/quality-banner__item-9.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sartor-modal__footer">
+                        <a class="btn btn_dark sartor-modal__btn" href="">
+                            <p>appliquer cette option</p>
+                        </a>
+                        <a class="btn_return btn_return-pale" href=""><img class="btn_return-img" src="static/img/arrow_return.svg" alt="">fermer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-3 services__item">
+                        <h2 class="services__title">retouches gratuites</h2>
+                        <p class="services__subtitle">pour la première chemise</p>
+                    </div>
+                    <div class="col-sm-3 services__item">
+                        <h2 class="services__title">livraison</h2>
+                        <p class="services__subtitle">sous 15 à 20 jours ouvrés</p>
+                    </div>
+                    <div class="col-sm-3 services__item">
+                        <h2 class="services__title">Service client</h2>
+                        <p class="services__subtitle">01 02 03 04 05</p>
+                    </div>
+                    <div class="col-sm-3 services__item">
+                        <h2 class="services__title">confection française</h2>
+                        <p class="services__subtitle">Made in France</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact-us">
+            <div class="container-fluid ">
+                <div class="row">
+                    <div class="wrapper text-center">
+                        <h2 class="contact-us__title">Rejoignez le club Swann & Oscar</h2>
+                        <div class="email text-center">
+                            <input class="email__input" type="text" placeholder="Votre adresse e-mail" name="email">
+                            <a class="btn email__btn" href="">OK</a>
+                        </div>
+                        <p class="contact-us__description">Et recevez :
+                            <br class="break" />Nos offres et réductions en exclusivité
+                            <br class="break" /> Les conseils style de nos experts
+                            <br class="break" /> Invitations privées lors de nos </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper footer__bottom">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-3 footer__line">
+                        <h2 class="footer__title">GService client</h2></li>
+                        <span class="footer__arrow"></span>
+                        <ul class="footer__block">
+                            <li class="footer__title">
+                                <li><a class="footer__link" href="" title="">intro</a></li>
+                                <li><a class="footer__link" href="" title="">01 02 03 04 05</a></li>
+                                <li><a class="footer__link" href="" title="">Du lundi au vendredi<br class="break"/> de 9h30 à 19h00</a></li>
+                                <li><a class="footer__link" href="" title="">ou par e-mail</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 footer__line">
+                        <h2 class="footer__title">Swann & oscar</h2></li>
+                        <span class="footer__arrow"></span>
+                        <ul class="footer__block">
+                            <li class="footer__title">
+                                <li><a class="footer__link" href="" title="">Ligne</a></li>
+                                <li><a class="footer__link" href="" title="">Ligne</a></li>
+                                <li><a class="footer__link" href="" title="">Ligne</a></li>
+                                <li><a class="footer__link" href="" title="">Ligne</a></li>
+                                <li><a class="footer__link" href="" title="">Ligne</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 footer__line">
+                        <h2 class="footer__title">Swann & oscar</h2></li>
+                        <span class="footer__arrow"></span>
+                        <ul class="footer__block">
+                            <li class="footer__title">
+                                <li><a class="footer__link" href="" title="">Ligne</a></li>
+                                <li><a class="footer__link" href="" title="">Ligne</a></li>
+                                <li><a class="footer__link" href="" title="">Ligne</a></li>
+                                <li><a class="footer__link" href="" title="">Ligne</a></li>
+                                <li><a class="footer__link" href="" title="">Ligne</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 ">
+                        <div class="row">
+                            <div class="col-sm-12 footer__line">
+                                <h2 class="footer__title">Newsletter</h2>
+                                <span class="footer__arrow"></span>
+                                <div class="footer__block">
+                                    <p class="footer__link">Incentive plus courte</p>
+                                    <div class="email email_bottom">
+                                        <input class="email__input" type="text" placeholder="Votre adresse e-mail" name="email">
+                                        <a class="btn email__btn" href="">OK</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 footer__line">
+                                <h2 class="footer__title">Suivez-nous</h2>
+                                <span class="footer__arrow"></span>
+                                <ul class="social footer__block">
+                                    <li class="social__item">
+                                        <a class="social__link" href="http://www.facebook.com/pages/Swann-et-Oscar-chemise-sur-mesure/27994272262?sk=wall">
+                                 <span class="social__icon fa fa-facebook"></span>
+                              </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a class="social__link" href="https://plus.google.com/110636738231196199565/about">
+                                 <span class="social__icon fa fa-google-plus"></span>
+                              </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a class="social__link" href="https://www.instagram.com/swannetoscar/">
+                                 <span class="social__icon fa fa-instagram"></span>
+                              </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a class="social__link" href="http://chemises-homme.tumblr.com/">
+                                 <span class="social__icon fa fa-tumblr"></span>
+                              </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

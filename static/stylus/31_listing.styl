@@ -1,0 +1,66 @@
+.listing
+	&__caption
+		height: 450px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		@media(max-width: $lg)
+			height: auto;
+	&__img
+		width: auto;
+		height: 100%;
+		margin-bottom: 10px;
+		@media(max-width: $lg)
+			height: auto;
+			width: 100%;
+	&__img-block
+		margin-bottom: 15px;
+		height: 450px;
+		overflow: hidden
+		@media(max-width: $lg)
+			height: auto;
+	&__title
+		font-size: 32px;
+		margin-bottom: 10px;
+		margin-top: 15px;
+	&__subtitle
+		font-size: 20px;
+		font-family: CochinItalic
+		margin-bottom: 20px;
+	&__description
+		color: #5c5c5c
+		font-size: 20px;
+		font-family: CochinItalic
+		margin-bottom: 30px;
+	&__link
+		font-size: 18px;
+		text-decoration: underline
+		margin-bottom: 15px;
+		display: inline-block;
+	&__block
+		margin-bottom: 50px;
+		overflow: hidden;
+	&__top-block
+		overflow: hidden;
+		padding: 7px 0;
+	&__filter
+		margin-left: 20px;
+	&__filter-wrapper	
+		justify-content: flex-end;
+		display: flex;
+	&__filter-title
+		color: #555a69
+		padding: 15px 0;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		font-size: 14px;
+		position: relative
+		width: 170px;
+		&:before
+			position: absolute
+			height: 1px;
+			width: 170px;
+			background-color: $separator-color
+			content: ""
+			top: 0

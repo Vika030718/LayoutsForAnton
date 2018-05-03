@@ -1,0 +1,454 @@
+.orders
+	&__item
+		margin-bottom: 13px;
+		background-color: #ffffff;
+		display:flex;
+		font-size: 14px;
+		flex-wrap: wrap;
+		border: 1px solid transparent;
+		&:nth-last-child(1)
+			margin-bottom: 30px;
+		@media(max-width: $sm)
+			border: 1px solid rgba(0,0,0,.15);
+	&__item_active
+		border: 1px solid rgba(0,0,0,.15);
+		box-shadow: 0 0 15px 3px rgba(0,0,0,.09);
+		.cart-big__bottom
+			display: block
+	&__head
+		display: flex;
+		justify-content: space-between;
+		position: relative
+		font-size: 14px;
+		padding: 15px 0;
+		border-top: 1px solid rgba(0,0,0,.15);
+		&:before
+			content: "\f107";
+			position: absolute;
+			font-family: fontAwesome
+			width: 30px;
+			height: 30px;
+			border-radius: 30px;
+			top: 50%;
+			margin-top: -15px;
+			font-size: 27px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+	&__head_done
+		&:before
+			background-color: #89d885
+		.orders__status
+			color: #69c365
+	&__head_wait
+		&:before
+			background-color: #f6b76d
+		.orders__status
+			color: #ee9d3e
+	&__head-left
+		padding-left: 45px;
+		flex: 0 1 70%;
+	&__head-right
+		text-align: right;
+		flex: 0 1 30%;
+	&__name
+		color: #000000;
+		font-size: 14px;
+		display: inline-block;
+	&__client
+		color: rgba(0, 0, 0, 0.75);
+	&__date
+		color: rgba(0, 0, 0, 0.75);
+		display: inline-block;
+	&__see
+		color: #000000;
+	&__img
+		padding: 10px 18px 10px 10px;
+		flex: 0 0 115px;
+		@media(max-width: $sm)
+			border-bottom: 1px solid rgba(0,0,0,.15);
+	&__more-text
+		flex: 0 0 170px;
+		display: flex;
+		justify-content: center
+		align-items: center
+		cursor: pointer
+		justify-content: flex-end;
+		padding-right: 40px;
+		margin-left: auto;
+		border-left: 1px solid rgba(0,0,0,.15);
+		@media(max-width: $sm)
+			flex: 0 1 50%;
+		&:hover
+			.orders__more-link
+				text-decoration: underline;
+				color: #000000;
+	&__more-link
+		color: #bdbdbd;
+		position: relative
+		&:after
+			content: "\f107";
+			position: absolute;
+			font-family: fontAwesome
+			top: 50%;
+			margin-top: -9px;
+			font-size: 22px;
+			margin-left: 5px;
+	&__recommend
+		flex: 0 0 190px;
+		border-left: 1px solid rgba(0,0,0,.15);
+		padding-top: 25px;
+		text-align: center;
+		@media(max-width: $sm)
+			flex: 0 1 50%;
+			border-left: none;
+			padding-top: 15px;
+			padding-bottom: 15px;
+	&__recommend-text
+		margin: auto;
+		display: inline-block;
+		width:110px;
+		text-align: left;
+		color: #69c365;
+		&:hover
+			color: #2a7e27;
+			text-decoration: none!important
+	&__main-description
+		flex: 0 1 calc( 100% - 475px);
+		padding-top: 25px;
+		@media(max-width: $sm)
+			flex: 0 1 calc( 100% - 115px);
+			border-bottom: 1px solid rgba(0,0,0,.15);
+	&__price
+		color: rgba(0, 0, 0, 0.75);
+		margin-top: 3px;
+	&__order
+		display: none;
+		border-top: none!important
+		position: relative;
+		&:before
+			content: "";
+			position: absolute;
+			width: calc(100% - 170px)
+			left:0;
+			height: 1px; 
+			background-color: rgba(0,0,0,.15);
+			top: 0;
+		@media(max-width: $sm)
+			&:before
+				width: 100%
+.order
+	&__item
+		box-shadow: 0 0 15px 3px rgba(0,0,0,.09);
+		border: 1px solid rgba(0,0,0,.15);
+		margin-bottom: 20px;
+		position: relative;
+	&__item_part
+		display: flex;
+		justify-content: space-between;
+		background-color: #ffffff;
+		@media(max-width: $sm)
+			flex-direction: column;
+	&__part-description
+		padding-top: 25px;
+		flex: 1 0 auto;
+		@media(max-width: $sm)
+			padding:15px 10px;
+	&__part-price
+		padding	:0 30px;
+		display: flex;
+		align-items: center;
+		font-size: 16px;
+		@media(max-width: $sm)
+			padding: 0 10px 15px 10px;
+	&__part-title
+		font-size: 18px;
+	&__body
+		display: flex
+		background-color: #ffffff;
+		@media(max-width: $sm)
+			flex-wrap: wrap;
+			font-size: 14px;
+	&__address
+		background-color: #ffffff;
+		box-shadow: 0 0 15px 3px rgba(0,0,0,.09);
+		margin-bottom: 20px;
+		padding: 30px;
+		margin-top: 10px;
+		height: 230px;
+	&__address-title
+		margin-bottom: 20px;
+		max-width: 90px;
+	&__address_last
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		padding: 30px 15px 15px 15px;
+	&__address-bill
+		background-color: #f5f6f8;
+		padding: 4px 4px 4px 15px;
+		display: flex;
+		align-items: center;
+	&__address-img
+		margin-left: 10px;
+	&__address-block
+		padding-left: 25px;
+	&__card
+		color: #555a69;
+		position: relative;
+		font-size: 15px;
+		padding-left: 20px;
+		&:before
+			position: absolute;
+			font-family: fontAwesome;
+			content: "\f00c";
+			font-size: 18px;
+			color: #69c365;
+			left:0
+	&__card-img
+		padding-left: 20px;
+	&__address-phone
+		color: #93959a
+		margin-top: 13px;
+	&__head
+		display: flex
+		justify-content: space-between;
+		padding: 20px 0 20px 45px;
+		position: relative
+		font-size: 16px;
+		&:before
+			content: "\f107";
+			position: absolute;
+			font-family: fontAwesome
+			width: 30px;
+			height: 30px;
+			border-radius: 30px;
+			top: 50%;
+			margin-top: -15px;
+			font-size: 27px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			left: 0
+	&__head_done
+		&:before
+			background-color: #89d885;
+	&__head_wait
+		&:before
+			background-color: #f6b76d;
+	&__head-right
+		text-align: right
+	&__name
+		color: #343a48
+		margin-right: 8px;
+	&__date
+		color: rgba(0, 0, 0, 0.75);
+		font-size: 14px;
+	&__status
+		margin-right: 4px;
+		color: #69c365
+	&__status-hint
+		color: #000000
+		background-color: #89d885
+		padding: 1px 8px;
+		border-radius: 3px;
+		white-space: nowrap;
+	&__price
+		flex: 0 1 115px;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		font-size: 18px;
+		@media(max-width: $sm)
+			flex: 1 1 20%;
+			font-size:14px;
+	&__quantaty
+		flex: 0 1 115px;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		border-right: 1px solid rgba(0,0,0,.15);
+		font-size: 18px;
+		@media(max-width: $sm)
+			flex: 1 1 20%;
+			font-size:14px;
+	&__recommend
+		flex: 0 1 180px;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		color: #69c365;
+		border-left: 1px solid rgba(0,0,0,.15);
+		border-right: 1px solid rgba(0,0,0,.15);
+		padding: 10px;
+		@media(max-width: $sm)
+			flex: 0 1 40%;
+	&__recommend-text
+		width: 125px;
+	&__main-description
+		flex: 0 0 calc( 100% - 410px );
+		padding: 15px 15px 15px 30px;
+		font-size: 18px;
+		@media(max-width: $sm)
+			flex: 0 0 100%;
+			border-bottom: 1px solid rgba(0,0,0,.15);
+	&__main-detailed
+		font-size:14px;
+		margin-top: 8px;
+		color: rgba(0, 0, 0, 0.75);
+	&__old-price
+		text-decoration: line-through;
+		margin-right: 15px;
+	&__total-price
+		color: #f47129
+	&__total
+		box-shadow: 0 0 4px 2px rgba(0,0,0,.09);
+		background-color: #ffffff;
+		padding:30px 30px 10px 30px;
+		margin-bottom: 70px;
+		td
+			padding-bottom: 10px;
+			color: #848383;
+	&__total-final
+		color: #000000!important
+		text-transform: uppercase
+		padding-top: 20px;
+	&__table
+		width: 100%;
+		text-align: right;
+.order-more
+	background-color: #ffffff;
+	padding: 25px 20px 0 20px;
+	font-size: 14px;
+	width: 100%;
+	border-top: 1px solid rgba(0,0,0,.15);
+	&_small
+		padding-bottom: 20px
+	&_cart
+		position: relative;
+		display: flex;
+		border-top: none;
+		// box-shadow: 0 0 15px 3px rgba(0,0,0,.09);
+		box-shadow: none;
+		flex-direction: column;
+		@media(max-width: $lg)
+			display: block
+	&__big-img
+		width: 100%;
+	&__description
+		@media(max-width: $lg)
+			margin-top: 10px;
+	&__title
+		font-size: 18px;
+		margin-bottom:20px;
+		margin-right: 100px;
+		@media(max-width: $md)
+			padding-top: 60px;
+	&__body
+		position: relative;
+		display: flex;
+		margin-bottom: 25px;
+		width: 100%;
+		@media(max-width: $md)
+			display: block
+	&__block
+		flex: 1;
+.order-detail
+	border-top: 1px solid rgba(0,0,0,.15);
+	display: flex;
+	padding-bottom: 20px;
+	@media(max-width: $lg)
+		flex-direction: column;
+		border-top:none;
+		width: 100%;
+	&__item
+		padding: 15px 8px 0 8px;
+		border-right: 1px solid rgba(0,0,0,.15);
+		height: 110px;
+		display: flex;
+		flex-direction: column;
+		color:#555a69
+		text-align: center;
+		flex: 0 1 10%;
+		&:nth-last-child(1)
+			border-right: none;
+		@media(max-width: $lg)
+			height: auto;
+			text-align: left
+			border-right: none;
+			border-top: 1px solid rgba(0,0,0,.15);
+			padding: 10px 0;
+			display: block;
+			flex: 0 1 auto;
+	&__data
+		flex: 0 0 50%;
+.order-list
+	&__parametrs
+		color: rgba(0, 0, 0, 0.9);
+	&__item
+		color: rgba(85, 90, 105, 0.9);
+		margin-bottom:8px;
+		&:nth-last-child(1)
+			margin-right:110px;
+			@media(max-width: $md)
+				margin-right:0
+.order-info
+	display: flex;
+	padding: 15px 0;
+	width: 100%;
+	justify-content: space-between;
+	font-size: 14px;
+	&__block
+		display: flex;
+		@media(max-width: $lg)
+			flex-direction: column;
+	&__icon
+		margin-right: 8px;
+	&__title
+		margin-right: 8px;
+		color: rgba(0, 0, 0, 0.9);
+	&__subtitle
+		margin-right: 8px;
+		color: #555a69
+	&__date
+		color: rgba(85, 90, 105, 0.75);
+	&__link
+		text-decoration: underline
+.order-actions
+	display:flex;
+	justify-content: space-between;
+	width: 100%;
+	font-size: 15px;
+	padding: 20px 0;
+	border-top: 1px solid rgba(0,0,0,.15);
+	@media(max-width: $md)
+		flex-direction: column;
+	&__client
+		display:flex;
+	&__tags
+		display:flex;
+		flex-wrap: wrap;
+		@media(max-width: $md)
+			margin-top: 15px;
+	&__tag
+		text-decoration: underline;
+		font-size:15px;
+		cursor: pointer
+		margin-right: 35px;
+		&:nth-last-child(1)
+			margin-right: 0;
+		@media(max-width: $md)
+			margin-right: 10px;
+	&__client-text
+		margin-right: 10px;
+	&__link
+		text-decoration: underline;
+		position: relative
+		padding-right: 20px;
+		&:after
+			font-family: fontAwesome;
+			position: absolute;
+			right: 0
+			content: '\f107';
+			font-size: 20px;
+			top: 2px;

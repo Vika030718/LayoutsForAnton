@@ -1,0 +1,10 @@
+.persons__description {
+   font-family:brandonBold;
+   font-size:14px;
+
+   padding-top:26px;
+   padding-bottom:22px;
+}
+.persons__subdescription {
+   font-size:14px;
+}

@@ -1,0 +1,1144 @@
+.cart-body
+	padding-top: 110px;
+	.header
+		height: 110px;
+.cart-last
+	background-image: url('../img/cart__bg.jpg');
+	background-position: center;
+	padding-top: 80px;
+	background-size: cover;
+	min-height: 100vh;
+	@media(max-width:$md)
+		padding-top: 20px;
+	&__body
+		max-width: 330px;
+		margin:auto;
+		width: 100%;
+		color: #ffffff
+		text-align: center;
+		@media(max-width:$md)
+			padding: 0 20px;
+	&__name
+		font-size: 24px;
+		margin-bottom:20px;
+	&__text
+		font-size: 24px;
+		margin-bottom: 30px;
+	&__subtext
+		font-size: 16px;
+		margin-bottom:35px;
+	&__social-text
+		font-size:16px;
+		padding-top:20px;
+		margin-bottom: 15px;
+	&__social
+		margin-top:70px;
+		font-size:25px;
+		&:before
+			width:70%;
+			border-top:1px solid #ffffff
+			content:""
+			display: block;
+			margin: auto;
+		@media(max-width:$md)
+			margin-top: 20px;
+	&__social-icon
+		padding: 0 7px;
+		color: #fff;
+.cart-header
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 40px;
+	@media(max-width:$lg)
+		flex-direction: column;
+		.logo__img_mobile
+			display:none;
+	&__icon
+		color: #12a278
+		font-size: 22px;
+		margin-left: 7px;
+	&__text
+		display: flex;
+		align-items: center;
+.payment-icons
+	margin: 0 -10px;
+	&__img
+		padding: 0 10px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+.cart-footer
+	margin: auto;
+	text-align: center;
+	background-color: #ebedf0
+	padding-bottom:150px;
+	&__icons
+		padding-top:50px;
+		margin:0 0 40px 0;
+		justify-content: center;
+.address-box
+	display: flex;
+	justify-content: space-between;
+	@media(max-width: $md)
+		flex-direction: column;
+	&__delivery
+		border: 1px solid transparent;
+		background-color: #fff;
+		padding: 30px 30px 40px 30px;
+		margin: 0 15px;
+		@media(max-width: $md)
+			padding: 20px;
+			margin: 0
+		@media(min-width: $md)
+			flex: 0 0 46%
+	form
+		width: 100%
+	&__address
+		margin: 0 15px;
+		@media(max-width:$md)
+			margin: 0
+.cart
+	background-color: #f5f6f8;
+	padding-bottom:40px;
+	&__title
+		font-size: 26px;
+		margin-right: 15px;
+		margin-bottom: 30px;
+		margin-top: 40px;
+	&__subtitle
+		font-size: 26px;
+		margin-top: 30px;
+		margin-bottom: 40px;
+		text-align: center;
+	&__title-accent
+		font-size: 16px;
+		color: #848383
+	&__summary-title
+		font-size: 26px;
+		margin-right: 15px;
+		margin-bottom: 30px;
+		display: flex;
+		justify-content: space-between;
+		margin-top: 40px;
+	&__text
+		font-size: 15px;
+		color: #555a69
+		text-align:center
+		margin-top:20px;
+		max-width:390px;
+		margin:auto
+	&__text-link
+		text-decoration:underline
+		color: #555a69
+.cart-price
+	&__block
+		position: absolute
+		right:0px;
+		top: 0;
+		font-size: 16px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: flex-end;
+		right: 20px;
+		font-family: brandonMedium
+		@media(max-width: $md)
+			align-items: flex-start;
+			left: 15px;
+			height: 41px;
+			justify-content: center;
+	&__number
+		font-size: 14px;
+		color: #848383
+		font-family: brandonRegular
+.cart-number
+	position: absolute
+	right:0px;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	right: 20px;
+	@media(max-width: $md)
+		top:0;
+		bottom: auto;
+	&__qty
+		margin-right: 15px;
+		font-size: 15px;
+	&__select
+		max-width: 60px;
+		&:after
+			top: 11px;
+.cart-small
+	position: relative;
+	display: flex;
+	margin-bottom: 20px;
+	flex-wrap: wrap;
+	font-size: 14px;
+	width: 100%;
+	padding: 25px 0 25px 0;
+	background-color: #fff;
+	&__img
+		min-height: 160px;
+		display: flex;
+		align-items: center;
+		img
+			width: 100%;
+			max-width: 160px;
+	&__main
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		flex: 1;
+		@media(max-width: $md)
+			margin-bottom: 0px;
+	&__title
+		font-size: 18px;
+		margin-bottom: 5px;
+		margin-right:100px;
+		@media(max-width: $md)
+			padding-top: 15px;
+			margin-top: 55px;
+			border-top: 1px solid #ccc;
+			margin-right:0;
+	&__subtitle
+		font-size: 15px;
+		color: #848383;
+	&__body
+		position: relative;
+		display: flex;
+		width:100%
+		@media(max-width: $md)
+			display: block
+	&__description
+		@media(max-width: $md)
+			margin-bottom: 15px;
+	&__error
+		margin: 5px 100px 5px 0;
+		@media(max-width: $md)
+			margin: 5px 0;
+.cart-big
+	font-size: 14px;
+	margin-bottom: 20px;
+	border: 1px solid transparent
+	&__bottom
+		padding: 0 20px;
+		background-color: #fafafb;
+		display: none;
+.remove
+	text-decoration: underline;
+	font-size:15px;
+	position: relative;
+	cursor: pointer;
+	padding-left: 15px;
+	margin-right: 35px;
+	@media(max-width: $md)
+		margin-right: 10px;
+	&:before
+		content: "\f00d";
+		font-family:fontAwesome
+		position: absolute;
+		left: 0px;		
+.cart-summary
+	background-color: #ffffff
+	padding: 10px 35px 0 35px;
+	position: relative;
+	@media(max-width: $md)
+		padding: 10px 20px 0 20px;
+	&__title
+		font-size: 20px;
+		padding-top: 30px;
+		padding-bottom: 40px;
+		position: relative
+		padding-right: 25px;
+	&__img-td
+		width: 70px;
+	&__img
+		width: 50px
+		height: 50px
+		overflow: hidden
+		display: flex;
+		align-items: center;
+		img
+			width: 100%
+			height: auto;
+	&__item-accent
+		color: #f47129
+	&__edit
+		color: #555a69;
+		font-size: 15px;
+		margin-left: 10px;
+	td
+		padding: 13px 0;
+	&__row
+		border-bottom: 1px solid #ccc;
+	&__total
+		font-size: 18px;
+		font-family: brandonMedium
+	&__offer
+		color: #12a278
+	&__btn
+		border: 1px solid #ccc!important;
+		padding: 7px 13px;
+		color: #555a69
+		text-decoration: none!important;
+		font-size: 14px;
+		width: 90px;
+		display: block;
+	&__text
+		color: #555a69
+		padding-bottom: 0px!important;
+		font-size: 14px;
+	&__input
+		border: 1px solid #ccc!important;
+		padding: 7px 13px;
+		color: #555a69
+		text-decoration: none!important;
+		font-size: 14px;
+		width: 96%;
+		max-width: 230px;
+	&__accent
+		color: #555a69
+	&__accent-small
+		color: #555a69
+		font-size:13px;
+	&__icon
+		margin-left: 7px;
+		color: #b0b0b0;
+	&__table
+		width:100%;
+		&_resulted
+			border-top: 1px solid #ccc;
+			table .cart-summary__row
+				color: #555a69;
+				font-size: 14px;
+				border: none;
+				td
+					padding: 3px 0;
+			.cart-summary__total
+				font-size: 16px;
+				font-family: brandonRegular
+	&__old-price
+		text-decoration: line-through;
+	&__discount
+		color: #f47129
+		font-size: 14px;
+		margin-right:10px;
+	&__link
+		color: #555a69
+		text-decoration:underline
+.cart-toggle
+	width: 50px
+	height: 50px;
+	position: absolute;
+	right: 35px;
+	top: 40px;
+	cursor: pointer
+	width: 25px;
+	height: 23px;
+	z-index: 2
+	color: #000
+	@media(max-width: $md)
+		right: 20px;
+	&:before
+		font-family: fontAwesome;
+		font-size: 39px;
+		top: 50%;
+		right: 0;
+		margin-top: -25px;
+		content: '\f106';
+	&_close
+		&:before
+			content: '\f107';
+	&__area
+		display: none;
+		width: 100%
+	&_show
+		display: table
+.cart-sale
+	display: flex;
+	position: absolute;
+	right:0px;
+	top: 0;
+	align-items: center;
+	@media(max-width: $md)
+		right: auto
+		height: 41px;
+	&__discount
+		color: #f47129
+		border: 1px solid #f47129
+		font-size: 13px;
+		padding: 1px 6px;
+		height: 22px;
+		margin-right: 15px;
+	.old-price
+		font-size: 16px;
+		text-decoration: line-through;
+		margin-right: 15px;
+		font-family: brandonMedium
+	.special-price
+		color: #f47129
+		margin-right: 15px;
+		font-family: brandonMedium
+		font-size: 16px;
+	.price-box
+		display: flex;
+		@media(max-width: $sm)
+			flex-direction: column;
+.cart-payment
+	margin-top:25px;
+	margin-bottom: 25px;
+	&__item
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		margin-bottom: 10px;
+	&__text
+		color: #555a69;
+		font-size: 15px;
+		margin-bottom:15px;
+		flex: 1 0 auto;
+		text-align: center;
+		line-height: 1em;
+		&:nth-child(1)
+			border-right: 1px solid #e0e0e0;
+			@media(max-width: $lg)
+				border-right: none
+	&__img
+		padding-left: 8px;
+		padding-right: 8px;
+.delivery
+	&__img
+		margin-right:10px;
+	&__item
+		background-color: #f5f6f8
+		padding: 20px 15px
+		margin-bottom: 25px;
+		position: relative;
+	&__label
+		font-size: 14px;
+		color: #000000;
+		padding-left: 30px;
+		margin-right: 0
+		cursor: pointer
+		position: relative
+		font-weight: normal;
+		display: flex;
+		align-items: center;
+		&:hover
+			text-decoration: underline
+		&:before
+			content: ""
+			position: absolute
+			left: 0;
+			width: 16px;
+			height: 16px;
+			border-radius: 16px;
+			border: 1px solid #000000;
+			top: 1px;
+			top: 50%;
+			margin-top: -8px;
+	&__value
+		position: absolute
+	&__text
+		font-size: 15px;
+		color: #12a278
+		margin-top:4px;
+		padding-left:30px;
+	&__data
+		display: flex;
+		margin-top: 20px;
+	&__data-address
+		font-size: 15px;
+		color: #555a69;
+		border-right: 1px solid #cccccc;
+		padding-right: 13px;
+		padding-left: 30px;
+	&__data-contacts
+		font-size: 14px;
+		color: rgba(85, 90, 105, 0.75);
+		padding-left: 15px;
+	&__icons
+		padding-top: 10px;
+		padding-left: 30px;
+	&__icon
+		font-size: 22px;
+		color: #12a278;
+		vertical-align: middle;
+	&__bottom
+		display: flex;
+		justify-content: space-between;
+		display: flex;
+		padding: 20px 30px 0 30px;
+		align-items: center;
+		color:#12a278
+		font-size:14px;
+		@media(max-width: $md)
+			padding: 20px 0 0 0 ;
+			flex-direction: column;
+	&__card-img
+		margin-left: 10px;
+	&__payment-info
+		display: flex;
+		margin-top: 15px;
+		align-items: baseline;
+		margin-bottom: 10px;
+		padding-left: 30px;
+		color: #555a69
+		font-size: 16px;
+	&__card-info
+		margin-left:10px;
+	&__edit
+		font-size: 15px;
+		color: #555a69;
+		position: absolute;
+		right: 15px;
+		top:20px
+	&__description
+		font-size:16px;
+		color:#555a69;
+		margin-top: 25px;
+		margin-bottom: 30px;
+	&__bottom-text
+		font-size: 15px;
+		margin-top: 25px;
+		color: #93959a
+	
+.delivery-table
+	margin-bottom:10px;
+	&__row
+		display: flex;
+		justify-content: space-between;
+		font-size: 15px;
+		padding: 10px 0 
+		border-bottom: 1px solid #cccccc
+		&:nth-last-child(1)
+			border-bottom: none;
+.card
+	padding: 0 30px;
+	padding-top: 20px;
+	@media(max-width: $md)
+		padding: 20px 0 0 0;
+	&__fields
+		display:flex;
+		// flex-wrap: wrap;
+	&__field
+		flex: 0 1 50%;
+	&__cvc-hint
+		position: absolute;
+		display: none
+		top: -25px;
+		right: -12px;
+		background-color: #333;
+		color: #ffffff;
+		font-size: 12px;
+		padding: 3px 6px;
+		white-space: nowrap;
+		&:after
+			position: absolute;
+			bottom: -6px;
+			right: 24px;
+			width: 0;
+			height: 0;
+			margin-left: -4px;
+			content: '';
+			border-top: 6px solid #333;
+			border-right: 6px solid transparent;
+			border-left: 6px solid transparent;
+	&__cvc
+		width: 120px;
+		position: relative
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+	&__cvc-icon
+		position: absolute;
+		width: 20px;
+		height: 25px;
+		right: 7px;
+		bottom: 23px;
+		cursor:pointer
+		&:after
+			content:url("../img/card_cvc.png");
+			bottom: 0px;
+			right: 0px;
+		&:hover + .card__cvc-hint
+			display: block!important
+	&__number
+		position: relative
+		&:after
+			content:"\f023";
+			position: absolute
+			top: 50%;
+			margin-top: -17px;
+			right: 10px;
+			font-family:fontAwesome
+			font-size: 22px;
+			color: #12a278;
+	&__date
+		// width: 120px;
+		margin-right: 15px;
+		display: flex;
+		flex-direction: column;
+		flex: 1 0 70px;
+	&__amount
+		margin-right: 19px;
+		position: relative
+		flex: 0 1 50%;
+		&:after
+			font-family: fontAwesome;
+			font-size: 15px;
+			position: absolute;
+			top: 13px;
+			right: 10px;
+			content: "\f153";
+			color: #555a69;
+	&__input
+		padding: 11px 15px 11px 15px;	
+		margin-bottom: 15px;
+		border-color: #d2d6de;
+	&__input-wrapper
+		position: relative
+	&__select
+		margin-bottom: 15px;
+		&:after
+			top: 11px;
+		select
+			width: 100%;
+			border: 1px solid #d2d6de;
+			background-color: #fff;
+			max-width: none;
+	&__label
+		margin-bottom: 5px;
+		font-size: 14px;
+		flex: 1 1 100%;
+	&__row
+		display: flex;
+		@media(max-width: $md)
+			flex-direction: column;
+	&__block
+		display: flex;
+	&__item
+		display:flex
+		flex-direction: row;
+		flex-wrap: wrap;
+a.card__btn
+	padding: 11px 15px 11px 15px;	
+	margin-bottom: 15px;
+	border-color: #555a69;
+	background-color: #ffffff;
+input.delivery__value[type=radio]:checked + label
+	&:after
+		content: ""
+		background-color: #000000;
+		position: absolute
+		left: 3px;
+		top: 50%;
+		margin-top:-5px;
+		width: 10px;
+		height: 10px;
+		border-radius: 10px;
+.info
+	&__list
+		display: flex;
+		flex: 1 1 auto;
+		justify-content: center;
+		@media(max-width:$lg)
+			flex-direction: column;
+	&__item
+		font-size: 12px;
+		position: relative;
+		padding-right: 10px;
+		padding-left: 10px;
+		text-align: center;
+		flex: 0 0 140px;
+		padding-top: 33px
+		color: #9d9d9d;
+		display: flex;
+		justify-content: center;
+	&__number
+		position: absolute;
+		top: 50%;
+		color: #9d9d9d;
+		margin-top: -20px;
+		left: 50%;
+		margin-left: -3px;
+		@media(max-width: $lg)
+			top:25px;
+	&__item:before 
+		font-family: fontAwesome;
+		font-size: 14px;
+		line-height: 28px;
+		position: absolute;
+		top: 0px;
+		left: 50%;
+		width: 30px;
+		height: 30px;
+		margin-left: -15px;
+		content: '';
+		text-align: center;
+		color: #9d9d9d;
+		border: 2px solid #9d9d9d;
+		border-radius: 30px;
+	// &__item_1:before 
+	// 	content: '1';
+	// &__item_2:before 
+	// 	content: '2';
+	// &__item_3:before 
+	// 	content: '3';
+	&__item.allow
+		color: #000000
+		&:before
+			font-family: fontAwesome;
+			color: #fff;
+			border-color: #000000;
+			background-color: #000000;
+		.info__number
+			color: #ffffff
+	&__item:after
+		position: absolute;
+		top: 15px;
+		left: calc(51% + 15px);
+		width: calc(98% - 30px);
+		content: '';
+		border-bottom: 1px solid #9d9d9d;
+		@media(max-width: $lg)
+			top: 53px;
+			left: 50%;
+			width: 1px;
+			border-right: 1px solid #9d9d9d;
+			height: 87px;
+			border-bottom: none;
+	&__item:nth-last-child(1):after
+		width: 0;
+		padding-bottom: 0;
+		height: 0;
+.payment-address
+	margin-top:25px;
+	background-color: #ffffff;
+	padding: 40px 35px 35px 35px;
+	font-size: 15px;
+	color: #555a69
+	position: relative
+	margin-bottom: 25px;
+	@media(max-width: $md)
+		padding: 40px 20px 35px 20px;
+	.address__item
+		margin-bottom:0;
+	.address__phone
+		font-size: 15px;
+		margin-top: 15px;
+		color: #93959a;
+		padding-bottom: 15px;
+		border-bottom:1px solid #cccccc
+		margin-bottom:0
+	.address__edit
+		padding-top: 15px;
+		padding-bottom:30px;
+		color: #555a69
+		font-size: 15px;
+	&__block
+		display: flex;
+		flex-direction: column;
+		margin-top: 25px;
+	&__title
+		font-size:16px;
+		color: #000000
+	&__bottom
+		padding-top: 30px;
+		color: #12a278;
+		font-size: 15px;
+		border-top:1px solid #cccccc
+.cart-checkbox 
+	font-size:14px;
+	position:relative;
+	padding:3px 0 7px 0;
+	color:#555a69;
+	&__input
+		display: none;
+	&__accent
+		color: #12a278
+	label
+		font-size: 13px;
+		color: #555a69;
+		padding-left: 30px;
+		margin-right: 0
+		cursor: pointer
+		position: relative
+		font-weight: normal;
+	&:before
+		content: ""
+		position: absolute
+		left: 0;
+		width: 16px;
+		height: 16px;
+		border: 1px solid #c3c3c3;
+		background-color: #ffffff;
+		border-radius: 2px;
+		top: 3px;
+input.cart-checkbox__input[type=checkbox]:checked + label
+	&:after
+		content: ""
+		background-color: #555a69
+		position: absolute
+		left: 1px;
+		top: 1px;
+		content: "\f00c";
+		font-family: fontAwesome;
+		line-height: 16px;
+		background-color: transparent
+		color: #12a278;
+.visa
+	display:flex;
+	justify-content: center;
+	margin-bottom: 7px;
+	&__label
+		margin-right:15px;
+		color: #555a69
+		font-size: 13px;
+		width: 70px;
+		padding-top: 4px;
+.cart-login
+	display: flex
+	@media(max-width: $sm)
+		display: block
+	&__block
+		background-color: #ffffff
+		height: 100%;
+		padding: 30px 40px 35px 40px;
+		font-size: 16px;
+		display: flex;
+		@media(max-width: $sm)
+			margin-bottom: 20px
+			padding: 25px;
+	&__title
+		font-size: 23px;
+		margin-bottom: 20px;
+	&__subtitle
+		font-size: 16px;
+		margin-bottom: 10px;
+		font-family: brandonMedium
+	&__list
+		list-style-type: disc;
+		margin-left: 19px;
+		font-size: 15px;
+		margin-bottom: 20px;
+		text-align: left;
+		color: rgb(85, 90, 105);
+	&__body
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		justify-content: space-between;
+	&__subtext
+		margin-bottom: 10px;
+		font-size: 14px;
+		color: rgb(85, 90, 105);
+	&__form
+		width: 100%;
+.sartor
+	background-color: #ffffff	
+	margin-top: 3px;
+	padding:12px 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	&:before
+		content:""
+		position: absolute;
+		width: 28px;
+		height: 28px;
+		left: -14px;
+		top: -14px;
+		border-radius:28px;
+		background-color: #f5f6f8;
+	.checkbox
+		margin-top: 0;	
+		margin-bottom:0px;
+	&__block
+		display: flex;
+		align-items: center;
+		flex: 1 1 auto;
+		@media(max-width: $md)
+			flex-direction: column;
+			align-items: flex-start;
+	&__link
+		color: #676a77;
+		font-size: 14px;
+		text-decoration: underline;
+	&__info
+		font-size: 16px;
+		color: #676a77;
+		margin-left: 20px;
+		margin-right: 17px;
+		@media(max-width: $md)
+			margin:0 0 5px 0;
+			display: inline-block;
+	&__price
+		font-size:16px;
+		display: none;
+	&__label
+		font-size: 16px!important;
+		color: #000000!important;
+		&:after
+			color: #12a278!important
+			font-size: 14px;
+			-webkit-text-stroke: 1px white;
+.sartor-modal
+	width: 100%;
+	max-width: 1000px;
+	@media(max-width: $md)
+		width: auto
+	&__block
+		margin: 60px 0 90px 0;
+		
+		@media(max-width: $md)
+			margin: 0px 0 20px 0;
+	&__wrapper
+		max-width: 600px;
+		margin-left:auto;
+		margin-right:auto;
+	.modal-popup__close
+		right: 30px;
+		top: 25px;
+	&__header
+		display: flex;
+		background-image: url("../img/sartor__head.jpg");
+		background-repeat: no-repeat
+		background-size: cover;
+		height: 380px;
+		color: #ffffff;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		text-align: center;
+		position: relative;
+		overflow: hidden;
+		background-position: center;
+		padding: 0 10px;
+	&__title
+		font-size: 55px;
+		margin-bottom: 15px;
+		font-family: CochinItalic
+		@media(max-width: $sm)
+			font-size: 42px
+	&__body
+		padding: 60px 30px 0 30px;
+		@media(max-width: $md)
+			padding: 60px 20px 0 20px;
+	&__logos
+		background-color: #f3f2f7;
+		margin: 0 15px;
+		padding: 50px 0;
+		margin-bottom: 50px;
+		@media(max-width: $md)
+			margin-bottom: 20px;
+			padding: 20px 0;
+	&__banner
+		margin:0 15px;
+	&__description
+		background-color:#f3f2f7
+		padding: 50px 10px 50px 10px;
+		margin: 40px 0 0;
+		@media(max-width: $md)
+			padding: 30px 10px 0 10px;
+	&__description-bottom
+		@media(max-width: $sm)
+			overflow: scroll
+	&__main-title
+		font-size: 26px;
+		margin-bottom: 15px;
+		text-align: center
+		@media(max-width: $md)
+			font-size: 20px;
+	&__text
+		font-size:18px;
+		color: #747474;
+		text-align: center;
+		margin-bottom: 15px;
+		line-height: 1.4em;
+		
+		@media(max-width: $md)
+			font-size: 14px;
+	&__subtext
+		font-size: 16px;
+		color: #747474;
+		margin-top: 30px;
+		text-align: center;
+	&__img
+		margin: 50px auto 80px;
+		display: block;
+		@media(max-width: $md)
+			width: 300px;
+	&__button
+		position: absolute;
+		top: 12px;
+		left: 18px;
+		text-align: right;
+		max-width:100px;
+		z-index: 1;
+		@media(max-width: $md)
+			left: 40px;
+			top: 38px;
+	&__col
+		position: absolute;
+		top: 26px;
+		right: 123px;
+		max-width: 65px;
+		z-index: 1;
+		@media(max-width: $md)
+			top: 47px;
+			right: 106px;
+	&__patterns
+		position: absolute;
+		top: 97px;
+		right: -2px;
+		max-width: 65px;
+		z-index: 1;
+		@media(max-width: $md)
+			top: 82px;
+			right: 50px;
+	&__shoulder
+		position: absolute;
+		z-index: 1;
+		top: 175px;
+		left: -83px;
+		max-width: 100px;
+		text-align: right;
+		@media(max-width: $md)
+			left: -8px;
+			top: 116px;
+	&__top-seam
+		position: absolute;
+		z-index: 1;
+		top: 175px;
+		left: 264px;
+		max-width: 88px;
+		text-align: right;
+		@media(max-width: $md)
+			top: 117px;
+			left: 156px;
+	&__seam
+		position: absolute;
+		z-index: 1;
+		bottom: 196px;
+		left: 195px;
+		max-width: 58px;
+		@media(max-width: $md)
+			top: 303px;
+			left: 174px;
+	&__bottom
+		position: absolute;
+		z-index: 1;
+		right: 217px;
+		bottom: 90px;
+		max-width: 73px;
+		@media(max-width: $md)
+			right: 58px;
+			bottom: 108px;
+	&__hem
+		position: absolute;
+		z-index: 1;
+		bottom: 29px;
+		left: 193px;
+		max-width: 80px;
+		text-align: right;
+		@media(max-width: $md)
+			left: 132px;
+			bottom: 81px;
+	&__sleeve
+		position: absolute;
+		z-index: 1;
+		right: 123px;
+		top: 419px;
+		max-width: 73px;
+		@media(max-width: $md)
+			right: 139px;
+			top: 226px;
+	&__img-wrapper
+		position:relative;
+		width: 676px;
+		margin: auto;
+		overflow: visible;
+		@media(max-width: $md)
+			width: 480px;
+			overflow: scroll;
+	.quality-banner__text
+		font-size:16px;
+		margin-bottom: 15px;
+		line-height:1.6em;
+		@media(max-width: $md)
+			line-height: 1.4em;
+			font-size: 14px;
+	&__footer
+		border-top: 1px solid #cccccc;
+		padding: 45px 0 90px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 0 -30px;
+		@media(max-width: $md)
+			margin:0;
+			padding: 20px 0 30px;
+	&__btn
+		margin-bottom: 30px;
+		display: inline-block;
+		width: auto;
+		max-width: 360px;
+		width: 100%;
+	.quality-item
+		margin: 40px auto;
+		@media(max-width: $md)
+			margin: 10px auto;
+	.quality-banner
+		height: 540px;
+		margin: 0 -30px;
+		background-position: right;
+		@media(max-width: $md)
+			margin: 0 -20px;
+			background-position: left;
+			height: auto;
+			padding-bottom: 20px;
+	.quality-banner__body
+		padding: 70px  80px 0 80px;
+		justify-content: start;
+		@media(max-width: $md)
+			padding: 0 20px;
+	&__text-right
+		text-align: right!important;
+	.quality-banner__text_first
+		max-width:300px;
+	.quality-banner_second
+		background-position: center;
+	.quality-banner__text_second
+		max-width: 480px;
+	.quality-item__info-block
+		justify-content: start;
+	.quality-item__second-title
+		margin-bottom: 30px;
+		margin-top: 30px;
+		@media(max-width: $md)
+			margin-top: 10px;
+			margin-bottom: 10px;
+			min-height: auto;
+	.quality-banner__title
+		@media(max-width: $md)
+			margin-top:30px;
+.quality-item__info-block,
+.quality-item__special-block
+	.sartor-modal__text
+		font-size:16px;
+		color: #747474;
+		text-align: left;
+		margin-bottom: 15px;
+		line-height: 1.4em;
+		text-align: inherit;
+		@media(max-width: $md)
+			font-size: 14px;
+	
+	
+		

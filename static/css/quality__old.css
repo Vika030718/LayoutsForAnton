@@ -1,0 +1,203 @@
+.quality-header {
+   position:relative;
+
+   display:-webkit-box;
+   display:flex;
+   overflow:hidden;
+   flex-direction:column;
+
+   height:380px;
+   margin:0 15px;
+   padding:0 10px;
+
+   text-align:center;
+
+   color:#fff;
+   background-image:url('../img/quality-header.jpg');
+   background-repeat:no-repeat;
+   background-position:center;
+   background-size:cover;
+
+   -webkit-box-pack:center;
+   justify-content:center;
+   -webkit-box-align:center;
+   align-items:center;
+   -webkit-box-orient:vertical;
+   -webkit-box-direction:normal;
+}
+.quality-header__title {
+   font-family:CochinItalic;
+   font-size:55px;
+
+   margin-bottom:15px;
+}
+@media (max-width: $sm) {
+   .quality-header__title {
+      font-size:42px;
+   }
+}
+.quality-header__subtitle {
+   font-family:CochinItalic;
+   font-size:22px;
+
+   margin-bottom:50px;
+}
+@media (max-width: $sm) {
+   .quality-header__subtitle {
+      font-size:22px;
+   }
+}
+.quality-header__btn {
+   position:absolute;
+   bottom:0;
+
+   width:100px;
+   height:100px;
+   margin-bottom:-50px;
+
+   -webkit-transform:rotate(90deg);
+           transform:rotate(90deg);
+
+   border-radius:100px;
+   background-color:#fff;
+   background-image:url('../img/arrow_return.svg');
+   background-repeat:no-repeat;
+   background-position:28px center;
+   background-size:23%;
+}
+.quality-item {
+   padding:90px 0;
+}
+@media (max-width: $lg) {
+   .quality-item {
+      padding:30px 0;
+   }
+}
+@media (max-width: $md) {
+   .quality-item {
+      padding:10px 0;
+   }
+}
+.quality-item_bottom {
+   max-width:calc(1060px + (100% - 1060px) / 2);
+   padding:0 0 90px 0;
+}
+@media (max-width: $lg) {
+   .quality-item_bottom {
+      padding-bottom:40px;
+   }
+}
+@media (max-width: $md) {
+   .quality-item_bottom {
+      padding-bottom:30px;
+   }
+}
+.quality-item__title {
+   font-size:26px;
+
+   margin-bottom:15px;
+   padding-top:50px;
+}
+@media (max-width: $lg) {
+   .quality-item__title {
+      padding-top:0;
+   }
+}
+@media (max-width: $md) {
+   .quality-item__title {
+      font-size:24px;
+
+      padding-top:20px;
+   }
+}
+.quality-item__title_bottom {
+   padding-top:30%;
+}
+@media (max-width: $lg) {
+   .quality-item__title_bottom {
+      padding-top:0;
+   }
+}
+@media (max-width: $md) {
+   .quality-item__title_bottom {
+      padding-top:15px;
+   }
+}
+.quality-item__subtitle {
+   font-family:CochinItalic;
+   font-size:20px;
+
+   margin-bottom:40px;
+}
+@media (max-width: $md) {
+   .quality-item__subtitle {
+      font-size:18px;
+
+      margin-bottom:15px;
+   }
+}
+.quality-item__text {
+   font-size:18px;
+   line-height:1.3em;
+
+   max-width:340px;
+
+   color:#747474;
+}
+@media (max-width: $md) {
+   .quality-item__text {
+      font-size:16px;
+
+      max-width:none;
+      margin-bottom:15px;
+   }
+}
+.quality-item__img {
+   width:100%;
+}
+.quality-banner {
+   height:620px;
+   margin:0 15px;
+
+   color:#fff;
+   background-image:url('../img/quality-banner.jpg');
+   background-repeat:no-repeat;
+   background-position:center;
+   background-size:cover;
+}
+@media (max-width: $md) {
+   .quality-banner {
+      height:520px;
+      margin-top:20px;
+   }
+}
+.quality-banner__title {
+   font-size:26px;
+
+   margin-bottom:15px;
+}
+.quality-banner__subtitle {
+   font-family:CochinItalic;
+   font-size:20px;
+
+   margin-bottom:40px;
+}
+.quality-banner__text {
+   font-size:18px;
+   line-height:1.3em;
+
+   max-width:350px;
+}
+.quality-banner__body {
+   display:-webkit-box;
+   display:flex;
+   flex-direction:column;
+
+   height:100%;
+   padding:0 15px;
+
+   -webkit-box-pack:center;
+   justify-content:center;
+   -webkit-box-orient:vertical;
+   -webkit-box-direction:normal;
+}

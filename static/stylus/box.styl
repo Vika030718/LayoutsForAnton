@@ -1,0 +1,446 @@
+.box-header
+	display: flex;
+	background-image: url("../img/box__header.jpg");
+	background-repeat: no-repeat
+	background-size: cover;
+	height: 380px;
+	color: #ffffff;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	background-position: center;
+	padding: 0 10px;
+	&__title
+		font-size: 55px;
+		margin-bottom: 5px;
+		font-family: CochinItalic
+		@media(max-width: $sm)
+			font-size: 42px
+	&__subtitle
+		font-size: 22px;
+		font-family: CochinItalic
+		margin-bottom: 30px;
+		@media(max-width: $sm)
+			font-size: 22px
+	&__btn
+		background-image: url("../img/arrow_return.svg");
+		background-color: #f0efea;
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		bottom: 0;
+		margin-bottom: -50px;
+		border-radius: 100px;
+		background-repeat: no-repeat
+		transform: rotate(90deg);
+		background-position: 28px center;
+		background-size: 23%;
+	&__links
+		display: flex;
+	&__link
+		font-size: 13px;
+		text-decoration: underline;
+		color: #ffffff!important;
+		padding:0 15px;
+.box-prize
+	padding-top: 45px;
+	padding-bottom: 60px;
+	background-color:#f0efea;
+	@media(max-width: $md)
+		padding: 20px;
+	&__title
+		font-size: 30px;
+		margin-bottom: 25px;
+		margin-top: 20px;
+		@media(max-width: $md)
+			font-size: 20px;
+	&__img
+		width: 100%;
+	&__subtext
+		color: #555a69
+		text-align: right;
+	&__block
+		color: #555a69
+		font-size:20px;
+		margin-bottom: 30px;
+		@media(max-width: $md)
+			font-size:14px;
+	&__price-block
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 25px;
+	&__price
+		font-size:28px;
+		display: flex;
+		align-items: center;
+		@media(max-width: $md)
+			font-size:18px;
+	&__price-text
+		font-size:14px;
+		color: #555a69;
+		text-align: right;
+	&__subtitle
+		margin-top:30px;
+		font-size: 16px;
+		color: #555a69;
+		position: relative;
+		padding-left: 35px;
+		line-height: 23px;
+		&:before
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 30px;
+			height: 22px;
+			content: "";
+			background-image: url('../img/box-icons.png');
+			overflow: hidden;
+	&__subtitle_first
+		&:before
+			background-position: top
+	&__subtitle_second
+		&:before
+			background-position: bottom
+	&__points
+		margin-top: 20px;
+	&__point
+		font-size:16px;
+		color: rgba(85, 90, 105, 0.75);
+		margin-bottom:10px;
+		position: relative;
+		padding-left: 35px;
+		&:before
+			font-family: fontAwesome;
+			font-size: 20px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 14px;
+			height: 14px;
+			content: '\f107';
+		@media(max-width: $md)
+			font-size:14px;
+	&__link
+		margin-top: 50px;
+		color: #555a69;
+		text-decoration:underline
+		display: block;
+		@media(max-width: $md)
+			margin-top: 20px;
+			margin-bottom: 10px;
+	
+.box-payment
+	display: flex;
+	margin-bottom: 20px;
+	&__item
+		margin-right: 20px;
+		font-size: 22px;
+		color: rgba(0, 0, 0, 0.75);
+		@media(max-width: $md)
+			font-size: 16px;
+	&__item_active
+		color: #000000;
+		border-bottom: 1px solid #000000
+		padding-bottom: 12px;
+.box-line
+	font-size:22px;
+	color: #555a69;
+	background-color:#e1e0d9
+	display: flex;
+	justify-content: center;
+	padding: 25px 0;
+	align-items: center;
+	@media(max-width: $md)
+		flex-direction: column;
+		text-align: center
+		font-size:18px;
+	&__img
+		margin-left: 15px;
+		@media(max-width: $md)
+			margin-left: 0;
+			margin-top: 15px;
+.box-use
+	background-image: url('../img/box-use__bg.jpg');
+	margin: 20px 0 0;
+	background-size: cover;
+	padding: 80px 20px;
+	color: #ffffff
+	@media(max-width: $md)
+		padding: 20px;
+	&__wrapper
+		max-width: 1015px;
+		margin:auto;
+	&__block
+		width: 380px;
+		@media(max-width: $md)
+			width: 100%;	
+	&__title
+		font-size: 30px;
+		margin-bottom: 15px;
+		@media(max-width: $md)
+			font-size: 20px;
+	&__subtitle
+		font-size: 20px;
+		margin-bottom: 15px;
+		font-family: CochinItalic
+		@media(max-width: $md)
+			font-size: 15px;
+	&__text
+		font-size:16px;
+		margin-bottom: 30px;
+		@media(max-width: $md)
+			font-size: 14px;
+	&__img
+		margin-bottom: 40px;
+		width: 100%;
+		max-width: 300px;
+		@media(max-width: $md)
+			margin-bottom: 10px;
+		
+.box
+	&__wrapper
+		max-width: 1200px;
+		margin:auto;
+.box-info
+	padding:70px 60px;
+	@media(max-width: $lg)
+		padding:70px 20px;
+	@media(max-width: $md)
+		padding:20px;
+	&__body
+		display: flex;
+		@media(max-width: $sm)
+			flex-direction: column;
+	&__title
+		font-size: 30px;
+		margin-bottom:15px;
+		text-align: center;
+		@media(max-width: $lg)
+			font-size: 25px;
+	&__subtitle
+		font-size: 20px;
+		font-family: CochinItalic
+		margin-bottom: 60px;
+		text-align: center;
+		@media(max-width: $lg)
+			margin-bottom: 20px;
+	&__point
+		font-size: 25px;
+		margin-bottom: 10px;
+		@media(max-width: $lg)
+			font-size: 20px;
+	&__text
+		color: #747474
+		font-size: 16px;
+		@media(max-width: $lg)
+			font-size: 14px;
+	&__item
+		padding-left: 90px;
+		flex: 0 0 25%;
+		position: relative
+		max-width: 310px;
+		margin-left: auto;
+		margin-right: auto;
+		@media(max-width: $lg)
+			padding-left: 50px;
+		@media(max-width: $sm)
+			margin-bottom: 15px;
+	&__number
+		position: absolute
+		left:0;
+		top: 0;
+		font-size: 22px;
+		line-height: 70px;
+		display: block;
+		width: 70px;
+		height: 70px;
+		border-radius: 70px;
+		text-align: center;
+		background-color: #000000;
+		color: #ffffff
+		@media(max-width: $lg)
+			width: 40px;
+			height: 40px;
+			border-radius: 40px;
+			line-height:40px;
+.story
+	padding: 50px 0 170px;
+	@media(max-width: $md)
+		padding: 50px 0 20px;
+	&__subtitle
+		font-size: 20px;
+		color: rgba(0, 0, 0, 0.5);
+		text-decoration: underline
+		font-family: CochinItalic
+		margin-bottom: 50px;
+	&__img-block
+		height: 360px;
+		width: 100%;
+		overflow: hidden
+		margin-bottom: 120px;
+		@media(max-width: $md)
+			height: auto;
+			margin-bottom: 30px;
+	&__description
+		position: absolute;
+		bottom: 20px;
+		background-color: #ffffff;
+		width: 370px;
+		left: 50%;
+		margin-left: -185px;
+		padding: 30px 60px;
+		height: 160px;
+		@media(max-width: $md)
+			margin-left: auto
+			margin-right: auto
+			padding: 15px 15px 30px;
+			width: 100%;
+			height: auto;
+			width: 100%;
+			left: 0
+			background-color: rgba(255, 255, 255, 0.75);
+			padding: 15px 25px 15px;
+	&__description_main
+		width: 500px;
+		margin-left: -225px;
+		@media(max-width: $md)
+			margin-left: auto
+			width: 100%;
+	&__item
+		position: relative
+		margin-bottom: 20px;
+	&__name
+		font-size: 18px;
+		text-transform: uppercase;
+		margin-bottom: 15px;
+		margin-top: 0;
+	&__text
+		font-family: CochinItalic
+		margin-bottom: 15px;
+		font-size: 18px;
+	&__link
+		font-size: 18px;
+		font-family: CochinItalic
+.box-story
+	background-color: #f6f6f3;
+	padding: 50px 0 90px 0;
+	text-align: center;
+	@media(max-width: $md)
+		padding: 20px;
+	&__wrapper
+		max-width: 1015px;
+		margin: auto;
+	&__title
+		font-size:32px;
+		margin-bottom: 5px;
+		text-align: center
+		@media(max-width: $md)
+			font-size:25px;
+	&__subtitle
+		font-size:20px;
+		font-family: CochinItalic
+		color: rgba(0, 0, 0, 0.5);
+		margin-bottom:55px;
+		text-align: center
+		@media(max-width: $md)
+			margin-bottom:20px;
+	&__btn
+		max-width: 400px;
+		width: 100%;
+	.story__description
+		background-color: #f6f6f3;
+		@media(max-width: $md)
+			background-color: #f6f6f3a1;
+	.story__item
+		margin-bottom:0;
+.box-slider
+	color: #ffffff
+	position: relative
+	&_box
+		margin: 20px 0;
+	&__caption
+		height: 89%
+		position: absolute
+		right: 0
+		top: 0
+		width: 100%
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	&__title
+		font-size: 30px;
+		margin-bottom: 20px;
+		@media(max-width: $md)
+			font-size:24px;
+			padding: 0 60px;
+	&__subtitle
+		font-size: 14px;
+		color: #ffffff!important
+		text-decoration: underline
+	&__controls
+		width: 100%;
+		position: absolute
+		top: 45%;
+		display: flex;
+		justify-content: space-between;
+		left: 0
+		right: 0
+	&__controls-right,
+	&__controls-left
+		position: relative;
+	&__controls-right:before,
+	&__controls-left:before
+		position: absolute
+		content: ''
+		width: 29px;
+		height: 58px;
+		margin-top: -29px;
+		z-index: 2;
+	&__controls-right:before
+		background-image: url('../img/slider__arrow-right.png');
+		right: 15px;
+	&__controls-left:before
+		background-image: url('../img/slider__arrow-left.png');
+		left: 15px;
+	&__img
+		min-width: 0; 
+.box-modal
+	position: absolute;
+	z-index: 1;
+	left: 50%;
+	display: block;
+	width: 450px;
+	margin: auto;
+	margin-left: -225px;
+	&__body
+		padding:30px;
+		width: 100%;
+		max-width: 660px;
+		text-align:center
+	&__title
+		font-size: 24px;
+	&__subtitle
+		color:#9597af
+		font-size:16px;
+		margin-bottom:35px;
+		margin-top:5px;
+	&__img
+		width:100%
+		margin-bottom: 25px;
+	&__btn
+		max-width: 340px;
+		width: 100%;
+		display:block!important;
+		margin: 0 auto 25px auto;
+	&__close
+		position: absolute;
+		z-index: 2;
+		top: 20px;
+		right: 20px;
+	&__close-icon
+		width:20px;
+		height:20px;

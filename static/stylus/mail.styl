@@ -1,0 +1,293 @@
+*
+	box-sizing: border-box;
+ol, ul
+	list-style: none outside none;
+p
+	line-height: 1.2em;
+html, body, div, h1, h2, h3, h4, h5, h6, p, blockquote, pre, img, ins, dl, dt, dd, ol, ul, li, form, label, table, tbody, tfoot, thead, tr, th, td
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	background: transparent;
+	line-height: 1.2em;
+a
+	transition:background-color .2s ease-in-out, border-color .2s ease-in-out, color .2s ease-in-out;
+	text-decoration:none;
+	color:#000;
+h1, h2, h3, h4, h5, h6
+	font-family: inherit;
+	font-weight: 500;
+	line-height: 1.1;
+	color: inherit;
+.fa
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+.fa-instagram:before
+	content: "\f16d";
+.fa-tumblr:before
+	content: "\f173";
+.fa-facebook-f:before, .fa-facebook:before
+	content: "\f09a";
+.fa-google-plus:before
+	content: "\f0d5";
+a:hover
+	color:inherit;
+.mail-body
+	padding-top:0;
+	background-color: #f5f6f8;
+	font-family: arial
+.mail-top
+	color: #000000bf;
+	text-align: right;
+	padding: 13px 0;
+	font-size:13px;
+	max-width: 570px;
+	margin: auto;
+.mail-menu
+	padding: 0 45px 30px 45px;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+	border-bottom: 1px solid #ebebeb
+	@media(max-width:660px)
+		padding:0 10px 10px 10px;
+	&__link
+		font-size: 12px;
+		text-transform: uppercase;
+		padding: 0 15px;
+		@media(max-width:660px)
+			padding:0 5px;
+		&_last
+			font-size: 14px;
+			text-transform: none;
+			font-style: italic;
+			font-family: "Times New Roman", Times, serif;
+.mail
+	max-width: 570px;
+	margin: auto;
+	padding-bottom: 240px;
+	@media(max-width:660px)
+		padding-bottom: 40px;
+	&__logo
+		text-align: center;
+	&__head
+		padding: 26px 30px 40px 30px;
+		background-color: #ffffff;
+		@media(max-width:660px)
+			padding: 16px 10px 20px 10px;
+	&__name
+		font-size:26px;
+		padding-top:30px;
+		margin-bottom: 15px;
+		text-align: center;
+		font-style: italic;
+		font-family: "Times New Roman", Times, serif;
+	&__title
+		font-size: 15px;
+		margin: 15px auto 28px auto;
+		text-align: center;
+		max-width: 390px;
+		line-height: 1.5em;
+		padding: 0 20px;
+	&__accent
+		font-weight: bold;
+	&__description
+		color: #000000bf;
+		line-height: 1.4em;
+		font-size: 13px;
+		padding: 0 45px;
+		text-align: center;
+		line-height: 1.7em;
+	&__body
+		padding: 0 25px 30px 30px;
+		border-top: 1px solid #ebebeb
+		background-color: #ffffff;
+	&__logo
+		max-width:170px;
+		margin: auto;
+.mail-status
+	&__head
+		display: flex;
+		justify-content: space-between;
+		position: relative
+		font-size: 14px;
+		padding: 33px 0 28px;
+		&:before
+			content: "\f107";
+			position: absolute;
+			font-family: fontAwesome
+			width: 30px;
+			height: 30px;
+			border-radius: 30px;
+			top: 50%;
+			margin-top: -15px;
+			font-size: 27px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+	&__head_done
+		&:before
+			background-color: #89d885
+		.orders__status
+			color: #69c365
+	&__head_wait
+		&:before
+			background-color: #f6b76d
+		.orders__status
+			color: #ee9d3e	
+	&__head-left
+		padding-left: 45px;
+		flex: 0 1 70%;
+	&__name
+		color: #000000;
+		font-size: 14px;
+		display: inline-block;
+	&__client
+		color: rgba(0, 0, 0, 0.75);
+	&__date
+		color: rgba(0, 0, 0, 0.75);
+		display: inline-block;	
+.mail-item
+	border-top: 1px solid #ebebeb;
+	position: relative;
+	display: flex;
+	background-color: #fff;
+	justify-content: space-between;
+	font-size: 13px;
+	@media(max-width: 660px)
+		flex-direction: column;
+	&__img
+		padding: 18px 15px 18px 0;
+		flex: 0 0 86px;
+		@media(max-width: 660px)
+			border-bottom: 1px solid #ebebeb;
+	&__description
+		padding: 18px 0 18px 0;
+		flex: 1 0 auto;
+		flex-direction: column;
+		justify-content: space-between;
+		display:flex;
+		@media(max-width: 660px)
+			padding:15px 0;
+	&__price
+		padding: 18px 0 18px 0;
+		display: flex;
+		color: #000000;
+		@media(max-width: 660px)
+			padding: 0px 0 10px 0;
+	&__title
+		font-size: 13px;
+	&__accent
+		color: rgba(0,0,0,.75)!important;
+		margin-top: 5px;
+	&__link
+		color: rgba(0,0,0,.5)!important;
+		text-decoration: underline
+		margin-left: 10px;
+.mail-total
+	padding: 20px 0px 0 0px;
+	background-color: #fff;
+	border-top: 1px solid #ebebeb;
+	font-size: 13px;
+	td
+		padding-bottom: 8px;
+		color: #848383;
+	&__final
+		color: #000000!important
+		text-transform: uppercase
+		padding-top: 16px;
+		padding-bottom: 18px!important;
+	&__table
+		width: 100%;
+		text-align: right;
+.mail-bottom
+	font-size:13px;
+	border-top: 1px solid #ebebeb;
+	border-bottom: 1px solid #ebebeb;
+	background-color: #ffffff
+	display: flex;
+	@media(max-width: 660px)
+		flex-direction: column;
+	&__item
+		padding: 25px 30px 30px 30px;
+		border-right: 1px solid #ebebeb;
+		flex: 0 0 33.33%;
+		@media(max-width: 660px)
+			border-bottom: 1px solid #ebebeb;
+			border-right: none;
+			padding: 15px 30px 15px 30px;
+		&:nth-last-child(1)
+			border-right: none;
+			border-bottom: none;
+	&__title
+		margin-bottom: 25px;
+		color: #000;
+		@media(max-width:660px)
+			margin-bottom: 15px;
+	&__link
+		margin-bottom: 5px;
+		color: #555a69;
+		line-height: 1.7em;
+	&__list
+		margin-bottom: 10px;
+	&__phone
+		color: #93959a;
+.mail-more
+	background-color: #fafafb
+	padding-top: 30px;
+	padding-bottom: 40px;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 40px;
+	box-shadow: 0px 25px 48px -29px #ccc;
+	&__btn
+		text-transform: uppercase;
+		border: 1px solid #000000
+		font-size: 12px;
+		padding: 20px 60px;
+		display: inline-block;
+		width: auto!important;
+		border-radius: 0;
+.mail-footer
+	text-align: center;
+	&__title
+		font-size: 28px;
+		font-style: italic;
+		font-family: "Times New Roman", Times, serif;
+		margin-bottom: 15px;
+	&__subtitle
+		font-size: 16px;
+		margin-top: 15px;
+		padding-bottom:35px;
+		margin-bottom:25px;
+		line-height: 1.3em;
+		border-bottom: 1px solid #ebebeb;
+		font-style: italic;
+		font-family: "Times New Roman", Times, serif;
+	&__copyright
+		margin-top:30px;
+		font-size: 11px;
+/* block: social
+_______________________________________________*/
+.social
+	color: #000000;
+	font-size: 22px
+	&__item
+		display: inline-block
+		position: relative
+	&__link
+		display: inline-block
+		height: 25px;
+		margin-right: 15px;
+		text-align: center
+		color: inherit
+	&__icon
+		transition: color .2s ease-out
+		&:hover
+			color: #000000		
+	

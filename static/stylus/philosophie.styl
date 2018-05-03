@@ -1,0 +1,526 @@
+.quality-header
+	display: flex;
+	background-image: url("../img/philosophie.jpg");
+	background-repeat: no-repeat
+	background-size: cover;
+	height: 380px;
+	color: #ffffff;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	margin: 0 15px;
+	background-position: center;
+	padding: 0 10px;
+	
+	&__title
+		font-size: 55px;
+		margin-bottom: 15px;
+		font-family: CochinItalic
+		@media(max-width: $sm)
+			font-size: 42px
+	&__subtitle
+		font-size: 22px;
+		font-family: CochinItalic
+		margin-bottom: 50px;
+		@media(max-width: $sm)
+			font-size: 22px
+	&__btn
+		background-image: url("../img/arrow_return.svg");
+		background-color: #f3f2f7;
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		bottom: 0;
+		margin-bottom: -50px;
+		border-radius: 100px;
+		background-repeat: no-repeat
+		transform: rotate(90deg);
+		background-position: 28px center;
+		background-size: 20px;
+.quality-item
+	margin: 60px auto;
+	@media(max-width: $lg)
+		margin: 30px auto;
+	@media(max-width: $md)
+		margin: 10px auto;
+	&_bottom
+		padding: 0 0 90px 0;
+		max-width: calc(1060px + (100% - 1060px)/2)
+		margin-left: auto;
+		@media(max-width: $lg)
+			padding-bottom: 40px;
+		@media(max-width: $md)
+			padding-bottom: 30px;
+	&_top
+		margin: 40px auto 60px;
+		@media(max-width: $lg)
+			margin: 30px auto;
+		@media(max-width: $md)
+			margin: 10px auto;
+	&__main-title
+		padding-top: 40px;
+		margin-bottom: 15px;
+		text-align: left;
+		font-size:26px;
+		@media(max-width: $md)
+			font-size: 20px;
+	&__main-img
+		padding-right:30px;
+		width: 100%;
+		@media(max-width: $md)
+			padding-right:0;
+	&__title
+		font-size: 26px;
+		margin-bottom: 15px;
+		padding-top: 170px;
+		@media(max-width: $xl)
+			padding-top: 75px;
+			font-size: 22px;
+		@media(max-width: $md)
+			font-size: 20px;
+			padding-top: 0;
+			padding-left: 60px;
+			min-height: 50px;
+			display: flex;
+			align-items: center;
+	&__second-title
+		font-size: 26px;
+		margin-bottom: 15px;
+		@media(max-width: $xl)
+			font-size: 22px;
+		@media(max-width: $md)
+			font-size: 20px;
+			padding-left: 60px;
+			min-height: 50px;
+			display: flex;
+			align-items: center;
+	&__title_bottom
+		padding-top: 30%;
+		@media(max-width: $lg)
+			padding-top: 0;
+		@media(max-width: $md)
+			padding-top: 15px;
+	&__subtitle
+		font-size: 20px;
+		font-family: CochinItalic
+		margin-bottom: 30px;
+		@media(max-width: $xl)
+			margin-bottom: 15px;
+			font-size: 18px;
+		@media(max-width: $md)
+			font-size: 16px;
+	&__text
+		color: #747474
+		font-size: 18px;
+		line-height: 1.3em;
+		max-width: 340px;
+		@media(max-width: $xl)	
+			font-size: 16px;
+		@media(max-width: $lg)
+			font-size: 14px;
+		@media(max-width: $md)
+			margin-bottom: 15px;
+			max-width: none;
+	&__main-text
+		color: #747474
+		font-size: 18px;
+		line-height: 1.3em;
+		margin-bottom:15px;
+		@media(max-width: $xl)	
+			font-size: 16px;
+		@media(max-width: $lg)
+			font-size: 14px;
+		@media(max-width: $md)
+			margin-bottom: 15px;
+			max-width: none;
+	
+	&__img
+		width: 100%;
+	&__top-title
+		text-align: center
+		font-size: 26px;
+		padding-top: 40px;
+	&__btn
+		max-width: 330px;
+		margin: 0 auto 60px
+		display: block!important
+	&__number 
+		font-size: 22px;
+		line-height: 70px;
+		position: absolute;
+		top: 0;
+		left: 15px;
+		display: block;
+		width: 70px;
+		height: 70px;
+		text-align: center;
+		color: #fff;
+		border-radius: 70px;
+		background-color: #4f3fa2;
+		margin-top: 80px;
+		@media(max-width: $xl)
+			margin-top: 10px;
+			width: 50px;
+			height: 50px;
+			border-radius: 50px;
+			line-height: 50px;
+			font-size: 16px;
+		@media(max-width: $md)
+			margin-top: 0px;
+	&__number_banner
+		top: -90px;
+		margin-top: 0;
+		left: 0;
+		@media(max-width: $xl)
+			top: -70px;
+	&__col
+		color: #fff;
+		padding-left: 0px;
+		@media(max-width: $xl)
+			padding-left: 15px;
+	&__body
+		display: flex
+		margin-right: 0;
+		margin-left: 0;
+		background-color: #2c2c32
+		margin-left: 15px;
+		margin-right: 15px;
+		@media(max-width: $md)
+			display: block
+	&__main-body
+		display: flex
+		@media(max-width: $md)
+			display: block
+	&__slider
+		.quality-item__text
+			color: #ffffff
+		.quality-item__number
+			background-color: #ffffff
+			color: #000000
+			left:0;
+			@media(max-width: $md)
+				left: 15px;
+	&__img-block
+		padding-left: 0;
+		padding-right: 30px;
+		@media(max-width: $md)
+			padding-right: 0;
+	&__block
+		padding-left: 105px;
+		@media(max-width: $lg)
+			padding-left:15px;
+	&__accent
+		color: #ff5400;
+	&__link
+		color:#747474;
+		font-size: 14px;
+		text-decoration: underline;
+	&_main
+		width: 100%;
+		max-width: 1180px;
+		margin-left: auto;
+		margin-right: auto;
+	&__body
+		display: flex;
+		@media(max-width: $md)
+			display:block;
+	&__info-block
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		.quality-item__second-title
+			padding-left: 0!important;
+	&__special-block
+		padding-top: 110px;
+		.quality-item__second-title
+			padding-left: 0!important;
+		@media(max-width: $md)
+			padding-top:0px;
+	&__main-block
+		display:flex;
+		@media(max-width: $md)
+			display:block
+.quality-banner
+	color: #ffffff
+	background-image: url("../img/quality-banner.jpg");
+	height: 620px;
+	margin: 0 15px;
+	background-repeat: no-repeat
+	background-size: cover;
+	background-position: center;
+	@media(max-width: $md)
+		height: 520px;
+		margin-top: 20px;
+	@media(max-width: $md)
+		height: auto;
+	&_mesures
+		background-image: url("../img/box__banner.jpg");
+		color: #000000;
+		@media(max-width: $md)
+			margin: 0;
+			background-image: none;
+	&_second
+		background-image: url("../img/quality-banner_second.jpg");
+		height: 690px;
+		.index__wrapper
+			max-width: 1225px!important;
+		.quality-item__second-title
+			margin-bottom:50px;
+			padding-left: 0!important
+			@media(max-width: $xl)
+				padding-top: 30px;
+		@media(max-width: $md)
+				height: auto;
+				padding-bottom: 20px;	
+	&_third
+		background-image: url("../img/quality-banner_third.jpg");	
+		.index__wrapper
+			max-width: 1225px!important;
+		.quality-banner__main-text
+			max-width: 620px;
+		.quality-banner__text
+			max-width: 690px;
+		.quality-banner__title
+			@media(max-width: $md)
+				margin-top: 30px;	
+	&__body_mesures
+		max-width: 420px;
+		margin-left: auto;
+		margin-right: 0;
+		position: relative;
+		@media(max-width: $md)
+			max-width: none
+	&__title
+		font-size: 26px;
+		margin-bottom: 15px;
+		margin-top: 20px;
+		@media(max-width: $xl)
+			margin-top: 80px;
+			font-size: 22px;
+		@media(max-width: $md)
+			font-size: 20px;
+			// margin-top: 30px;	
+	&__subtitle
+		font-size: 20px;
+		font-family: CochinItalic
+		margin-bottom: 40px;
+		@media(max-width: $md)
+			margin-bottom: 15px;
+	&__text
+		font-size: 18px;
+		line-height: 1.3em;
+		max-width: 350px;
+		@media(max-width: $xl)	
+			font-size: 16px;
+		@media(max-width: $lg)
+			font-size: 14px;
+		@media(max-width: $md)
+			margin-bottom: 15px;
+	&__main-subtext
+		font-size:20px;
+		font-family: CochinItalic;
+		margin-top:35px;
+		max-width: 660px;
+	&__text_first
+		max-width: 465px;
+	&__main-text
+		font-size: 18px;
+		line-height: 1.3em;
+		max-width: 660px;
+		margin-bottom:15px;
+		@media(max-width: $xl)	
+			font-size: 16px;
+		@media(max-width: $lg)
+			font-size: 14px;
+		@media(max-width: $md)
+			margin-bottom: 15px;
+	&__text_mesures
+		color: #747474
+		@media(max-width: $md)
+			max-width:none;
+	&__body
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		height: 100%;
+		padding: 0 15px;
+		position: relative
+		@media(max-width: $xl)
+			justify-content: flex-start;
+	&__text-accent
+		color: #000000
+.quality-info
+	background-color:#f3f2f7
+	padding: 40px 10px 50px 10px;
+	margin: 0 15px;
+	&__title
+		font-size: 26px;
+		margin-bottom: 15px;
+		text-align: center
+	&__accent
+		color: #914199
+	&__subtitle
+		font-size:20px;
+		font-family: CochinItalic
+		text-align: center
+		margin-bottom: 35px;
+	&__stars
+		display: flex
+		margin-bottom: 15px;
+		color: #fcba55
+		font-size: 24px;
+		margin-top: 7px;
+	&__star
+		margin-right: 3px;
+	&__percent
+		font-size:18px;
+		margin-bottom:5px;
+	&__percent-accent
+		font-size:18px;
+		margin-bottom: 12px;
+		color: rgba(0, 0, 0, 0.74);
+	&__text
+		font-size:16px;
+		color: rgba(0, 0, 0, 0.62);
+	&__item
+		display: flex;
+		border-right: 1px solid #ccc;
+		justify-content: flex-end;
+		@media(max-width: $md)
+			justify-content: center;
+			border: none
+	&__description
+		color: #747474;
+		max-width: 380px;
+		color: #747474;
+		line-height: 1.4em;
+		font-size:18px;
+		padding-right:10px;
+		text-align: right;
+		@media(max-width: $md)
+			max-width: none
+			margin-bottom: 10px;
+			font-size: 14px;
+			text-align: left;
+	&__info
+		padding-left:25px;
+		@media(max-width: $md)
+			padding-left:15px;
+.quality-description
+	background-color:#f3f2f7
+	padding: 50px 10px 50px 10px;
+	margin: 0 15px;
+	@media(max-width: $md)
+		padding: 30px 10px 0 10px;
+	&__title
+		font-size: 26px;
+		margin-bottom: 30px;
+		text-align: center
+		@media(max-width: $md)
+			font-size: 20px;
+	&__text
+		font-size:18px;
+		color: #747474;
+		text-align: center;
+		margin-bottom: 30px;
+		line-height: 1.4em;
+		@media(max-width: $md)
+			font-size: 14px;
+	&__separator
+		width: 100%;
+		max-width: 170px;
+		height: 1px;
+		display: block
+		margin: auto;
+		background-color: #88888b;
+		margin-bottom: 30px;
+	&__logos
+		display: flex;
+		align-items: center;
+		max-width: 590px;
+		width: 100%;
+		margin: auto;
+		@media(max-width: $md)
+			display: block;
+			max-width: none;
+	&_bottom
+		background-color:#ffffff;
+	&__wrapper
+		width: 100%;
+		max-width: 600px;
+		margin: auto;
+	&_last
+		padding-top:70px;
+		padding-bottom: 70px;
+		@media(max-width: $md)
+			padding-top:30px;
+			padding-bottom: 30px;
+	&__btns-wrapper
+		width: 100%;
+		max-width: 780px;
+		margin: auto;
+	&__img
+		@media(max-width: $md)
+			margin-bottom: 20px;
+	.quality-item__img
+		@media(max-width: $sm)
+			margin-bottom: 10px;
+.quality-wrapper
+	width: 100%;
+	max-width: 800px;
+	margin: auto;
+.quality-table
+	width: 100%;
+	min-width: 540px;
+	&__block
+		margin-bottom: 70px;
+	&__wrapper
+		max-width: 1030px;
+		width: 100%;
+		margin: auto;
+		border: 1px solid #bdbbc5
+		margin-top:70px;
+		@media(max-width: $sm)
+			overflow: scroll;
+	td
+		padding: 10px 35px;
+		color: #4c4c4c;
+		font-size: 18px;
+		text-align: center;
+		@media(max-width: $sm)
+			font-size: 14px;
+			padding: 10px 10px;
+	tr
+		border-top: 1px solid #f2f1f3;
+		&:nth-child(1)
+			border-top: none;
+	&__title
+		text-transform: uppercase;
+		padding: 25px 35px!important;
+		text-align: left!important;
+		@media(max-width: $sm)
+			font-size: 14px;
+			padding: 10px 10px!important;
+	&__subtitle
+		text-align: left!important;
+	&__maps
+		width: 100%;
+		max-width: 1030px;
+		margin: auto;
+		display: flex;
+		margin-top: 30px;
+		@media(max-width: $sm)
+			flex-direction: column;
+	&__map
+		padding-left: 35px;
+		@media(max-width: $sm)
+			padding-left: 0;
+.state
+	color: #8737c5
+	padding:0 15px;
+	font-size: 17px;
+	&_free
+		color: #c39be2

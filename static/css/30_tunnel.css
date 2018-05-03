@@ -1,0 +1,235 @@
+.tunnel__description {
+   margin-bottom:20px;
+}
+.tunnel__btn {
+   font-family:brandonBold;
+   font-size:17px;
+
+   width:100%;
+   padding:15px;
+
+   text-transform:uppercase;
+
+   color:#000;
+   border:1px solid #000;
+   background-color:#fff;
+}
+.tunnel__btn:hover {
+   color:#fff;
+   background-color:$hover-main-color;
+}
+.tunnel__btn-wrapper {
+   margin-top:50px;
+   margin-bottom:70px;
+}
+.tunnel__confirm {
+   padding-right:20px;
+   padding-left:20px;
+}
+.tunnel__note {
+   font-family:CochinItalic;
+   font-size:14px;
+   line-height:1.2;
+
+   position:relative;
+
+   margin-top:30px;
+   margin-bottom:50px;
+   padding-left:30px;
+}
+.tunnel__note:before {
+   position:absolute;
+   top:-15px;
+   left:0;
+
+   content:url('../img/tunnel-arrow.png');
+}
+.tunnel__note-bold {
+   font-family:cochinBoldItalic;
+}
+.tunnel__required {
+   font-size:12px;
+
+   display:block;
+
+   max-width:90px;
+   margin-right:auto;
+   margin-bottom:40px;
+   margin-left:auto;
+}
+.tunnel__checkbox {
+   font-size:13px;
+}
+.tunnel__address {
+   font-size:15px;
+   line-height:1.2em;
+
+   padding:20px;
+
+   background-image:url('../img/footer_services_bg.jpg');
+}
+.tunnel__address-item {
+   padding:10px;
+}
+.tunnel__address-item_first {
+   border-right:1px solid #000;
+}
+.tunnel__address-title {
+   font-family:brandonBold;
+   font-size:20px;
+   font-size:20px;
+
+   padding-right:10px;
+   padding-bottom:20px;
+   padding-left:10px;
+}
+.tunnel__address-type {
+   font-family:brandonBold;
+   font-size:15px;
+   font-size:15px;
+
+   padding-bottom:10px;
+}
+.tunnel__address-change {
+   font-size:12px;
+   font-style:italic;
+   font-style:italic;
+
+   margin-top:30px;
+
+   text-align:right;
+   text-decoration:underline;
+}
+.tunnel__method-type {
+   font-family:brandonBold;
+   font-size:15px;
+
+   margin-top:20px;
+
+   text-transform:uppercase;
+   text-transform:uppercase;
+}
+.tunnel__method-item {
+   font-size:15px;
+
+   margin-bottom:10px;
+   padding-left:22px;
+}
+.tunnel__method-item-time {
+   line-height:1.1em;
+
+   padding-left:22px;
+
+   color:#999;
+}
+.payment__card-info {
+   font-family:brandonBold;
+   font-size:15px;
+}
+.payment__cards {
+   padding-top:30px;
+   padding-bottom:30px;
+}
+.payment__note {
+   font-size:16px;
+   line-height:1.2em;
+}
+.payment__info {
+   font-size:15px;
+   line-height:1.2em;
+
+   padding:20px;
+
+   background-image:url('../img/footer_services_bg.jpg');
+}
+.payment__subtitle {
+   font-family:brandonBold;
+
+   padding-bottom:20px;
+}
+.payment__info-text {
+   padding-bottom:20px;
+}
+.payment__btn-wrapper {
+   margin-top:30px;
+   margin-bottom:30px;
+}
+.payment__edit {
+   font-family:francoisOne;
+   font-size:15px;
+
+   text-decoration:underline !important;
+}
+.payment__form {
+   margin-top:20px;
+   padding-top:20px;
+
+   border-top:1px solid #000;
+}
+.payment__add {
+   padding:6px;
+
+   color:#000;
+   border:1px solid #000;
+   background-color:#fff;
+}
+.payment__currency {
+   font-family:brandonBold;
+   line-height:34px;
+}
+.summary__list {
+   font-size:11px;
+}
+.summary__item {
+   line-height:1.5em;
+
+   display:-webkit-box;
+   display:flex;
+
+   padding-top:25px;
+   padding-bottom:25px;
+
+   border-bottom:1px solid #000;
+}
+.summary__item-block {
+   display:-webkit-box;
+   display:flex;
+   flex-direction:column;
+
+   -webkit-box-orient:vertical;
+   -webkit-box-direction:normal;
+   -webkit-box-pack:center;
+   justify-content:center;
+}
+.summary__img {
+   max-width:55px;
+}
+.summary__title {
+   font-family:brandonBold;
+   font-size:15px;
+
+   text-transform:uppercase;
+}
+.summary__description-title {
+   font-family:brandonBold;
+}
+.summary__total {
+   font-size:12px;
+
+   padding:15px;
+
+   background-image:url('../img/footer_services_bg.jpg');
+}
+.summary__price {
+   padding-right:15px;
+}
+.summary__total-price {
+   font-family:brandonBold;
+   font-size:22px;
+}
+.summary__total-lable {
+   font-family:brandonBold;
+   font-size:15px;
+
+   text-transform:uppercase;
+}

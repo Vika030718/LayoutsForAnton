@@ -1,0 +1,219 @@
+.press-header
+	display: flex;
+	background-image: url("../img/press-header.jpg");
+	background-repeat: no-repeat
+	background-size: cover;
+	height: 380px;
+	color: #ffffff;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	margin: 0 15px;
+	background-position: center;
+	padding: 0 10px;
+	&__title
+		font-size: 55px;
+		margin-bottom: 15px;
+		font-family: CochinItalic
+		@media(max-width: $sm)
+			font-size: 42px
+	&__subtitle
+		font-size: 22px;
+		font-family: CochinItalic
+		margin-bottom: 50px;
+		@media(max-width: $sm)
+			font-size: 22px
+	&__btn
+		background-image: url("../img/arrow_return.svg");
+		background-color: #f3f2f7;
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		bottom: 0;
+		margin-bottom: -50px;
+		border-radius: 100px;
+		background-repeat: no-repeat
+		transform: rotate(90deg);
+		background-position: 28px center;
+		background-size: 23%;
+.press-dashboadr
+	background-color: #f3f2f7;
+	text-align: center
+	padding-top: 80px;
+	padding-bottom:170px;
+	margin: 0 15px 30px 15px;
+	@media(max-width: $md)
+		padding-top: 40px;
+		padding-bottom: 30px;
+a.btn.press-dashboadr__btn
+	transition: color .2s ease-out, background-color .2s ease-out, border-color .2s ease-out;
+	border: 1px solid #000;
+	background-color: transparent;
+	padding-top: 26px!important;
+	padding-bottom: 26px!important;
+.press-item
+	padding: 35px 35px 50px 35px;
+	background-color: #ffffff
+	text-decoration: none!important;
+	display: block;
+	margin-bottom: 60px
+	height: 460px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	@media(max-width: $md)
+		margin-bottom: 15px
+	&:hover
+		box-shadow: 0 0 15px 3px rgba(0,0,0,.09);
+	&__logo
+		max-height: 60px;
+		width:auto;
+	&__title
+		font-size: 36px;
+		font-family: CochinItalic;
+		padding-top: 30px;
+	&__subtitle
+		font-family: Cochin
+		font-size: 20px;
+		color: #676767
+		margin-top: 13px;
+		margin-bottom: 20px;
+		line-height: 1.5em;
+	&__text
+		font-size: 16px;
+		color: #747474
+		margin-bottom: 25px;
+		line-height: 1.5em;
+		max-width: 400px;
+		width:100%;
+		margin-left: auto;
+		margin-right: auto;
+	&__arrow
+		height: 20px;
+	&__head
+		height: 80px;
+		padding-bottom: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center
+		width: 220px;
+		margin-right: auto;
+		margin-left: auto;
+		border-bottom: 1px solid #474a75
+.press-article
+	background-color:#f8f8f8
+	margin: 0 15px;
+	padding-bottom: 75px;
+	margin-bottom: 25px;
+	&__body
+		background-color: #ffffff;
+		padding: 50px 100px 100px 100px;
+		box-shadow: 0 0 15px 3px rgba(0,0,0,.09);
+		text-align: center;
+		@media(max-width: $lg)
+			padding: 50px 50px 50px 50px;
+		@media(max-width: $md)
+			padding: 20px;
+	&__header
+		padding: 40px 0
+		display: flex;
+		align-items: center;
+		@media(max-width: $lg)
+			display: block
+			padding:20px 0;
+	&__header-title
+		font-size: 45px;
+		font-family: CochinItalic
+		@media(max-width: $lg)
+			margin-top: 10px;
+			font-size: 30px;
+	&__head
+		border-bottom: 1px solid #474a75
+		padding-bottom: 20px;
+		display: inline-block;
+		min-width: 230px;
+		margin: auto;
+		margin-bottom: 25px;
+		@media(max-width: $md)
+			min-width: 100%;
+	&__title
+		font-size: 36px;
+		font-family: CochinItalic
+		margin-bottom: 10px;
+		@media(max-width: $lg)
+			font-size: 21px;
+	&__subtitle
+		color: #676767
+		font-family: CochinItalic
+		padding-bottom: 45px;
+		@media(max-width: $lg)
+			margin-bottom: 15px;
+			padding-bottom: 15px;
+	&__text
+		font-size: 16px;
+		line-height: 1.5em;
+		color: #000000
+		margin-bottom: 40px;
+	&__text_pale
+		font-size: 16px;
+		line-height: 1.5em
+		color: #747474
+		margin-bottom: 40px;
+	&__img
+		margin-bottom: 40px;
+		img
+			max-width: 100%;
+	&__author
+		font-size: 16px;
+		padding-bottom: 40px;
+	&__pdf
+		padding:15px;
+		border: 1px solid #000000
+		font-size: 16px;
+		display: flex;
+		align-items: center;
+		width: 415px;
+		margin:auto
+		@media(max-width: $sm)
+			flex-direction: column;
+			width: 100%;
+	&__pdf-img
+		margin-right: 40px;
+		@media(max-width: $sm)
+			margin-right:0;
+			margin-bottom: 10px;
+.press-list
+	max-width: 210px;
+	margin: auto;
+	@media(max-width: $lg)
+		max-width: none
+		margin-bottom: 15px;
+	&__title
+		font-size: 24px;
+		padding-bottom: 25px;
+		border-bottom: 1px solid #000000
+		margin-bottom: 25px;
+	&__name
+		font-size: 24px;
+		font-family: CochinItalic
+		margin-bottom: 10px;
+		@media(max-width: $lg)
+			font-size: 20px;
+	&__subtitle
+		color: #707070;
+		margin-bottom: 30px;
+		line-height: 1.5em
+		@media(max-width: $lg)
+			font-size: 14px;
+			margin-bottom: 15px;
+	&__ul
+		border-bottom: 1px solid #000000
+		margin-bottom:25px;
+	&__link
+		text-decoration: underline;
+	&__item
+		display: flex;
+		flex-direction: column;

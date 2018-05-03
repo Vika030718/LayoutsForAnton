@@ -1,0 +1,30 @@
+.newsletter__block {
+   padding-top:35px;
+   padding-bottom:35px;
+
+   background-image:url('../img/newsletter-bg.jpg');
+   background-size:cover;
+}
+.newsletter__title {
+   font-family:brandonBold, sans-serif;
+   font-size:16px;
+   font-weight:bold;
+
+   padding-bottom:20px;
+}
+.newsletter__description {
+   font-size:16px;
+
+   padding-bottom:20px;
+}
+.newsletter__block-wrapper {
+   padding:0 $gap;
+}
+.newsletter__btn {
+   max-width:287px;
+}
+@media (max-width: $md) {
+   .newsletter__btn {
+      max-width:100%;
+   }
+}

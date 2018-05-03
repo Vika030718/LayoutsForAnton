@@ -1,0 +1,210 @@
+.user-inner
+	padding-top: 0px;
+	&__body
+		background-position: center;
+		padding-top: 80px;
+		background-size: cover;
+		min-height: 100vh;
+		@media(max-width:$md)
+			padding-top: 20px;
+	&__registration
+		background-image: url('../img/registration/registration.jpg');
+	&__logo
+		margin-bottom: 35px;
+		display: block;
+		margin: auto;
+		width: 100%;
+		max-width:190px;
+		@media(max-width:$md)
+			margin-bottom: 20px;
+	&__logo-wrapper
+		height: 228px;
+	&__title
+		margin-bottom: 10px;
+		font-size: 24px;
+		text-align: center
+		color:#ffffff
+	&__subtitle
+		font-size: 16px;
+		margin-bottom: 40px;
+		text-align: center
+		color:#ffffff
+.club
+	max-width: 440px;
+	width: 100%;  
+	margin: auto;
+	margin-bottom: 15px;
+	&__description
+		font-size: 15px;
+		color: rgba(85,90,105,.75);
+		margin-bottom: 20px;
+		text-align: center;
+.registration
+	max-width: 440px;
+	width: 100%;  
+	margin: auto;
+	background-color: #f8f8f9;
+	display: flex;
+	flex-direction: column;
+	padding: 30px 40px 35px 40px;
+	height: 100%;
+	justify-content: space-between;
+	@media(max-width:$lg)
+		margin-bottom:10px;
+	&__head
+		background-color: #f1f1f1
+		padding	: 40px;
+	&__body
+		background-color: #f8f8f9;
+		padding: 25px 40px 25px 40px;
+		height: 100%;
+	@media(max-width:$lg)
+		margin-bottom:10px;
+	&__footer
+		background-color: #f1f1f1
+		padding: 25px 10px  20px 10px
+		text-align: center
+	&__title
+		margin-bottom: 25px;
+		font-size: 24px;
+		text-align: center;
+	&__subtitle
+		font-size: 16px;
+		color: #9597af
+		margin-bottom:20px;
+		text-align: center;
+	&__subtext
+		font-size: 15px;
+		text-align: center	
+	&__input
+		padding: 14px;
+		margin-bottom: 13px;
+		font-size: 15px;
+	&__btns
+		display: flex;
+		justify-content: space-between;
+		margin-top: 10px;
+		@media(max-width:$md)
+			flex-direction: column;
+	&__btn
+		margin-right: 10px;
+		background-color: #bebfcb!important;
+		font-size: 15px;
+		text-transform: uppercase;
+		color: #ffffff;
+		&:hover
+			background-color: #9f9f9f;
+			color: #ffffff!important;
+		@media(max-width:$md)
+			margin-right: 0;
+			margin-bottom:10px;
+	&__password-text
+		font-size: 15px;
+		color: rgba(85, 90, 105, .75);
+		margin-bottom:13px;
+		text-align:right;
+		display: block;   
+	&__password-title
+		font-size: 15px;
+		color: #000000;
+		text-align:center;
+		margin-bottom:20px;
+	&__password-subtitle	
+		font-size: 15px;
+		color: rgba(85, 90, 105, .75);
+		text-align:center;
+		margin-bottom:25px;
+	&__text
+		color: rgba(85, 90, 105, .75);
+		font-size: 14px;
+		margin-top: 15px;
+	&__return
+		margin-top:25px;
+		font-size: 18px;
+		text-align: center;
+		&:hover
+			color: #000000
+	&__form
+		width:100%;
+	&__return-out
+		font-size: 18px;
+		color: #ffffff!important;
+		display: flex;
+		align-items: center;
+		margin: auto;
+		max-width: 90px;
+		margin-top: 25px;
+		text-align: center;
+		.fa
+			line-height: 10px;
+			margin-right: 7px;
+		&:hover
+			color: #bababa!important;
+			text-decoration: none;
+	&__wrapper
+		display: flex;
+		@media(max-width:$lg)
+			display: block;
+	&__description
+		font-size: 15px;
+		color: rgba(85,90,105,.75);
+		text-align: left;
+		margin-bottom: 20px;
+.error
+	color: #F30A61;
+	&__text
+	.input
+		border: 1px solid #F30A61;
+		&:focus
+			border: 1px solid #F30A61!important;
+	.error-text
+		display:block;
+.error-text
+	display:none;
+	margin-bottom:10px;
+	text-align: right;
+	margin-top: 10px;
+.required
+	position: relative
+	&:after
+		position: absolute;
+		content: '*'
+		top: 18px;
+		right: -15px;
+		color: #555a69
+	@media(max-width:$sm)
+		&:after
+			right: -11px;
+.required-pale
+	position: relative
+	&:after
+		position: absolute;
+		content: '*'
+		top: 18px;
+		right: -15px;
+		color: rgba(85,90,105,.5);
+	@media(max-width:$sm)
+		&:after
+			right: -11px;
+.account__field.required-pale,
+.account__fields.required-pale
+	@media(max-width:$xl)
+		&:after
+			right: 0;
+.capture
+	display: flex;
+	align-items: center;
+	margin: 20px 0 20px 0;
+	&__reload
+		margin-right: 20px;
+		background-color: #0000003d;
+		width: 40px;
+		height: 40px;
+		border-radius: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 22px;
+		min-width: 40px;
+		&:hover
+			text-decoration:none;

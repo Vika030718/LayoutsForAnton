@@ -1,0 +1,408 @@
+/* main page
+_______________________________________________*/
+.offers
+   padding-top: 30px
+   &__item
+      margin-bottom: 20px
+      overflow: hidden
+      @media(max-width: $md)
+         margin-bottom: 5px
+         max-height: 250px
+   &__img
+      position: relative
+      width: 100%
+      &:hover
+         transform: scale(1.03, 1.03);
+   &__title
+      background-color: #020100;
+      color: #ffffff;
+      font-family: francoisOne, sans-serif
+      font-size: 18px
+      padding: 15px
+      position: absolute
+      text-transform: uppercase;
+      top: 50%
+      &:hover
+         background-color: $hover-main-color
+         transition: background-color .25s ease-in-out;
+   &__link
+      display: block
+      overflow: hidden
+.news
+   padding-bottom: 60px;
+   padding-top: 40px;
+   @media(max-width: $md)
+      padding-bottom: 0;
+      &__img 
+         max-width: 100%;
+   &__title
+      font-size: 26px;
+   &__subtitle
+      font-size: 20px;
+      font-family: CochinItalic; 
+      margin-bottom: 35px;
+      margin-top: 6px;
+   &__item-title
+      font-size: 22px;
+      margin-top: 15px;
+      margin-bottom: 6px;
+   &__item-subtitle
+      margin-bottom: 38px;
+      font-size: 20px;
+      font-family: CochinItalic;
+   &__block
+      @media(max-width: 1900px)
+         overflow: hidden;
+.comments
+   &__item
+      padding-bottom: 40px;
+      z-index: 2;
+      @media(max-width: $md)
+         padding-bottom: 20px;
+   &__item_last
+      @media(min-width: $sm)
+         display: block!important
+   &__caption
+      font-size: 32px;
+      line-height: 1em;
+      position: relative;
+      padding-bottom: 30px;
+      margin-bottom: 40px;
+      padding-top: 40px;
+      &:after
+         position: absolute;
+         bottom: 0;
+         left: 50%;
+         width: 38px;
+         height: 2px;
+         margin: 0 0 0 -19px;
+         content: '';
+         background: #000;
+      @media(max-width: 1200px)   
+         font-size: 27px;
+         line-height: 1em;
+         position: relative;
+         margin-bottom: 25px;
+         padding-top: 25px;
+         padding-bottom: 25px;
+   &__block
+      width: 100%
+   &__step
+      font-size: 18px;
+      color: rgba(0, 0, 0, 0.5);
+      margin: 0 auto 35px auto;
+      max-width: 150px;
+      @media(max-width: 1600px)
+         font-size: 16px;
+         max-width: 200px;
+      @media(max-width: 1360px)
+         margin-bottom: 25px;
+      @media(max-width: 1220px)
+         margin-bottom: 25px;
+      @media(max-width: 1100px)
+         font-size: 15px;
+         max-width: none;
+   &__title
+      font-size: 22px;
+      padding-top: 40px;
+      margin-bottom: 6px;
+      @media(min-width: $md) and (max-width: $lg)
+         padding-top: 65px;
+      @media(max-width: $sm)
+         padding-bottom: 20px;
+   &__subtitle
+      font-size: 20px;
+      font-family: CochinItalic
+   &__btn
+      border: 1px solid #000000
+      color: #000000
+      max-width: 220px;
+      position: relative
+      padding: 15px 0;
+      font-size: 16px;
+      padding-right: 10px;
+      transition: color .2s ease-out, border-color .2s ease-out
+      &:hover
+         border-color: $hover-main-color
+         color: $hover-main-color!important
+      &:after
+         font-family: fontAwesome;
+         position: absolute;
+         top: 50%;
+         right: 20px;
+         margin-top: -6px;
+         content: '\f107';
+         font-size: 18px;
+         font-weight: bold;
+   &__btn_active
+      color: #ffffff!important;
+      &:hover
+         color: #ffffff!important;
+      &:hover:after
+         color: $hover-main-color!important;
+      &:after
+         color: #000000;
+         right: 50%;
+         margin-right: -5px;
+         content: "\f106"
+   &__middle
+      margin: 0 -30px;
+      height: 100%;
+      z-index: 0;
+      padding: 0 10px 40px 10px;
+      box-shadow: 0 0px 30px -5px #ccc;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+      @media(max-width: $md)
+         margin: 0
+      @media(max-width: 1100px) 
+         padding-bottom: 10px 
+   &__wrapper
+      display: flex
+      @media(max-width: $md)
+         display: block
+.comments-bottom
+   display: none
+   padding-top: 55px;
+   padding-bottom: 80px;
+   background: rgba(219,219,219,1);
+   background: -moz-linear-gradient(top, rgba(219,219,219,1) 0%, rgba(209,209,209,1) 0%, rgba(226,226,226,1) 0%, rgba(254,254,254,1) 73%, rgba(254,254,254,1) 81%);
+   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(219,219,219,1)), color-stop(0%, rgba(209,209,209,1)), color-stop(0%, rgba(226,226,226,1)), color-stop(73%, rgba(254,254,254,1)), color-stop(81%, rgba(254,254,254,1)));
+   background: -webkit-linear-gradient(top, rgba(219,219,219,1) 0%, rgba(209,209,209,1) 0%, rgba(226,226,226,1) 0%, rgba(254,254,254,1) 73%, rgba(254,254,254,1) 81%);
+   background: -o-linear-gradient(top, rgba(219,219,219,1) 0%, rgba(209,209,209,1) 0%, rgba(226,226,226,1) 0%, rgba(254,254,254,1) 73%, rgba(254,254,254,1) 81%);
+   background: -ms-linear-gradient(top, rgba(219,219,219,1) 0%, rgba(209,209,209,1) 0%, rgba(226,226,226,1) 0%, rgba(254,254,254,1) 73%, rgba(254,254,254,1) 81%);
+   background: linear-gradient(to bottom, rgba(219,219,219,1) 0%, rgba(209,209,209,1) 0%, rgba(226,226,226,1) 0%, rgba(254,254,254,1) 73%, rgba(254,254,254,1) 81%);
+   @media(max-width: $md)
+      padding-top: 30px;
+      padding-bottom: 30px;
+   &__title
+      font-size: 32px;
+      padding-bottom: 60px;
+      position: relative
+      @media(max-width: $md)
+         padding-bottom: 30px;
+      &:before
+         width: 33%
+         height: 1px
+         position: absolute;
+         content: ""
+         left: 0
+         background-color: $separator-color
+         bottom: 72px;
+      &:after
+         width: 33%
+         height: 1px
+         position: absolute;
+         content: ""
+         right: 0
+         background-color: $separator-color
+         bottom: 72px;
+      @media(max-width: $lg)
+         &:before, &:after
+            width: 27%
+      @media(max-width: $sm)
+         &:before, &:after
+            width: 0
+   &__text
+      font-size: 18px;
+      padding-top: 30px;
+      min-height: 135px;
+      line-height: 1.3em;
+      @media(max-width: $md)
+         min-height: auto;
+         padding-top: 15px;
+         text-align: center;
+   &__description
+      font-size: 20px;
+      font-family: CochinItalic
+      color: rgba(0, 0, 0, 0.75);
+      @media(max-width: $md)
+         margin-top: 15px;
+         margin-bottom: 30px;
+         text-align: center;
+   &__number
+      width: 40px;
+      height: 40px;
+      background-color: #ffffff
+      text-align: center;
+      border-radius: 40px;
+      display: block;
+      line-height: 40px;
+      font-size: 18px;
+      @media(max-width: $md)
+         margin: auto
+   &__block
+      display: flex;
+.top-product
+   padding: 50px 0 80px;
+   background-color: #f5f6f8;
+   @media(max-width: $md)
+      padding: 30px 0 30px;
+   &_product
+      background-color: #ffffff
+      padding-top: 30px;
+      padding-bottom: 30px;
+   &_product-left
+      max-width: 360px;
+      border: 1px solid $separator-color
+      padding: 25px;
+      margin: 40px 0;
+      @media(max-width: $md)
+         max-width: none;
+   &__title_product
+      margin-bottom: 30px;
+      font-size: 32px;
+   &__img
+      margin: auto;
+      margin-bottom: 15px;
+      display: block;
+      max-width: 290px;
+      position: absolute;
+      left: 50%;
+      margin-left: -145px;
+      @media(max-width: $md)
+         width: 100%;
+         position: static;
+         margin-left: auto;
+         max-width: 469px;
+   &__img_side
+      max-width: 160px;
+      margin-left: -80px;
+      @media(max-width: $md)
+         width: auto;
+         margin-left: auto;
+         max-width: 469px;
+   &__title
+      font-size: 13px;
+      @media(max-width: $md)
+         text-align: center;
+   &__caption
+      font-size: 26px;
+      margin-bottom: 20px;
+      text-align: center;
+      line-height: 1.3em;
+   &__subtitle
+      color: $text-pale;
+      font-size: 13px;
+      @media(max-width: $md)
+         text-align: center;
+   &__price
+      font-size: 13px;
+      @media(max-width: $md)
+         text-align: center;
+         margin-bottom: 20px;
+   &__styles
+      display: flex;
+      justify-content: center;
+      margin-bottom: 70px;
+      margin-top: 10px;
+      @media(max-width: $md)
+         margin-bottom: 30px;
+   &__styles-item
+      padding: 0 15px;
+      font-family: CochinItalic;
+      font-size: 20px;
+      text-transform: lowercase;
+      &:hover
+         text-decoration: underline
+         cursor: pointer
+   &__styles-item_active
+      text-decoration: underline
+.index__wrapper
+   max-width: 1060px;
+   margin: auto;
+.stories
+   padding: 50px 0 170px;
+   @media(max-width: $md)
+      padding: 30px 0 20px;
+   &__subtitle
+      font-size: 20px;
+      color: rgba(0, 0, 0, 0.5);
+      text-decoration: underline
+      font-family: CochinItalic
+      margin-bottom: 50px;
+      margin-top: 7px;
+      transition: color .2s ease-out
+      // &:hover
+      //    text-decoration: underline
+      //    color: #000000
+      @media(max-width: $md)
+          margin-bottom: 30px;
+   &__img-block
+      height: 360px;
+      width: 100%;
+      overflow: hidden
+      @media(max-width: $md)
+         height: auto;
+   &__description
+      position: absolute;
+      bottom: -130px;
+      background-color: #ffffff;
+      width: 370px;
+      left: 50%;
+      margin-left: -185px;
+      padding: 30px 60px;
+      height: 190px;
+      @media(max-width: $md)
+         position: static
+         margin-left: auto
+         margin-right: auto
+         padding: 15px 15px 30px;
+         width: 100%;
+         height: auto;
+         max-width: 300px;
+   &__item
+      position: relative
+   &__name
+      font-size: 18px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+   &__text
+      font-family: CochinItalic
+      margin-bottom: 15px;
+      font-size: 18px;
+   &__link
+      font-size: 18px;
+      font-family: CochinItalic
+.index-help
+   &__item
+      height: 710px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff
+      background-size: cover;
+      @media(max-width: $md)
+         height: 350px;
+   &__item_shop
+      background-image: url('../img/index-help__2.jpg');
+   &__item_opinion
+      background-image: url('../img/index-help__1.jpg');
+   &__title
+      font-size: 32px;
+      margin-bottom: 10px;
+   &__shops
+      padding-bottom: 15px;
+   &__shop
+      font-size: 22px;
+      font-family: CochinItalic;
+      padding: 0 15px;
+   &__text
+      font-size: 24px;
+      font-family: CochinItalic;
+      width: 370px;
+      line-height: 1.3em;
+      margin-bottom: 25px;
+      text-align: center;
+      padding: 0 20px;
+   &__link
+      font-size: 18px;
+      text-decoration: underline
+      color: #ffffff!important
+   &__author
+      font-size: 16px;
+      
+      

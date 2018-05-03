@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+   <title>Chemises sur mesure | Swann & Oscar</title>
+   <link rel="stylesheet" href="lib/css/font-awesome.min.css">
+   <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+   <link rel="stylesheet" href="static/css/normalize.css">
+   <link rel="stylesheet" href="static/css/main.css">
+   <link rel="stylesheet" href="static/css/headerFooterResponsive.css">
+   <script src="lib/js/jquery-1.12.3.min.js"></script>
+   <script src="lib/js/bootstrap.min.js"></script>
+   <script src="static/js/main.js"></script>
+</head>
+
+<body>
+   <div class="header-mobile">
+      <div class="header-mobile__item header-mobile__icon-toggle">
+         <img class="header-mobile__icon header-mobile__icon-menu" src="static/img/icon-menu.png" alt="Open menu">
+         <img class="header-mobile__icon header-mobile__icon-menu-close" src="static/img/icon-menu-close.png" alt="Open menu">
+      </div>
+      <div class="header-mobile__item text-center">
+         <a class="logo__wrapper_mobile" href="">
+             <img class="logo__img_mobile" src="static/img/logo-mobile.svg" alt="logo">
+         </a>
+      </div>
+      <div class="header-mobile__item text-right">
+         <a href="" class="header__logout"><img src="static/img/icon-menu-close.png" alt=""></a>
+         <img class="header-mobile__icon header-mobile__icon_profile" src="static/img/icon-user.png" alt="My profile">
+         <div class="header-mobile__cart">
+            <img class="header-mobile__icon" src="static/img/icon-cart.png" alt="Cart">
+            <span class="header-mobile__num">2</span>
+         </div>
+      </div>
+   </div>
+   <header class="header">
+      <div class="wrapper">
+         <nav class="header__navbar">
+            <div class="search hide">
+               <form id="search_mini_form" class="search__form">
+                  <input id="search" type="text" autocomplete="off" name="q" value="" class="search__input" placeholder="Votre recherche">
+                  <div id="search_autocomplete" class="search-autocomplete" style="display: none;"></div>
+                  <a href="javascript:void(0);" onclick="$('#search_mini_form').submit();" class="search__link header__search-submit"><span class="fa fa-search fa-flip-horizontal"></span></a>
+                  <a href="javascript:void(0);" class="search__link header__search-close"><img src="https://swann-staging.iressources.com/skin/frontend/so/default/redesign/img/icon-menu-close.png" alt=""></a>
+               </form>
+            </div>
+            <div class="container-fluid">
+               <div class="row top-line">
+                  <div class="col-md-6 col-xs-12">
+                     <div class="top-line__text">
+                        <p class="top-line__order">Chemises sur mesure</p>
+                        <a class="top-line__shops" href="">Notre boutique</a>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-xs-12">
+                     <div class="text-right navbar-collapse collapse collapse_user-menu header__separator">
+                        <ul class="user-menu">
+                           <li class="navbar-nav user-menu__item">
+                              <div class="dropdown">
+                                 <a class="user-menu__link user-menu__link_lang dropdown-toggle" data-toggle="dropdown" href="#">fr</a>
+                                 <ul class="dropdown-menu dropdown-menu-right user-menu__lang">
+                                    <li class="current">
+                                       <a class="user-menu__link user-menu__link_submenu" href="">France</a>
+                                    </li>
+                                    <li>
+                                       <a class="user-menu__link user-menu__link_submenu" href="">Other Countries</a>
+                                    </li>
+                                    <li>
+                                       <a class="user-menu__link user-menu__link_submenu" href="">Belgique</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </li>
+                           <li class="navbar-nav user-menu__item">
+                              <a href="" class="header__logout"><img src="static/img/icon-menu-close.png" alt=""></a>
+                           </li>
+                           <li class="navbar-nav user-menu__item">
+                              <div class="dropdown">
+                                 <a class="user-menu__link" href="">Connexion</a>
+                              </div>
+                           </li>
+                           <li class="navbar-nav user-menu__item header__cart">
+                              <div class="dropdown">
+                                 <a class="user-menu__link user-menu__link_lang dropdown-toggle" data-toggle="dropdown" href="#">Mon panier - <span class="so_top_basket_num">0</span></a>
+                                 <div class="dropdown-menu dropdown-menu-right cart-popup">
+                                    <h2 class="cart-popup__caption">Mon panier</h2>
+                                    <div class="cart-popup__total">
+                                       <span class="cart-popup__title">Total</span>
+                                       <span class="cart-popup__price"><span class="price">0,00&nbsp;€</span></span>
+                                    </div>
+                                    <div class="cart-popup__btns">
+                                       <a class="btn btn_dark btn_cart" href="">
+                                          <p>Voir mon panier</p>
+                                       </a>
+                                       <a class="btn btn_transperent" href="" style="display:none;">
+                                          <p>Finaliser ma commande</p>
+                                       </a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="row header__head">
+                  <div class="col-md-5 head__item text-right">
+                     <div class="menu__item dropdown">
+                        <a class="menu__link menu__item  dropdown-toggle menu__item_shop" data-toggle="dropdown" href="javascript:void(0);">Shop</a>
+                        <ul class="dropdown-menu submenu">
+                           <li class="submenu__top-line"></li>
+                           <li class="submenu__line">
+                              <div class="col-md-3 menu__column">
+                                 <div class="dropdown-header submenu__title">Sélectionnez un tissu</div>
+                                 <ul class="menu__list">
+                                    <li>
+                                       <a class="submenu__link" href="">
+                                        Best sellers<span class="num">(24)</span>
+                                    </a>
+                                    </li>
+                                    <li>
+                                       <a class="submenu__link" href="">
+                                        Nouveautés<span class="num">(21)</span>
+                                    </a>
+                                    </li>
+                                    <li>
+                                       <a class="submenu__link" href="">
+                                        Ventes privilèges<span class="num">(28)</span>
+                                    </a>
+                                    </li>
+                                    <li>
+                                       <a class="submenu__link" href="">
+                                        Repassage facile<span class="num">(29)</span>
+                                    </a>
+                                    </li>
+                                    <li>
+                                       <a class="submenu__link" href="">
+                                                    Uni<span class="num">(155)</span>
+                                                </a>
+                                    </li>
+                                    <li>
+                                       <a class="submenu__link" href="">
+                                                    Rayé<span class="num">(111)</span>
+                                                </a>
+                                    </li>
+                                    <li>
+                                       <a class="submenu__link" href="">
+                                                    Carreaux<span class="num">(91)</span>
+                                                </a>
+                                    </li>
+                                    <li>
+                                       <a class="submenu__link" href="">
+                                                    Motif<span class="num">(31)</span>
+                                                </a>
+                                    </li>
+                                    <li>
+                                       <a class="submenu__link submenu__link_last" href="">
+                                    Tous les tissus                                    <span class="num">(391)</span>
+                                </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="col-md-3 menu__column">
+                                 <div class="dropdown-header submenu__title">Créer depuis un modèle</div>
+                                 <ul class="menu__list">
+                                    <li>
+                                       <a class="submenu__link" href="">
+                                    Casual                                </a>
+                                    </li>
+                                    <li>
+                                       <a class="submenu__link" href="">
+                                    Fancy                                </a>
+                                    </li>
+                                    <li>
+                                       <a class="submenu__link" href="">
+                                    Intemporel                                </a>
+                                    </li>
+                                    <li>
+                                       <a class="submenu__link" href="">
+                                    Cérémonie                                </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="col-md-3 menu__column">
+                                 <div class="dropdown-header submenu__title submenu__title_last">Coffrets cadeaux</div>
+                                 <ul class="menu__list menu__list_last menu__list_sets">
+                                    <li>
+                                       <a class="submenu__link" href="">
+                                    Acheter un coffret                                </a>
+                                    </li>
+                                    <li>
+                                       <a class="submenu__link" href="">
+                                    Utiliser mon coffret                                </a>
+                                    </li>
+                                 </ul>
+                                 <div class="dropdown-header submenu__title submenu__title_last">Accessoires</div>
+                                 <ul class="menu__list menu__list_last menu__list_accessories">
+                                    <li class="menu__list-body">
+                                       <ul class="menu__sublist_accessories">
+                                          <li> <a class="submenu__link" href="">Cravates</a></li>
+                                       </ul>
+                                    </li>
+                                    <li>
+                                       <a class="submenu__link submenu__link_last" href="">
+                                    Tous les accessoires                                </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="col-md-3 submenu__img-wrapper">
+                                 <div class="submenu__img-block">
+                                    <div class="submenu__img-caption">Sélection</div>
+                                    <div class="submenu__img-title">Casual shirts</div>
+                                    <a class="btn submenu__img-btn" href="">
+                                Créer une chemise                            </a>
+                                 </div>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                     <a class="menu__item menu__item_jornal menu__item-top" href="/blog/">Le Journal</a>
+                  </div>
+                  <div class="col-md-2 head__item text-center">
+                     <a href="https://swann-staging.iressources.com/" title="Swann &amp; Oscar">
+                        <img class="logo__img" src="https://swann-staging.iressources.com/skin/frontend/so/default/images/logo.svg" alt="Swann &amp; Oscar">
+                        <img class="logo__img_onscroll" src="https://swann-staging.iressources.com/skin/frontend/so/default/redesign/img/logo-mobile.svg" alt="Swann &amp; Oscar">
+                     </a>
+                  </div>
+                  <div class="col-md-5 head__item text-left">
+                     <a href="" class="menu__item menu__item-top menu__item_help">Aide</a>
+                     <a href="" class="menu__item menu__item-top">A propos</a>
+                     <a href="" class="menu__item menu__item-top">
+                        <span class="header__search-icon fa fa-search fa-flip-horizontal"></span>
+                     </a>
+                  </div>
+               </div>
+               <div class="header__mobile-links">
+                  <a href="" class="header__mobile-link">
+                     <div class="header__mobile-icon-wrapper">
+                        <img class="header__mobile-icon" src="" alt="">
+                     </div>
+                     Connexion </a>
+                  <a href="" class="header__mobile-link">
+                     <div class="header__mobile-icon-wrapper">
+                        <img class="header__mobile-icon" src="https://swann-staging.iressources.com/skin/frontend/so/default/redesign/img/icon-cart.png" alt="">
+                     </div>
+                     Mon panier </a>
+                  <a href="" class="header__mobile-link">
+                     <div class="header__mobile-icon-wrapper">
+                        <img class="header__mobile-icon" src="https://swann-staging.iressources.com/skin/frontend/so/default/redesign/img/icon-place.png" alt="">
+                     </div>
+                     Notre boutique </a>
+               </div>
+            </div>
+         </nav>
+      </div>
+   </header>
+   <div class="wrapper">
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-md-12">
+               <div id="slider_index" class="carousel slide slider_index" data-ride="carousel">
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner" role="listbox">
+                     <div class="item slider__item active">
+                        <img class="slider__img" src="static/img/slider__1.jpg" alt="Créez votre chemise">
+                        <div class="slider__caption text-center">
+                           <div class="container-fluid">
+                              <h1 class="slider__title">60s shirts</h1>
+                              <h2 class="slider__subtitle ">Incentive plus courte </h2>
+                              <p class="slider__description">Parce que chaque homme est différent, créer sa propre chemise est un moyen d'exprimer et de revendiquer sa liberté ! Créez votre chemise en quelques minutes !</p>
+                              <a class="slider__btn btn" href="http://www.swannetoscar.com/factory/shirt/#fabric">Créez depuis le début<i></i></a>
+                              <a class="slider__btn btn" href="http://www.swannetoscar.com/intemporel.html">Créez depuis un modèle existant<i></i></a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="item slider__item">
+                        <img class="slider__img" src="static/img/slider__2.jpg" alt="Créez votre chemise">
+                        <div class="slider__caption text-center">
+                           <div class="container-fluid">
+                              <h1 class="slider__title text-center">Créez votre chemise</h1>
+                              <h2 class="slider__subtitle text-center">Fancy</h2>
+                              <p class="slider__description">Parce que chaque homme est différent, créer sa propre chemise est un moyen d'exprimer et de revendiquer sa liberté ! Créez votre chemise en quelques minutes !</p>
+                              <a class="slider__btn btn" href="http://www.swannetoscar.com/factory/shirt/#fabric">Créez depuis le début<i></i></a>
+                              <a class="slider__btn btn" href="http://www.swannetoscar.com/intemporel.html">Créez depuis un modèle existant<i></i></a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="item slider__item">
+                        <img class="slider__img" src="static/img/slider__3.jpg" alt="Créez votre chemise">
+                        <div class="slider__caption text-center">
+                           <div class="container-fluid">
+                              <h1 class="slider__title text-center">Créez votre chemise</h1>
+                              <h2 class="slider__subtitle text-center">Casual</h2>
+                              <p class="slider__description">Parce que chaque homme est différent, créer sa propre chemise est un moyen d'exprimer et de revendiquer sa liberté ! Créez votre chemise en quelques minutes !</p>
+                              <a class="slider__btn btn" href="http://www.swannetoscar.com/factory/shirt/#fabric">Créez depuis le début<i></i></a>
+                              <a class="slider__btn btn" href="http://www.swannetoscar.com/intemporel.html">Créez depuis un modèle existant<i></i></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="news index__wrapper">
+      <div class="container-fluid text-center">
+         <div class="row">
+            <h2 class="news__title"> En ce moment</h2>
+            <h3 class="news__subtitle">Ce qu’il ne faut pas manquer</h3>
+            <div class="col-md-6 news__block">
+               <a href="">
+                  <img class="news__img" src="static/img/news__1.jpg" alt="">
+               </a>
+               <a href=""><h3 class="news__item-title">The Tim Style</h3></a>
+               <a href=""><h4 class="news__item-subtitle">La sélection Thomas Mason</h4></a>
+            </div>
+            <div class="col-md-6">
+               <div class="row">
+                  <div class="col-sm-12">
+                     <a href="">
+                        <img class="news__img" src="static/img/news__2.jpg" alt="">
+                     </a>
+                     <a href=""><h3 class="news__item-title">Edition limitée</h3></a>
+                     <a href=""><h4 class="news__item-subtitle">Le style anglais</h4></a>
+                  </div>
+                  <div class="col-sm-12">
+                     <a href="">
+                        <img class="news__img" src="static/img/news__3.jpg" alt="">
+                     </a>
+                     <a href=""><h3 class="news__item-title">Coffrets cadeaux</h3></a>
+                     <a href=""><h4 class="news__item-subtitle">Offrez une expérience sur mesure</h4></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="comments">
+      <div class="container-fluid text-center">
+         <div class="row comments__wrapper">
+            <div class="col-sm-12 col-md-5 comments__item">
+               <a href="">
+                  <img class="img" src="static/img/comments__1.jpg" alt="">
+               </a>
+               <a href=""><h3 class="comments__title">Qualité Swann & Oscar</h3></a>
+               <a href=""><h4 class="comments__subtitle">Lorem ipsum dsolor sic alet</h4></a>
+            </div>
+            <div class="col-sm-12 col-md-2">
+               <div class="comments__middle">
+                  <div class="comments__block">
+                     <h2 class="comments__caption">Comment <br class="break" > ça marche ?</h2>
+                     <p class="comments__step">Créez votre chemise ou choisissez parmi nos collections</p>
+                     <p class="comments__step">Optez pour une taille standard ou faites l'expérience du sur mesure</p>
+                     <p class="comments__step">Livraison en 15 jours ouvrés ou retrait gratuit en boutique</p>
+                     <a href="" class="btn comments__btn">en savoir plus</a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-12 col-md-5 comments__item comments__item_last">
+               <a href="">
+                  <img class="img" src="static/img/comments__2.jpg" alt="">
+               </a>
+               <a href=""><h3 class="comments__title">Notre philosophie</h3></a>
+               <a href=""><h4 class="comments__subtitle">Lorem ipsum dsolor sic alet</h4></a>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="comments-bottom">
+      <div class="container-fluid index__wrapper">
+         <div class="row ">
+            <div class="col-sm-12">
+               <h2 class="comments-bottom__title text-center">Le sur-mesure facile</h2>
+            </div>
+            <div class="col-sm-3">
+               <span class="comments-bottom__number">1</span>
+               <h3 class="comments-bottom__text">Choisissez un tissu ou un modèle de chemise</h3>
+               <p class="comments-bottom__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempor arcu nec erat venenatis, a gravida erat dignissim. </p>
+            </div>
+            <div class="col-sm-3">
+               <span class="comments-bottom__number">2</span>
+               <h3 class="comments-bottom__text">Choisissez les options & les finitions qui vous plaisent en quelques clics</h3>
+               <p class="comments-bottom__description">Arcu nec erat venenatis, a gravida erat dignissim. Morbi facilisis a lectus finibus pulvinar</p>
+            </div>
+            <div class="col-sm-3">
+               <span class="comments-bottom__number">2</span>
+               <h3 class="comments-bottom__text">Saisissez vos mesures en 1 minute</h3>
+               <p class="comments-bottom__description">Maecenas tempor arcu nec erat venenatis, a gravida erat dignissim. Morbi facilisis a lectus finibus pulvinar</p>
+            </div>
+            <div class="col-sm-3">
+               <span class="comments-bottom__number">2</span>
+               <h3 class="comments-bottom__text">Votre chemise part en confection et vous la recevez vous 15 à 20 jours ouvrés</h3>
+               <p class="comments-bottom__description">A gravida erat dignissim. Morbi facilisis a lectus finibus pulvinar</p>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="top-product ">
+      <div class="container-fluid index__wrapper">
+         <div class="row">
+            <div class="col-sm-12 text-center">
+               <h2 class="caption">Dernières inspirations</h2></div>
+            <div class="col-sm-12 text-center">
+               <ul class="top-product__styles">
+                  <li class="top-product__styles-item top-product__styles-item_active">casual</li>
+                  <li class="top-product__styles-item">smart</li>
+                  <li class="top-product__styles-item">formal</li>
+               </ul>
+            </div>
+            <div class="col-sm-3">
+               <div class="list-product__img-block">
+                  <img class="top-product__img" src="https://swann-staging.iressources.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/g/a/gabarit-photo-2000px.jpg" alt="">
+               </div>
+               <h2 class="top-product__title">Chemise Twill unie bleu</h2>
+               <h3 class="top-product__subtitle">Col Napolitain, Custom Fit, Poignets Simples</h3>
+               <p class="top-product__price">148 €</p>
+            </div>
+            <div class="col-sm-3">
+               <div class="list-product__img-block">
+                  <img class="top-product__img" src="https://swann-staging.iressources.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/g/a/gabarit-photo-2000px.jpg" alt="">
+               </div>
+               <h2 class="top-product__title">Chemise carreaux bleu & marron</h2>
+               <h3 class="top-product__subtitle">Col Button down, Custom fit</h3>
+               <p class="top-product__price">188 €</p>
+            </div>
+            <div class="col-sm-3">
+               <div class="list-product__img-block">
+                  <img class="top-product__img" src="https://swann-staging.iressources.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/g/a/gabarit-photo-2000px.jpg" alt="">
+               </div>
+               <h2 class="top-product__title">Chemise denim unie bleue</h2>
+               <h3 class="top-product__subtitle">Col Button down</h3>
+               <p class="top-product__price">188 €</p>
+            </div>
+            <div class="col-sm-3">
+               <div class="list-product__img-block">
+                  <img class="top-product__img" src="https://swann-staging.iressources.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/g/a/gabarit-photo-2000px.jpg" alt="">
+               </div>
+               <h2 class="top-product__title">Col classique, classic fit, poignets simples</h2>
+               <h3 class="top-product__subtitle">Col Napolitain, Custom Fit, Poignets Simples</h3>
+               <p class="top-product__price">90 €</p>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="index-help">
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-sm-6 index-help__item index-help__item_shop">
+               <h2 class="index-help__title">Nos boutiques</h2>
+               <div class="index-help__shops"><span class="index-help__shop">Paris</span><span class="index-help__shop">Bruxelles</span></div>
+               <a class="link index-help__link" href="">voir nos boutiques</a>
+            </div>
+            <div class="col-sm-6 index-help__item index-help__item_opinion">
+               <h2 class="index-help__title">Vos avis</h2>
+               <h3 class="index-help__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempor arcu nec erat venenatis, a gravida erat dignissim. Morbi facilisis a lectus.”</h3>
+               <p class="index-help__author">Charles LB - Lyon</p>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="stories index__wrapper">
+      <div class="container-fluid">
+         <div class="row text-center">
+            <div class="col-sm-12 ">
+               <h2 class="caption">Swann & Oscar stories</h2>
+               <p class="stories__subtitle">Voir le journal</p>
+            </div>
+            <div class="col-sm-6 stories__item">
+               <div class="stories__img-block">
+                  <img class="img" src="static/img/stories__2.jpg" alt="">
+               </div>
+               <div class="stories__description">
+                  <h3 class="stories__name">Lifestyle</h3>
+                  <p class="stories__text">Les aventures incroyables de Constantin dans la toundra</p>
+                  <a class="link stories__link" href="">lire la suite</a>
+               </div>
+            </div>
+            <div class="col-sm-6 stories__item">
+               <div class="stories__img-block">
+                  <img class="img" src="static/img/stories__1.jpg" alt="">
+               </div>
+               <div class="stories__description">
+                  <h3 class="stories__name">Lifestyle</h3>
+                  <p class="stories__text">Tim prend des appels pendant le shooting</p>
+                  <a class="link stories__link" href="">lire la suite</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="container-fluid">
+      <div class="row">
+         <div class="col-md-12">
+            <div id="slider-bottom" class="carousel_bottom slide slider-bottom" data-ride="carousel">
+               <!-- Wrapper for slides -->
+               <div class="slider-bottom__controls wrapper">
+                  <a class="slider-bottom__controls-left" href=""></a>
+                  <a class="slider-bottom__controls-right" href=""></a>
+               </div>
+               <div class="carousel-inner" role="listbox">
+                  <div class="item slider-bottom__item active">
+                     <img class="slider__img" src="static/img/press__1.jpg" alt="Créez votre chemise">
+                     <div class="slider-bottom__caption">
+                        <p class="slider-bottom__main-title text-center">La presse parle de nous</p>
+                        <!-- <h2 class="slider-bottom__title text-center">monsieur</h2> -->
+                        <img class="slider-bottom__logo" src="static/img/slider__logo.png" alt="">
+                        <p class="slider-bottom__subtitle text-center">Monsieur fait salon</p>
+                        <p class="slider-bottom__description text-center">et les vrais élégants se pressaient dans les allées...</p>
+                        <a href="" class="slider-bottom__link">Voir tous les articles</a>
+                     </div>
+                  </div>
+                  <div class="item slider-bottom__item">
+                     <img class="slider__img" src="static/img/press__1.jpg" alt="Créez votre chemise">
+                     <div class="slider-bottom__caption">
+                        <p class="slider-bottom__main-title text-center">La presse parle de nous</p>
+                        <!-- <h2 class="slider-bottom__title text-center">monsieur</h2> -->
+                        <img class="slider-bottom__logo" src="static/img/slider__logo.png" alt="">
+                        <p class="slider-bottom__subtitle text-center">Monsieur fait salon</p>
+                        <p class="slider-bottom__description text-center">et les vrais élégants se pressaient dans les allées...</p>
+                        <a href="" class="slider-bottom__link">Voir tous les articles</a>
+                     </div>
+                  </div>
+                  <div class="item slider-bottom__item">
+                     <img class="slider__img" src="static/img/press__1.jpg" alt="Créez votre chemise">
+                     <div class="slider-bottom__caption">
+                        <p class="slider-bottom__main-title text-center">La presse parle de nous</p>
+                        <!-- <h2 class="slider-bottom__title text-center">monsieur</h2> -->
+                        <img class="slider-bottom__logo" src="static/img/slider__logo.png" alt="">
+                        <p class="slider-bottom__subtitle text-center">Monsieur fait salon</p>
+                        <p class="slider-bottom__description text-center">et les vrais élégants se pressaient dans les allées...</p>
+                        <a href="" class="slider-bottom__link">Voir tous les articles</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <footer class="footer">
+      <div class="wrapper">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-sm-3 services__item">
+                  <h2 class="services__title">retouches gratuites</h2>
+                  <p class="services__subtitle">pour la première chemise</p>
+               </div>
+               <div class="col-sm-3 services__item">
+                  <h2 class="services__title">livraison</h2>
+                  <p class="services__subtitle">sous 15 à 20 jours ouvrés</p>
+               </div>
+               <div class="col-sm-3 services__item">
+                  <h2 class="services__title">Service client</h2>
+                  <p class="services__subtitle">01 02 03 04 05</p>
+               </div>
+               <div class="col-sm-3 services__item">
+                  <h2 class="services__title">confection française</h2>
+                  <p class="services__subtitle">Made in France</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="contact-us">
+         <div class="container-fluid ">
+            <div class="row">
+               <div class="wrapper text-center">
+                  <h2 class="contact-us__title">Rejoignez le club Swann & Oscar</h2>
+                  <div class="email text-center">
+                     <input class="email__input" type="text" placeholder="Votre adresse e-mail" name="email">
+                     <a class="btn email__btn" href="">OK</a>
+                  </div>
+                  <p class="contact-us__description">Et recevez :
+                     <br class="break" />Nos offres et réductions en exclusivité
+                     <br class="break" /> Les conseils style de nos experts
+                     <br class="break" /> Invitations privées lors de nos </p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="wrapper footer__bottom">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-sm-3 footer__line">
+                  <h2 class="footer__title">GService client</h2></li>
+                  <span class="footer__arrow"></span>
+                  <ul class="footer__block">
+                     <li class="footer__title">
+                        <li><a class="footer__link" href="" title="">intro</a></li>
+                        <li><a class="footer__link" href="" title="">01 02 03 04 05</a></li>
+                        <li><a class="footer__link" href="" title="">Du lundi au vendredi<br class="break"/> de 9h30 à 19h00</a></li>
+                        <li><a class="footer__link" href="" title="">ou par e-mail</a></li>
+                  </ul>
+               </div>
+               <div class="col-sm-3 footer__line">
+                  <h2 class="footer__title">Swann & oscar</h2></li>
+                  <span class="footer__arrow"></span>
+                  <ul class="footer__block">
+                     <li class="footer__title">
+                        <li><a class="footer__link" href="" title="">Ligne</a></li>
+                        <li><a class="footer__link" href="" title="">Ligne</a></li>
+                        <li><a class="footer__link" href="" title="">Ligne</a></li>
+                        <li><a class="footer__link" href="" title="">Ligne</a></li>
+                        <li><a class="footer__link" href="" title="">Ligne</a></li>
+                  </ul>
+               </div>
+               <div class="col-sm-3 footer__line">
+                  <h2 class="footer__title">Swann & oscar</h2></li>
+                  <span class="footer__arrow"></span>
+                  <ul class="footer__block">
+                     <li class="footer__title">
+                        <li><a class="footer__link" href="" title="">Ligne</a></li>
+                        <li><a class="footer__link" href="" title="">Ligne</a></li>
+                        <li><a class="footer__link" href="" title="">Ligne</a></li>
+                        <li><a class="footer__link" href="" title="">Ligne</a></li>
+                        <li><a class="footer__link" href="" title="">Ligne</a></li>
+                  </ul>
+               </div>
+               <div class="col-sm-3 ">
+                  <div class="row">
+                     <div class="col-sm-12 footer__line">
+                        <h2 class="footer__title">Newsletter</h2>
+                        <span class="footer__arrow"></span>
+                        <div class="footer__block">
+                           <p class="footer__link">Incentive plus courte</p>
+                           <div class="email email_bottom">
+                              <input class="email__input" type="text" placeholder="Votre adresse e-mail" name="email">
+                              <a class="btn email__btn" href="">OK</a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-sm-12 footer__line">
+                        <h2 class="footer__title">Suivez-nous</h2>
+                        <span class="footer__arrow"></span>
+                        <ul class="social footer__block">
+                           <li class="social__item">
+                              <a class="social__link" href="http://www.facebook.com/pages/Swann-et-Oscar-chemise-sur-mesure/27994272262?sk=wall">
+                                 <span class="social__icon fa fa-facebook"></span>
+                              </a>
+                           </li>
+                           <li class="social__item">
+                              <a class="social__link" href="https://plus.google.com/110636738231196199565/about">
+                                 <span class="social__icon fa fa-google-plus"></span>
+                              </a>
+                           </li>
+                           <li class="social__item">
+                              <a class="social__link" href="https://www.instagram.com/swannetoscar/">
+                                 <span class="social__icon fa fa-instagram"></span>
+                              </a>
+                           </li>
+                           <li class="social__item">
+                              <a class="social__link" href="http://chemises-homme.tumblr.com/">
+                                 <span class="social__icon fa fa-tumblr"></span>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+</body>
+
+</html>

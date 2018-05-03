@@ -1,0 +1,257 @@
+.brand__description {
+   font-size:14px;
+   line-height:1.2em;
+
+   text-align:center;
+}
+.brand__info-wrapper {
+   display:-webkit-box;
+   display:flex;
+
+   padding-top:40px;
+   padding-bottom:40px;
+}
+@media (max-width: $lg) {
+   .brand__info-wrapper {
+      display:block;
+   }
+}
+.brand__info-main {
+   position:relative;
+}
+.brand__info {
+   height:460px;
+   padding-bottom:30px;
+}
+@media (min-width: $md) {
+   .brand__info:hover {
+      outline:3px solid #000;
+      background-color:#000;
+   }
+   .brand__info:hover .brand__info-title {
+      color:#fff;
+      background-color:#000;
+   }
+   .brand__info:hover .brand__info-title:after {
+      background-color:#fff;
+   }
+   .brand__info:hover .brand__info-description {
+      color:#fff;
+      background-color:#000;
+   }
+}
+@media (max-width: $md) {
+   .brand__info {
+      height:400px;
+      padding-bottom:0;
+   }
+}
+.brand__info-img {
+   width:100%;
+   max-width:240px;
+   margin:auto;
+}
+.brand__info-description {
+   font-family:cochinRegular;
+   font-size:16px;
+   line-height:1em;
+
+   width:76%;
+   max-width:240px;
+   margin:auto;
+   padding-top:15px;
+   padding-right:10px;
+   padding-left:10px;
+}
+@media (max-width: $lg) {
+   .brand__info-description {
+      width:100%;
+   }
+}
+.brand__info-title {
+   font-size:17px;
+
+   position:absolute;
+   bottom:0;
+   left:50%;
+
+   width:76%;
+   margin-left:-38%;
+   padding-top:35px;
+   padding-bottom:40px;
+
+   text-transform:uppercase;
+
+   background-color:#fff;
+}
+.brand__info-title:after {
+   position:absolute;
+   bottom:0;
+   left:50%;
+
+   width:20px;
+   height:3px;
+   margin-left:-10px;
+
+   content:'';
+
+   background-color:#000;
+}
+@media (max-width: $lg) {
+   .brand__info-title {
+      left:0;
+
+      width:100%;
+      margin-left:0;
+
+      background-color:rgba(255,255,255,.7);
+   }
+}
+.mission__title {
+   font-family:brandonBold;
+   font-size:17px;
+
+   position:relative;
+
+   padding-bottom:15px;
+
+   text-transform:uppercase;
+}
+.mission__title:before {
+   position:absolute;
+   bottom:10px;
+
+   width:29px;
+   height:3px;
+
+   content:'';
+
+   background:#000;
+}
+.mission__text-left {
+   text-align:right;
+}
+@media (max-width: $md) {
+   .mission__text-left {
+      text-align:left;
+   }
+}
+.mission__text-left .mission__title:before {
+   right:0;
+}
+@media (max-width: $md) {
+   .mission__text-left .mission__title:before {
+      left:0;
+   }
+}
+.mission__img {
+   padding-bottom:10px;
+}
+@media (max-width: $md) {
+   .mission__img {
+      display:none;
+   }
+}
+.mission__contribution {
+   padding-top:30px;
+   padding-bottom:30px;
+}
+@media (max-width: $md) {
+   .mission__contribution-img {
+      display:none;
+   }
+}
+.mission__contribution-title {
+   font-family:brandonBold;
+   font-size:20px;
+
+   padding-bottom:20px;
+   padding-left:10px;
+}
+@media (max-width: $md) {
+   .mission__contribution-title {
+      padding-left:0;
+
+      text-align:left;
+   }
+}
+.mission__contribution-text {
+   font-size:14px;
+   line-height:1.3em;
+
+   padding-bottom:20px;
+   padding-left:10px;
+}
+@media (max-width: $md) {
+   .mission__contribution-text {
+      padding-left:0;
+   }
+}
+.mission__description {
+   font-size:14px;
+   line-height:1.2em;
+
+   padding-top:30px;
+   padding-bottom:30px;
+}
+/* block: reviews
+_______________________________________________*/
+.reviews__order {
+   padding-bottom:50px;
+}
+.reviews__title {
+   font-size:28px;
+
+   text-transform:uppercase;
+}
+.reviews__subtitle {
+   font-family:brandonBold;
+   font-size:28px;
+
+   text-transform:uppercase;
+}
+.reviews__description {
+   font-size:13px;
+   line-height:1.2em;
+}
+.reviews__btn {
+   display:block;
+
+   width:100%;
+   max-width:150px;
+   margin:auto;
+}
+@media (max-width: $sm) {
+   .reviews__btn {
+      max-width:none;
+   }
+}
+.reviews__login {
+   margin-top:30px;
+   padding:30px;
+
+   background-image:url('../img/footer_services_bg.jpg');
+}
+.reviews__login-title {
+   font-family:brandonBold;
+   font-size:14px;
+
+   padding-bottom:15px;
+
+   text-transform:uppercase;
+}
+.reviews__btn-photo {
+   max-width:190px;
+   margin:0;
+   margin-bottom:20px;
+
+   background-color:$btn-background-color;
+}
+.reviews__btn-photo:before {
+   font-family:fontAwesome;
+   font-size:14px;
+
+   margin-right:7px;
+
+   content:'\f019';
+}

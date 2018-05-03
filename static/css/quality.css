@@ -1,0 +1,363 @@
+.quality-header {
+   position:relative;
+
+   display:-webkit-box;
+   display:flex;
+   overflow:hidden;
+   flex-direction:column;
+
+   height:380px;
+   margin:0 15px;
+   padding:0 10px;
+
+   text-align:center;
+
+   color:#fff;
+   background-image:url('../img/philosophie.jpg');
+   background-repeat:no-repeat;
+   background-position:center;
+   background-size:cover;
+
+   -webkit-box-pack:center;
+   justify-content:center;
+   -webkit-box-align:center;
+   align-items:center;
+   -webkit-box-orient:vertical;
+   -webkit-box-direction:normal;
+}
+.quality-header__title {
+   font-family:CochinItalic;
+   font-size:55px;
+
+   margin-bottom:15px;
+}
+@media (max-width: $sm) {
+   .quality-header__title {
+      font-size:42px;
+   }
+}
+.quality-header__subtitle {
+   font-family:CochinItalic;
+   font-size:22px;
+
+   margin-bottom:50px;
+}
+@media (max-width: $sm) {
+   .quality-header__subtitle {
+      font-size:22px;
+   }
+}
+.quality-header__btn {
+   position:absolute;
+   bottom:0;
+
+   width:100px;
+   height:100px;
+   margin-bottom:-50px;
+
+   -webkit-transform:rotate(90deg);
+           transform:rotate(90deg);
+
+   border-radius:100px;
+   background-color:#f3f2f7;
+   background-image:url('../img/arrow_return.svg');
+   background-repeat:no-repeat;
+   background-position:28px center;
+   background-size:23%;
+}
+.quality-item {
+   padding:60px 0;
+}
+@media (max-width: $lg) {
+   .quality-item {
+      padding:30px 0;
+   }
+}
+@media (max-width: $md) {
+   .quality-item {
+      padding:10px 0;
+   }
+}
+.quality-item_bottom {
+   max-width:calc(1060px + (100% - 1060px) / 2);
+   margin-left:auto;
+   padding:0 0 90px 0;
+}
+@media (max-width: $lg) {
+   .quality-item_bottom {
+      padding-bottom:40px;
+   }
+}
+@media (max-width: $md) {
+   .quality-item_bottom {
+      padding-bottom:30px;
+   }
+}
+.quality-item_top {
+   padding:40px 0 60px;
+}
+.quality-item__title {
+   font-size:26px;
+
+   margin-bottom:15px;
+   padding-top:170px;
+}
+@media (max-width: $lg) {
+   .quality-item__title {
+      padding-top:90px;
+   }
+}
+@media (max-width: $md) {
+   .quality-item__title {
+      font-size:24px;
+
+      padding-top:90px;
+   }
+}
+.quality-item__title_bottom {
+   padding-top:30%;
+}
+@media (max-width: $lg) {
+   .quality-item__title_bottom {
+      padding-top:0;
+   }
+}
+@media (max-width: $md) {
+   .quality-item__title_bottom {
+      padding-top:15px;
+   }
+}
+.quality-item__subtitle {
+   font-family:CochinItalic;
+   font-size:20px;
+
+   margin-bottom:40px;
+}
+@media (max-width: $md) {
+   .quality-item__subtitle {
+      font-size:18px;
+
+      margin-bottom:15px;
+   }
+}
+.quality-item__text {
+   font-size:18px;
+   line-height:1.3em;
+
+   max-width:340px;
+
+   color:#747474;
+}
+@media (max-width: $md) {
+   .quality-item__text {
+      font-size:16px;
+
+      max-width:none;
+      margin-bottom:15px;
+   }
+}
+.quality-item__img {
+   width:100%;
+}
+.quality-item__top-title {
+   font-size:26px;
+
+   padding-top:40px;
+
+   text-align:center;
+}
+.quality-item__btn {
+   display:block !important;
+
+   max-width:330px;
+   margin:0 auto 60px;
+}
+.quality-item__number {
+   font-size:22px;
+   line-height:70px;
+
+   position:absolute;
+   top:0;
+   left:15px;
+
+   display:block;
+
+   width:70px;
+   height:70px;
+   margin-top:80px;
+
+   text-align:center;
+
+   color:#fff;
+   border-radius:70px;
+   background-color:#4f3fa2;
+}
+@media (max-width: $lg) {
+   .quality-item__number {
+      margin-top:0;
+   }
+}
+.quality-item__number_banner {
+   top:-90px;
+   left:0;
+
+   margin-top:0;
+}
+.quality-banner {
+   height:620px;
+   margin:0 15px;
+
+   color:#fff;
+   background-image:url('../img/quality-banner.jpg');
+   background-repeat:no-repeat;
+   background-position:center;
+   background-size:cover;
+}
+@media (max-width: $md) {
+   .quality-banner {
+      height:520px;
+      margin-top:20px;
+   }
+}
+.quality-banner_mesures {
+   color:#000;
+   background-image:url('../img/box__banner.jpg');
+}
+.quality-banner__body_mesures {
+   position:relative;
+
+   max-width:330px;
+   margin-right:0;
+   margin-left:auto;
+}
+.quality-banner__title {
+   font-size:26px;
+
+   margin-bottom:15px;
+}
+.quality-banner__subtitle {
+   font-family:CochinItalic;
+   font-size:20px;
+
+   margin-bottom:40px;
+}
+.quality-banner__text {
+   font-size:18px;
+   line-height:1.3em;
+
+   max-width:350px;
+}
+.quality-banner__text_mesures {
+   color:#747474;
+}
+.quality-banner__body {
+   position:relative;
+
+   display:-webkit-box;
+   display:flex;
+   flex-direction:column;
+
+   height:100%;
+   padding:0 15px;
+
+   -webkit-box-pack:center;
+   justify-content:center;
+   -webkit-box-orient:vertical;
+   -webkit-box-direction:normal;
+}
+.quality-banner__text-accent {
+   color:#000;
+}
+.quality-info {
+   margin:0 15px;
+   padding:40px 10px 50px 10px;
+
+   background-color:#f3f2f7;
+}
+.quality-info__title {
+   font-size:26px;
+
+   margin-bottom:15px;
+
+   text-align:center;
+}
+.quality-info__accent {
+   color:#914199;
+}
+.quality-info__subtitle {
+   font-family:CochinItalic;
+   font-size:20px;
+
+   margin-bottom:35px;
+
+   text-align:center;
+}
+.quality-info__stars {
+   display:-webkit-box;
+   display:flex;
+
+   margin-bottom:15px;
+
+   color:#fcba55;
+}
+.quality-info__star {
+   margin-right:3px;
+}
+.quality-info__percent {
+   font-size:18px;
+
+   margin-bottom:5px;
+}
+.quality-info__percent-accent {
+   font-size:18px;
+
+   margin-bottom:12px;
+
+   color:rgba(0,0,0,.74);
+}
+.quality-info__text {
+   font-size:16px;
+
+   color:rgba(0,0,0,.62);
+}
+.quality-info__item {
+   display:-webkit-box;
+   display:flex;
+
+   border-right:1px solid #ccc;
+
+   -webkit-box-pack:end;
+   justify-content:flex-end;
+}
+@media (max-width: $md) {
+   .quality-info__item {
+      border:none;
+
+      -webkit-box-pack:center;
+      justify-content:center;
+   }
+}
+.quality-info__description {
+   font-size:18px;
+   line-height:1.4em;
+
+   max-width:380px;
+   padding-right:10px;
+
+   color:#747474;
+   color:#747474;
+}
+@media (max-width: $md) {
+   .quality-info__description {
+      max-width:none;
+      margin-bottom:10px;
+   }
+}
+.quality-info__info {
+   padding-left:25px;
+}
+@media (max-width: $md) {
+   .quality-info__info {
+      padding-left:15px;
+   }
+}

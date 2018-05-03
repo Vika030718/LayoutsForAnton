@@ -1,0 +1,383 @@
+.help-dashboard
+	background-color: #f5f6f8
+	padding-top: 30px;
+	padding-bottom: 30px;
+	@media(max-width: $sm)
+		padding-top: 20px;
+		padding-bottom: 20px;
+	&__title
+		font-family: CochinItalic
+		font-size: 55px;
+		margin-bottom: 20px;
+		text-align: center
+		@media(max-width: $sm)
+			font-size: 35px;
+			margin-bottom: 10px;
+	&__subtitle
+		font-size: 24px;
+		margin-bottom: 40px;
+		text-align: center
+		@media(max-width: $sm)
+			font-size: 16px;
+			margin-bottom: 20px;
+	&__row
+		display: flex
+		margin-bottom: 30px;
+		justify-content: center;
+		@media(max-width: $lg)
+			flex-direction: column;
+			margin-bottom:0;
+.help-content
+	background-color: #f5f6f8
+	padding-top: 30px;
+	padding-bottom: 30px;
+	@media(max-width: $sm)
+		padding-top: 20px;
+		padding-bottom: 20px;
+	&__title
+		font-family: CochinItalic
+		font-size: 55px;
+		margin-bottom: 20px;
+		text-align: center
+		@media(max-width: $sm)
+			font-size: 35px;
+			margin-bottom: 10px;
+	&__contacts
+		flex-direction: column;
+		display: flex;
+		align-items: flex-start;
+		@media(max-width: $md)
+			margin-bottom: 15px;
+.help-item
+	padding: 30px;
+	background-color: #ffffff
+	margin-bottom: 30px;
+	transition: box-shadow .2s ease-out;
+	height: 100%;
+	@media(max-width: $sm)
+		margin-bottom: 20px;
+	&:hover
+		box-shadow: 0 0 15px 3px rgba(0,0,0,.09);
+	&__title
+		font-size: 22px;
+		margin-bottom: 20px;
+		@media(max-width: $sm)
+			font-size: 18px;
+	&__list
+		list-style-type: none;
+		margin-left: 20px;
+		color: #000000
+	&__point
+		font-size: 16px;
+		position: relative;
+		margin-bottom: 8px;
+		&:before
+			content: "\f111"
+			font-family: fontAwesome
+			position: absolute
+			color: #1f212e
+			left: -20px;
+			font-size: 7px;
+		@media(max-width: $sm)
+			font-size: 14px;
+	&__link
+		color: #747474
+.help-top-menu
+	background-color: #e9ebef
+	margin-bottom: 38px;
+	display: flex;
+	&__item
+		background-color: #ffffff;
+		margin: 0 7px;
+		font-size: 16px;
+		flex: 1 1 0%
+		border: 1px solid transparent
+		position: relative
+		cursor: pointer
+		transition: border-color .2s ease-out, box-shadow .2s ease-out
+		&_active
+			border: 1px solid #000000
+			box-shadow: 0 0px 37px -6px rgba(0,0,0,.15);
+			&:after
+				width: 0; 
+				height: 0; 
+				border-left: 15px solid transparent;
+				border-right: 15px solid transparent;
+				border-top: 20px solid #e9ebef;
+				content: ""
+				bottom:-36px
+				position: absolute
+				left: -10px;
+		&:hover
+			border: 1px solid #000000
+			box-shadow: 0 0px 37px -6px rgba(0,0,0,.15);
+		@media(max-width: $lg)
+			padding: 10px;
+			font-size: 13px;
+	a
+		text-decoration: none;
+		height: 100%;
+		display: inline-block;
+		width: 100%;
+		padding: 15px;
+	&__title
+		flex: 1 1 150px;
+		font-size: 24px;
+		padding: 15px;
+		padding-right: 0;
+		@media(max-width: $xl)
+			padding-left: 10px;
+		@media(max-width: $lg)
+			font-size: 16px;
+			flex: 1 1 auto;
+			margin: 7px 7px 0 7px;
+			padding-bottom: 0;
+		@media(max-width: $sm)
+			font-size: 18px;
+	&__list
+		display: flex;
+		padding: 15px;
+		@media(max-width: $md)
+			flex-direction: column;
+	&__block
+		display: flex;
+		@media(max-width: $lg)
+			flex-direction: column;
+.help-menu
+	padding: 25px 0 30px 0;
+	background-color: #ffffff;
+	box-shadow: 0 0px 37px -6px rgba(0,0,0,.15);
+	&__title
+		font-size: 30px;
+		color: #000000
+		padding: 0 30px;
+		margin-bottom: 28px
+		@media(max-width: $sm)
+			padding: 9px 20px;
+			font-size: 24px;
+			margin-bottom: 15px
+	&__item
+		font-size: 16px;
+		transition: background-color .2s ease-out
+		&_active
+			background-color:#f5f6f8;
+		&:hover
+			background-color:#f5f6f8;
+	&__link
+		color: #555a69;
+		padding: 9px 30px;
+		display: block;
+		&:hover
+			text-decoration: none
+		@media(max-width: $sm)
+			padding: 9px 20px;
+	&__text
+		font-size: 24px;
+		padding: 30px 0 25px 0;
+		font-family: CochinItalic
+.help-article
+	background-color: #ffffff;
+	padding: 0 40px 25px 40px;
+	@media(max-width: $sm)
+		padding: 0 20px 15px 20px;
+	&__main-title
+		margin-bottom: 25px;
+		padding-top: 25px;
+		font-size:30px;
+		@media(max-width: $sm)
+			font-size:24px;
+	&__title
+		margin-bottom: 10px;
+		font-size:24px;
+		margin-top: 10px;
+		@media(max-width: $sm)
+			font-size:21px;
+	&__subtitle
+		font-size:20px;
+		margin-bottom: 10px;
+		margin-top: 5px;
+		@media(max-width: $sm)
+			font-size:18px;
+	&__text
+		padding-bottom: 30px;
+		color: #747474
+		font-size: 16px;
+		@media(max-width: $sm)
+			font-size:16px;
+	&__list-text
+		color: #747474
+		font-size: 16px;
+		margin-bottom:10px;
+		@media(max-width: $sm)
+			font-size:14px;
+	&__list
+		list-style-type: disc;
+		padding-left: 20px;
+		color: #747474;
+		font-size: 16px;
+		padding-bottom: 30px;
+		@media(max-width: $sm)
+			font-size:14px;
+	&__img
+		width: 100%;
+		max-width:100%;
+		padding-bottom: 25px;
+	&__img-caption
+		margin-top: -10px;
+		color: #000000;
+		text-align: right;
+		font-size: 16px;
+		@media(max-width: $sm)
+			font-size:14px;
+	&__link
+		text-decoration: underline
+	&__block
+		margin-bottom: 50px;
+	&__caption
+		position: relative;
+		font-size: 24px;
+		padding:25px 0;
+		border-top: 1px solid #cccdd2
+		border-bottom: 1px solid #cccdd2
+		margin-bottom: 30px;
+		@media(max-width: $sm)
+			font-size:20px;
+	&__toggle-block
+		position: relative
+	&__inner-block
+		display: none
+	&__img-block
+		position: relative;
+		overflow: hidden;
+		margin-bottom: 30px;
+		display: flex;
+		justify-content: center;
+	&__img-title
+		font-size: 17px;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 100%;
+		max-width: 130px;
+		margin: auto;
+		margin-top: -84px;
+		margin-left: -65px;
+		padding: 14px 5px;
+		text-align: center;
+		color: #000;
+		background-color: #fff;
+.help-article-toggle
+	position: absolute;
+	z-index: 2;
+	top: 25px;
+	right: 0;
+	width: 25px;
+	height: 23px;
+	cursor: pointer;
+	color: #000;
+	&:before
+		font-family: fontAwesome;
+		font-size: 39px;
+		top: 50%;
+		right: 0;
+		margin-top: -25px;
+		content: '\f107'
+	&_close
+		&:before
+			content: '\f106'
+	&_show
+		display: block
+.guarantees
+	background-color: #f5f6f8
+	padding-top: 40px;
+	padding-bottom: 40px;
+	@media(max-width: $sm)
+		padding-top: 20px;
+		padding-bottom: 20px;
+	&__main-title
+		font-family: CochinItalic;
+		font-size: 55px;
+		margin-bottom: 50px;
+		text-align: center;
+		@media(max-width: $sm)
+			font-size: 35px;
+	&__wrapper
+		max-width: 920px;
+		margin: auto;
+		width: 100%;
+	&__block
+		background-color: #ffffff
+		padding: 40px 40px 20px 40px;
+		margin-bottom: 50px;
+		@media(max-width: $sm)
+			padding: 20px;
+			margin-bottom: 20px;
+	&__title
+		font-size: 24px;
+		margin-bottom: 20px;
+		@media(max-width: $sm)
+			font-size: 20px;
+			margin-bottom: 10px;
+	&__text
+		color:#747474
+		font-size: 16px;
+		line-height: 1.5em
+		margin-bottom: 20px;
+		@media(max-width: $sm)
+			font-size: 14px;
+			margin-bottom: 10px;
+	a
+		text-decoration: none;
+		color:#747474;
+		&:hover
+			text-decoration: underline;
+.cms
+	background-color: #f5f6f8
+	padding-top: 40px;
+	padding-bottom: 40px;
+	@media(max-width: $sm)
+		padding-top: 20px;
+		padding-bottom: 20px;
+	&__main-title
+		font-family: CochinItalic;
+		font-size: 55px;
+		margin-bottom: 50px;
+		text-align: center;
+		@media(max-width: $sm)
+			font-size: 35px;
+	&__wrapper
+		max-width: 920px;
+		margin: auto;
+		width: 100%;
+	&__block
+		background-color: #ffffff
+		padding: 40px 40px 20px 40px;
+		margin-bottom: 50px;
+		@media(max-width: $sm)
+			padding: 20px;
+			margin-bottom: 20px;
+	&__title
+		font-size: 24px;
+		margin-bottom: 20px;
+		@media(max-width: $sm)
+			font-size: 20px;
+			margin-bottom: 10px;
+	&__text
+		color:#747474
+		font-size: 16px;
+		line-height: 1.5em
+		margin-bottom: 20px;
+		@media(max-width: $sm)
+			font-size: 14px;
+			margin-bottom: 10px;
+	a
+		text-decoration: none;
+		color:#747474;
+		&:hover
+			text-decoration: underline;
+	&__img
+		img
+			max-width:100%;
+	&__list
+		padding-left: 18px;
+		list-style-type: disc;

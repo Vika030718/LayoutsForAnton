@@ -1,0 +1,307 @@
+@require '__variables'
+@require '__fonts'
+
+.blog
+	&__wrapper
+		max-width: 1030px;
+		margin: auto;
+		img
+			width: 100%
+			max-width: 100%;
+	&__title
+		position: relative;
+		text-align: center;
+		margin-top: 0px;
+		margin-bottom: 30px;
+		@media(max-width: $md)
+			margin-top: 30px;
+		&:after
+			width: 100%;
+			height: 1px;
+			background-color: $separator-color;
+			content: ''
+			position: absolute
+			left: 0;
+			bottom: 50%;
+		@media(max-width: $md)
+			&:after
+				width: 0
+	&__title-text
+		background-color: #ffffff;
+		font-family: CochinItalic;
+		font-size: 60px;
+		text-align: center;
+		position: relative
+		z-index: 2;
+		display: inline-block;
+		padding: 0 25px;
+		margin: 0;
+		@media(max-width: $md)
+			font-size: 30px;
+			padding: 0 5px;
+	&__return, &__category
+		background-color: #ffffff;
+		font-size: 16px;
+		text-align: center;
+		position: relative
+		z-index: 2;
+		display: inline-block;
+		padding: 0 25px;
+		margin: 0;
+		top: -13px;
+		@media(max-width: $md)
+			top: 0;
+	&__return
+		left: -20%;
+		padding: 0 10px 0 25px;
+		@media(max-width: $md)
+			left: 0;
+		&:before
+			content: "\f104"
+			font-family: fontAwesome
+			font-size: 18px;
+			left: 13px;
+			position: absolute;
+	&__category
+		right: -20%
+		padding: 0 25px 0 10px;
+		@media(max-width: $md)
+			right: 0
+		&:before
+			font-family: fontAwesome;
+			font-size: 18px;
+			position: absolute;
+			right: 8px;
+			content: '\f107';
+			top: 0px;
+	&__photo-title
+		font-size: 13px;
+		margin-top: 25px
+		margin-bottom: 5px
+	&__photo-subtitle
+		color: $text-pale;
+		font-size: 13px;
+		margin-bottom: 10px;
+		margin-top: 0px;
+	&__photo-price
+		font-size: 13px;
+.story
+	padding: 50px 0 170px;
+	@media(max-width: $md)
+		padding: 50px 0 20px;
+	&__subtitle
+		font-size: 20px;
+		color: rgba(0, 0, 0, 0.5);
+		text-decoration: underline
+		font-family: CochinItalic
+		margin-bottom: 50px;
+	&__img-block
+		height: 360px;
+		width: 100%;
+		overflow: hidden
+		margin-bottom: 120px;
+		@media(max-width: $md)
+			height: auto;
+			margin-bottom: 30px;
+	&__description
+		position: absolute;
+		bottom: 20px;
+		background-color: #ffffff;
+		width: 370px;
+		left: 50%;
+		margin-left: -185px;
+		padding: 30px 60px;
+		height: 160px;
+		@media(max-width: $md)
+			margin-left: auto
+			margin-right: auto
+			padding: 15px 15px 30px;
+			width: 100%;
+			height: auto;
+			width: 100%;
+			left: 0
+			background-color: rgba(255, 255, 255, 0.75);
+			padding: 15px 25px 15px;
+	&__description_main
+		width: 500px;
+		margin-left: -225px;
+		@media(max-width: $md)
+			margin-left: auto
+			width: 100%;
+	&__item
+		position: relative
+		margin-bottom: 20px;
+	&__name
+		font-size: 18px;
+		text-transform: uppercase;
+		margin-bottom: 15px;
+		margin-top: 0;
+	&__text
+		font-family: CochinItalic
+		margin-bottom: 15px;
+		font-size: 18px;
+	&__link
+		font-size: 18px;
+		font-family: CochinItalic
+.article
+	padding: 50px 0 170px;
+	@media(max-width: $md)
+		padding: 50px 0 20px;
+	&__close
+		position: absolute;
+		top: 20px;
+		right: 20px;
+	&__top
+		background: url('../img/temp/article__bg.jpg');
+		height: 270px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+	&__top-subtitle
+		font-size: 14px;
+		color: #ffffff;
+		text-transform: uppercase
+	&__top-title
+		font-size: 22px;
+		color: #ffffff;
+		text-transform: uppercase
+		margin-top: 10px;
+	&__inner-wrapper
+		max-width: 860px;
+		margin: auto;
+	&__img-block
+		width: 100%;
+		overflow: hidden
+		position: relative;
+		margin-bottom: 50px;
+		@media(max-width: $md)
+			height: auto;
+	&__img-subtext
+		margin-bottom: 60px;
+		color: #000000;
+		text-align: left;
+		padding-left: 50px;
+	&__description
+		position: absolute;
+		bottom: 30px;
+		background-color: #ffffff;
+		width: 70%;
+		left: 50%;
+		margin-left: -35%;
+		padding: 25px;
+		@media(max-width: $md)
+			margin-left: auto
+			margin-right: auto
+			padding: 15px 15px 30px;
+			width: 100%;
+			left: auto;
+			background-color: rgba(255, 255, 255, 0.75);
+	&__name
+		font-size: 11px;
+		text-transform: uppercase;
+		margin-bottom: 7px;
+		margin-top: 0px;
+	&__text
+		font-family: CochinItalic
+		margin-bottom: 15px;
+		font-size: 18px;
+	&__link
+		font-size: 18px;
+		font-family: CochinItalic
+	&__tags
+		color: #b1b1b1;
+		text-transform: uppercase
+		font-size: 8px;
+	&__subtext
+		font-size: 24px;
+		color: #747474
+		margin-top: 60px;
+		margin-bottom: 70px;
+		font-family: CochinItalic
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+	&__subtitle
+		font-size: 24px;
+		margin-top: 50px;
+		margin-bottom: 30px;
+		text-align: left;
+		padding-left: 50px;
+	&__paragraph
+		font-size: 18px;
+		color: #747474;
+		text-align: left;
+		margin-bottom: 50px;
+		padding-left: 50px;
+	&__text-right
+		padding-left: 0
+		padding-top: 30px;
+		margin-bottom: 0
+	&__text-left
+		padding-top: 30px;
+		margin-bottom: 0
+		padding-left: 0
+	&__social
+		border-top: 1px solid #ccc;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		margin-top: 90px;
+	&__social-title
+		font-size: 16px;
+		margin-right: 20px;
+		margin-bottom: 5px;
+	&__list
+		text-align: left;
+		margin-bottom: 75px;
+		color: #747474;
+	&__list-item
+		padding: 15px 0;
+		display: flex;
+		align-items: center;
+		&:before
+			content: url('../img/arrow__article.png');
+			padding-right: 20px;
+			height: 15px;
+	&__title-text
+		font-size: 24px;
+		position: relative;
+		z-index: 2;
+		display: inline-block;
+		margin: 0;
+		padding: 0 25px;
+		text-align: center;
+		background-color: #fff;
+
+/*______________________________ preloader ______________________________*/		
+.cssload-container
+	width: 100%;
+	height: 49px;
+	text-align: center;
+.cssload-speeding-wheel
+	width: 49px;
+	height: 49px;
+	margin: 0 auto;
+	border: 3px solid rgb(0,0,0);
+	border-radius: 50%;
+	border-left-color: transparent;
+	border-right-color: transparent;
+	animation: cssload-spin 575ms infinite linear;
+	-o-animation: cssload-spin 575ms infinite linear;
+	-ms-animation: cssload-spin 575ms infinite linear;
+	-webkit-animation: cssload-spin 575ms infinite linear;
+	-moz-animation: cssload-spin 575ms infinite linear;
+@keyframes cssload-spin
+	100%{ transform: rotate(360deg); transform: rotate(360deg); }
+@-o-keyframes cssload-spin 
+	100%{ -o-transform: rotate(360deg); transform: rotate(360deg); }
+@-ms-keyframes cssload-spin
+	100%{ -ms-transform: rotate(360deg); transform: rotate(360deg); }
+@-webkit-keyframes cssload-spin
+	100%{ -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+@-moz-keyframes cssload-spin
+	100%{ -moz-transform: rotate(360deg); transform: rotate(360deg); }

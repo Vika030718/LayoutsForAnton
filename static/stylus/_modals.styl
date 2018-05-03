@@ -1,0 +1,249 @@
+.modals
+   padding: 40px;
+   &_order
+      width:100%;
+      max-width: 830px;
+   &_gallery
+      max-width: 930px;
+      width: calc(100% - 20px);
+   &__header
+      border-bottom: 0;
+      text-align: center;
+      padding-top: 30px;
+      padding-bottom: 30px;
+   &__body
+      display: flex;
+      padding-left: 15px;
+      padding-right: 15px;
+   &__footer
+      border-top: 0;
+      text-align: center;
+      padding-bottom: 30px;
+   &__title
+      line-height: 19px;
+      margin: auto;
+      position: relative;
+      font-size: 17px;
+      font-family: brandonBold;
+      text-transform: uppercase;
+      &:after
+         content: "";
+         position: absolute;
+         bottom: 0;
+         left: 50%;
+         width: 125px;
+         height: 3px;
+         margin: 0 0 0 -62px;
+         background: #000;
+         bottom: -12px;
+   &__subtitle
+      margin-top: 25px;
+   &__group
+      margin-bottom: 10px;
+   &__group_bottom
+      margin-bottom: 0px;
+   &__description
+      background-image: url('../img/footer_services_bg.jpg');
+      font-size: 14px;
+      line-height: 18px;
+      padding: 9px 22px;
+   &__btns
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+      margin-left:-5px;
+      margin-right: -5px;
+      .btn
+         margin: 0 5px;
+   &__btn
+      font-size: 15px !important;
+      display: inline-block !important;
+      width: auto !important;
+      min-width: 76px !important;
+      margin: 0 10px;
+      padding: 11px !important;
+      color: #555a69;
+      border: 1px solid #000;
+.modal_filter
+   max-width: 1240px;
+   width: calc( 100% - 20px )
+.modal-compare
+   max-width: 940px;
+   width: 100%
+   .modal-body
+      padding: 0 45px 0 45px;
+   .close
+      top: 25px!important;
+      right:15px!important;
+   &__row
+      display: flex;
+      // @media(max-width: $lg)
+      //    display: block;
+   &__controls
+      position: absolute;
+      top: 200px;
+      right: 0;
+      left: 0;
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      padding: 0 15px;
+      @media(max-width: $sm)
+         padding:0 10px;
+   &__controls-link
+      cursor: pointer;
+      z-index: 2;
+body.modal-open
+   overflow: auto;
+.modal-content
+   border-radius: 0!important;
+.modal-popup
+   z-index: 2222;
+   .modal-dialog 
+      // z-index: 980979;
+      max-width: 400px;
+      width: 100%;
+      position: absolute;
+      left: 50%;
+      margin-left: -200px;
+      top:0;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media(max-width: $lg)
+         width: auto!important;
+         margin-left: auto!important;
+         margin-right: auto!important;
+         left: 10px!important;
+         right: 10px!important;
+         bottom: auto;
+      &_fixed
+         position: fixed
+   .modal-content
+      padding: 30px 40px 20px 40px;
+      border-radius: 0;
+      border-color: #fff;
+   &__title
+      font-size: 18px;
+      margin-bottom: 40px;
+      font-family: brandonBold
+      text-align: center;
+      position: relative
+      &:after
+         content: "";
+         position: absolute;
+         bottom: -10px;
+         left: 50%;
+         width: 125px;
+         height: 1px;
+         margin: 0 0 0 -62px;
+         background: #000;
+   &__text
+      font-size: 14px;
+   &__close
+      position: absolute
+      top: 10px;
+      right: 10px;
+      text-decoration: none!important;
+      img
+         width: 20px;
+         height: 20px
+   &__close-text
+      margin-right: 10px;
+      color: #676a77;
+      font-size: 16px;
+      font-weight: normal;
+   &__text
+      margin-top: 15px;
+      margin-bottom:15px;
+.modal-main
+   width: 720px!important;
+   margin-left: -375px !important;
+   max-width: none!important;
+   @media(max-width: $lg)
+      width: auto!important;
+      margin-left: auto!important;
+      margin-right: auto!important;
+      left: 10px!important;
+      right: 10px!important;
+.recommend-popup
+   width: 830px !important;
+   max-width: none !important;
+   margin-left: -415px !important;
+   .modal-content
+      width: 100%;
+      @media(max-width: $sm)
+         padding: 15px;
+   &__title
+      font-size: 24px;
+      margin-bottom: 10px;
+      text-align: center
+      padding-top: 20px;
+      @media(max-width: $md)
+         font-size: 20px;
+   &__subtitle
+      font-size: 16px;
+      color: #9597af
+      text-align: center
+      margin-bottom: 35px;
+      @media(max-width: $md)
+         font-size: 14px;
+   &__head
+      display: flex;
+      border-bottom: 1px solid #cccccc;
+      border-top: 1px solid #cccccc;
+      padding: 0 25px;
+      &:nth-child(1)
+         border-top: none;
+      @media(max-width: $lg)
+         padding: 0 15px;
+      @media(max-width: $md)
+         flex-direction: column;
+   &__body
+      padding: 25px 0 10px 0;
+      display: flex;
+      @media(max-width: $md)
+         flex-direction: column;
+   &__block
+      padding: 30px 25px;
+      border-right: 1px solid #cccccc;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex: 1;
+      &:nth-last-child(1)
+         border-right: none;
+         padding-right: 0;
+      &:nth-child(1)
+         padding-left: 0;
+      @media(max-width: $lg)
+         font-size: 12px;
+         padding: 15px 10px;
+         flex: 1;
+      @media(max-width: $md)
+         border-right: none;
+         padding: 7px 10px;
+   &__btn
+      width: auto!important;
+   &__footer
+      padding-top:20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-top: 1px solid #cccccc;
+   &__return
+      margin-top: 20px;
+      width: auto;
+      color:#000000!important
+      .btn_return-img
+         opacity: 1;
+   &__img
+      width:100%;
+   &__description
+      @media(max-width: $lg)
+         margin-top: 10px;
+   &__content
+      overflow: scroll
+      height: 557px;
+      border-top: 1px solid #ccc;
