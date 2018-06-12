@@ -1,7 +1,0 @@
-CalculateFunction.py
-README.txt
-setup.py
-CalculateFunction.egg-info/PKG-INFO
-CalculateFunction.egg-info/SOURCES.txt
-CalculateFunction.egg-info/dependency_links.txt
-CalculateFunction.egg-info/top_level.txt
