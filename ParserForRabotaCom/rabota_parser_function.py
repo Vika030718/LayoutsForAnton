@@ -1,4 +1,4 @@
-from rabota_parser_loggin import Logging
+from rabota_parser_loggin import Logger
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -53,7 +53,7 @@ def parser(query):
             for k,v in jobs_attributes.items():
                 for job_item in job.find_elements_by_class_name(v):
                     job_info[k]=job_item.text
-            Logging().log_writer(job_info)
+            Logger().log_writer(job_info)
 
         pages_xpath = "//dl[contains(@id, 'ctl00_content_vacancyList_gridList_ctl23_pagerInnerTable')]/dd[" + str(page_counter) + "]/a[contains(@class, 'f-always-blue')]"
         page_number = driver.find_element_by_xpath(pages_xpath)

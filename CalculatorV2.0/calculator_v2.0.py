@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-from calculate_function import Scanner, Logging
+from calculate_function import Scanner, Logger
 
 def calculator():
     print('\nHello, You are in The World of Numbers, how can I help you? \n')
@@ -9,12 +9,13 @@ def calculator():
     operation = input('Please, make your choice: ')
 
     if operation=='1':
-        result = Scanner(input('Please, enter your expression: ')).scann()
+        expression = input('Please, enter your expression: ')
+        result = Scanner(expression).scann()
         print('Your result is: ' + str(result))
     elif operation=='2':
-        Logging().log_reader()
+        Logger.log_reader()
     elif operation=='3':
-        Logging().log_clear()
+        Logger.log_cleaner()
         print('Your history has been cleaned.')
     elif operation=='4':
         exit()

@@ -1,7 +1,8 @@
-import csv, datetime
+import csv, datetime, re
 
-class Logging:
+class Logger(object):
 
+    @classmethod
     def log_reader(self):
 
         with open('calculator_history.csv', 'r') as csv_file:
@@ -10,19 +11,20 @@ class Logging:
             for line in csv_reader:
                 print(line)
 
-    def log_clear(self):
+    @classmethod
+    def log_cleaner(self):
 
         with open('calculator_history.csv', 'w') as csv_file:
             csv_file.truncate()
 
-class Scanner:
+class Scanner(object):
 
     def __init__(self, user_phrase):
         self.user_phrase = user_phrase
 
     def log_writer(self, expression, result):
 
-        log_row = [str(datetime.date.today()), expression, result]
+        log_row = [datetime.date.today().strftime("%x"), expression, result]
 
         with open('calculator_history.csv', 'a') as csv_file:
             csv_writer = csv.writer(csv_file, delimiter=',')
@@ -32,11 +34,19 @@ class Scanner:
         expression = self.user_phrase.replace(" ", "")
         # Check if there are any unsupported characters in the string
         expression_list = []
+
         for ch in expression:
             if ch not in '01234567890+-*/.()':
                 print('Unsupported Character: ' + ch)
                 exit()
             expression_list.append(ch)
+
+        # if re.findall('[^0-9]', expression):
+        #     print('Unsupported Character: ')
+        #     exit()
+        # else:
+        #     for ch in expression:
+        #         expression_list.append(ch)
 
         count = 0
         while count < len(expression_list) - 1:

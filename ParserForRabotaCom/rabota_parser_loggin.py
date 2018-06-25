@@ -1,7 +1,8 @@
-import time, csv, datetime
+import csv
 
-class Logging:
+class Logger(object):
 
+    @classmethod
     def log_reader(self):
 
         with open('rabota_data.csv', 'r') as csv_file:
@@ -10,7 +11,8 @@ class Logging:
             for line in csv_reader:
                 print(line)
 
-    def log_clear(self):
+    @classmethod
+    def log_cleaner(self):
 
         with open('rabota_data.csv', 'w') as csv_file:
             csv_file.truncate()

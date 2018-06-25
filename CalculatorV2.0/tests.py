@@ -18,5 +18,8 @@ class TestScanner(unittest.TestCase):
     def test_expression(self):
         self.assertEqual(Scanner('10/2-3+22*2-(15+5)').scann(), 26)
 
+    def test_expression2(self):
+        self.assertEqual(Scanner('5+2*(5-3)').scann(), 9)
+
 if __name__ == '__main__':
     unittest.main()
