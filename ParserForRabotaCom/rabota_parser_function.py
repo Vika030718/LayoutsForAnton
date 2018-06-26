@@ -1,10 +1,9 @@
-from rabota_parser_loggin import Logger
+"""Parse Rabota.com"""
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-
-
+from rabota_parser_loggin import Logger
 
 def open_jobs_list(query):
     """Initiates driver and opens jobs list"""
@@ -22,6 +21,7 @@ def open_jobs_list(query):
     return driver
 
 def count_pages(driver):
+    """Count pages"""
     pages = driver.find_elements_by_id("ctl00_content_vacancyList_gridList_ctl23_pagerInnerTable")
     pages_list = []
     for page_item in pages:
@@ -31,33 +31,34 @@ def count_pages(driver):
     return number_of_pages
 
 def parser(query):
-
+    """Parser pages"""
     jobs_attributes = {'name': 'f-vacancylist-vacancytitle',
-                        'city': 'f-vacancylist-characs-block',
-                        'description': 'f-vacancylist-shortdescr'}
+                       'city': 'f-vacancylist-characs-block',
+                       'description': 'f-vacancylist-shortdescr'}
 
     driver = open_jobs_list(query)
     number_of_pages = count_pages(driver)
 
     job_info = {}
     page_counter = 3
-    for i in range(number_of_pages):
+    for _i in range(number_of_pages):
 
-        jobs =  driver.find_elements_by_class_name("f-vacancylist-vacancyblock")
+        jobs = driver.find_elements_by_class_name("f-vacancylist-vacancyblock")
 
         jobs_list = []
         for job in jobs:
             jobs_list.append(job)
 
         for job in jobs_list:
-            for k,v in jobs_attributes.items():
-                for job_item in job.find_elements_by_class_name(v):
-                    job_info[k]=job_item.text
+            for key, value in jobs_attributes.items():
+                for job_item in job.find_elements_by_class_name(value):
+                    job_info[key] = job_item.text
             Logger().log_writer(job_info)
-
-        pages_xpath = "//dl[contains(@id, 'ctl00_content_vacancyList_gridList_ctl23_pagerInnerTable')]/dd[" + str(page_counter) + "]/a[contains(@class, 'f-always-blue')]"
+        pages_xpath_start = "//dl[contains(@id, 'ctl00_content_vacancyList_gridList_ctl23_pagerInnerTable')]/dd["
+        pages_xpath_end = "]/a[contains(@class, 'f-always-blue')]"
+        pages_xpath = pages_xpath_start + str(page_counter) + pages_xpath_end
         page_number = driver.find_element_by_xpath(pages_xpath)
-        page_counter+= 1
+        page_counter += 1
         page_number.click()
 
     driver.quit()

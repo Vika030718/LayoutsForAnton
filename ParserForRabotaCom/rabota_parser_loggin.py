@@ -3,7 +3,7 @@ import csv
 class Logger(object):
 
     @classmethod
-    def log_reader(self):
+    def log_reader(cls):
 
         with open('rabota_data.csv', 'r') as csv_file:
             csv_reader = csv.reader(csv_file)
@@ -12,12 +12,13 @@ class Logger(object):
                 print(line)
 
     @classmethod
-    def log_cleaner(self):
+    def log_cleaner(cls):
 
         with open('rabota_data.csv', 'w') as csv_file:
             csv_file.truncate()
 
-    def log_writer(self, data):
+    @classmethod
+    def log_writer(cls, data):
 
         log_row = [data['name'], data['city'], data['description']]
 

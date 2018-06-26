@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Parse rabota.com for Pytho vacancy, take name, city, description and put It into css file"""
 
 import time
 from rabota_parser_function import parser
@@ -9,15 +10,15 @@ def rabota_parser():
 
     operation = input('Please, make your choice: ')
 
-    if operation=='1':
+    if operation == '1':
         parser("python")
         time.sleep(5)
-    elif operation=='2':
+    elif operation == '2':
         Logger.log_reader()
-    elif operation=='3':
+    elif operation == '3':
         Logger.log_cleaner()
         print('Your history has been cleaned.')
-    elif operation=='4':
+    elif operation == '4':
         exit()
 
 
