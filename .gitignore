@@ -3,3 +3,6 @@
 *.coverage
 *geckodriver.log
 *.vscode
+*pylintrc
+*\flask
+*.db
