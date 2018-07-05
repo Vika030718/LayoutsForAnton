@@ -10,7 +10,7 @@ class Searcher(object):
     YOUTUBE_API_SERVICE_NAME = "youtube"
     YOUTUBE_API_VERSION = "v3"
 
-    video_dict = []
+    # video_dict = []
 
     def youtube_search(self, q, max_results=50, order="relevance", token=None, location=None, location_radius=None):
 
@@ -41,16 +41,22 @@ class Searcher(object):
         res = self.youtube_search(keyword, token=token)
         token = res[0]
         videos = res[1]
+        video_dict = []
         for vid in videos:
-            self.video_dict.append({'title': vid['snippet']['title'], 'id': vid['id']['videoId']})
-        return token
+            video_dict.append({'title': vid['snippet']['title'], 'id': vid['id']['videoId']})
+        return token, video_dict
 
     def youtube_search_all(self, expression):
 
-        token = self.grab_videos(expression)
+        video_dict = []
+        video_block = []
+
+        token, video_dict = self.grab_videos(expression)
         while token != "last_page":
-            token = self.grab_videos(expression, token=token)
+            token, video_block = self.grab_videos(expression, token=token)
+            for video in video_block:
+                video_dict.append(video)
 
-        print(len(self.video_dict))
+        print(len(video_dict))
 
-        return self.video_dict
+        return video_dict

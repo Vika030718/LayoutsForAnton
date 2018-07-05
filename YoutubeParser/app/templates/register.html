@@ -1,14 +1,15 @@
 {% extends "base.html" %} {% block content %}
-            <h1 class="title">Sign In</h1>
+            <h1 class="title">Registration</h1>
             <form action="" method="post" name="register">
                     {{form.hidden_tag()}}
                     <p>
 
-                        some text
+                        {{form.email(class_="form-control mr-sm-2")}}
+                        {{form.password(class_="form-control mr-sm-2")}}
 
                     </p>
 
-                    <p><input type="submit" class="btn btn-success my-2 my-sm-0" value="register"></p>
+                    <p><input type="submit" class="btn btn-success my-2 my-sm-0" value="Register"></p>
                 </form>
 
 

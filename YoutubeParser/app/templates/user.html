@@ -4,14 +4,15 @@
 {% block content %}
 <table>
     <tr valign="top">
-        <td><img src="{{user.avatar(128)}}"></td>
-        <td><h1>User: {{user.nickname}}</h1></td>
+        <td><h1 class="title">{{user.nickname}}, here is the story of your search.</h1></td>
     </tr>
 </table>
-<hr>
-{% for post in posts %}
-<p>
-  {{post.author.nickname}} says: <b>{{post.body}}</b>
-</p>
+<table>
+    <tr valign="top">
+        <td class="search-history_date">When</td><td>What</td>
+    </tr>
+</table>
+{% for post in posts|sort(attribute='timestamp', reverse = True) %}
+    {% include 'search_history.html' %}
 {% endfor %}
 {% endblock %}

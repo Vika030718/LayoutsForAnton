@@ -6,5 +6,15 @@ class LoginForm(Form):
     openid = StringField('openid', validators=[DataRequired()])
     remember_me = BooleanField('remember_me', default=False)
 
+class LoginEmailForm(Form):
+    login_email = StringField('login_email', validators=[DataRequired()])
+    login_password = StringField('login_password', validators=[DataRequired()])
+    remember_me = BooleanField('remember_me', default=False)
+
+class RegistrationForm(Form):
+    email = StringField('email', validators=[DataRequired()])
+    password = StringField('password', validators=[DataRequired()])
+    remember_me = BooleanField('remember_me', default=False)
+
 class SearchForm(Form):
     search_field = StringField('search', validators=[DataRequired()])

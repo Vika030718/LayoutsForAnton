@@ -49,3 +49,22 @@ body {
     margin-top: 20px;
     font-size: 18px;
 }
+.search-count{
+    color: #28a745;
+    font-size: 22px;
+    font-weight: 600;
+}
+.search-history_date{
+    padding-right: 20px;
+    color: #838383;
+    width: 130px;
+}
+.form-control{
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+.register-block{
+    border-top: 1px solid #ccc;
+    padding-top: 30px;
+}
