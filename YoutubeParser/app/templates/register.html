@@ -1,16 +1,12 @@
 {% extends "base.html" %} {% block content %}
-            <h1 class="title">Registration</h1>
-            <form action="" method="post" name="register">
-                    {{form.hidden_tag()}}
-                    <p>
-
-                        {{form.email(class_="form-control mr-sm-2")}}
-                        {{form.password(class_="form-control mr-sm-2")}}
-
-                    </p>
-
-                    <p><input type="submit" class="btn btn-success my-2 my-sm-0" value="Register"></p>
-                </form>
-
-
+<div class="row">
+    <div class="col-md-6 offset-md-3">
+        <h1 class="title">Registration</h1>
+        <form action="" method="post" name="register">
+            {{form.hidden_tag()}}
+            {{form.email(class_="form-control mr-sm-2")}} {{form.password(class_="form-control mr-sm-2")}}
+            <input type="submit" class="btn btn-success my-2 my-sm-0" value="Register">
+        </form>
+    </div>
+</div>
 {% endblock %}

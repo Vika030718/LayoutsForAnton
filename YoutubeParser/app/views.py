@@ -1,8 +1,8 @@
 """Main views"""
 from flask import render_template, flash, redirect, session, url_for, request, g
 from flask_login import login_user, logout_user, current_user, login_required
-from app import app, db, lm, oid
-from .forms import LoginForm, SearchForm, RegistrationForm, LoginEmailForm
+from app import app, db, lm
+from .forms import SearchForm, RegistrationForm, LoginEmailForm
 from .models import User, SearchHistory, ROLE_USER, ROLE_ADMIN
 from .youtube_sercher import Searcher
 import datetime
@@ -14,10 +14,12 @@ def load_user(id):
 @app.route('/', methods=['GET', 'POST'])
 @app.route('/index', methods=['GET', 'POST'])
 def index():
-    user = g.user
+
     if g.user is None or g.user.is_authenticated==False:
         return redirect(url_for('login'))
+    user = g.user
     form = SearchForm()
+
     if form.validate_on_submit():
         video = Searcher().youtube_search_all(form.search_field.data)
         p = SearchHistory(body=form.search_field.data, timestamp=datetime.datetime.utcnow(), author=user)
@@ -37,23 +39,17 @@ def index():
                            user=user)
 
 @app.route('/login', methods=['GET', 'POST'])
-@oid.loginhandler
 def login():
-    user = g.user
+
     if g.user is not None and g.user.is_authenticated:
         return redirect(url_for('index'))
 
-    login_form = LoginForm()
+    user = g.user
     login_email_form = LoginEmailForm()
 
-    if login_form.validate_on_submit():
-        return oid.try_login(login_form.openid.data, ask_for=['nickname', 'email'])
     if login_email_form.validate_on_submit():
         user = User.query.filter_by(email=login_email_form.login_email.data).first()
         password = user.password
-
-        import ipdb
-        ipdb.set_trace()
 
         if user and login_email_form.login_password.data == password:
             login_user(user)
@@ -63,9 +59,7 @@ def login():
 
     return render_template('login.html',
                            title='Sign In',
-                           login_form=login_form,
-                           login_email_form=login_email_form,
-                           providers=app.config['OPENID_PROVIDERS'])
+                           login_email_form=login_email_form)
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
@@ -81,10 +75,8 @@ def register():
         return redirect(url_for('index'))
     return render_template('register.html',
                            title='Sign In',
-                           form=form,
-                           providers=app.config['OPENID_PROVIDERS'])
+                           form=form)
 
-@oid.after_login
 def after_login(resp):
     if resp.email is None or resp.email == "":
         flash('Invalid login. Please try again.')
