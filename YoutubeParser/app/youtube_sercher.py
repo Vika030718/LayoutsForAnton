@@ -1,8 +1,7 @@
 import sys
-sys.path.append('/home/vika/Documents/TestRepo/LayoutsForAnton/YoutubeParser/')
 from apiclient.discovery import build
-from apiclient.errors import HttpError
-from oauth2client.tools import argparser
+sys.path.append('/home/vika/Documents/TestRepo/LayoutsForAnton/YoutubeParser/')
+
 
 class Searcher(object):
 

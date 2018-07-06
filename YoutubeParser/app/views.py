@@ -1,50 +1,49 @@
 """Main views"""
-from flask import render_template, flash, redirect, session, url_for, request, g
+import datetime
 from flask_login import login_user, logout_user, current_user, login_required
+from flask import render_template, flash, redirect, url_for, request, g
 from app import app, db, lm
 from .forms import SearchForm, RegistrationForm, LoginEmailForm
-from .models import User, SearchHistory, ROLE_USER, ROLE_ADMIN
+from .models import User, SearchHistory, ROLE_USER
 from .youtube_sercher import Searcher
-import datetime
+
 
 @lm.user_loader
-def load_user(id):
-    return User.query.get(int(id))
+def load_user(_id):
+    return User.query.get(int(_id))
 
 @app.route('/', methods=['GET', 'POST'])
 @app.route('/index', methods=['GET', 'POST'])
-@app.route('/index/<int:page>', methods = ['GET', 'POST'])
 def index():
-    if g.user is None or g.user.is_authenticated == False:
+    if g.user is None or g.user.is_authenticated is False:
         return redirect(url_for('login'))
-    user = g.user
     form = SearchForm()
     if form.validate_on_submit():
         video = Searcher().youtube_search_all(form.search_field.data)
-        p = SearchHistory(body=form.search_field.data, timestamp=datetime.datetime.utcnow(), author=user)
-        db.session.add(p)
+        search_history_item = SearchHistory(body=form.search_field.data,
+                                            timestamp=datetime.datetime.utcnow(),
+                                            author=g.user)
+        db.session.add(search_history_item)
         db.session.commit()
         return render_template('index.html',
                                title='Home',
                                form=form,
-                               user=user,
+                               user=g.user,
                                video=video,
                                video_count=len(video))
     return render_template('index.html',
                            title='Home',
                            form=form,
-                           user=user)
+                           user=g.user)
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if g.user is not None and g.user.is_authenticated:
         return redirect(url_for('index'))
-    user = g.user
     login_email_form = LoginEmailForm()
     if login_email_form.validate_on_submit():
         user = User.query.filter_by(email=login_email_form.login_email.data).first()
-        password = user.password
-        if user and login_email_form.login_password.data == password:
+        if user and login_email_form.login_password.data == user.password:
             login_user(user)
             return redirect(url_for('index'))
         else:
@@ -62,9 +61,10 @@ def register():
     password = form.password.data
     if form.validate_on_submit():
         if User.query.filter_by(email=form.email.data).first() is None:
-            import ipdb
-            ipdb.set_trace()
-            user = User(nickname=nickname.split('@')[0], email=form.email.data, password=password, role=ROLE_USER)
+            user = User(nickname=nickname.split('@')[0],
+                        email=form.email.data,
+                        password=password,
+                        role=ROLE_USER)
             db.session.add(user)
             db.session.commit()
             login_user(user)
@@ -110,4 +110,3 @@ def user(nickname):
     return render_template('user.html',
                            user=user,
                            posts=posts)
-
