@@ -13,26 +13,23 @@ def load_user(id):
 
 @app.route('/', methods=['GET', 'POST'])
 @app.route('/index', methods=['GET', 'POST'])
+@app.route('/index/<int:page>', methods = ['GET', 'POST'])
 def index():
-
-    if g.user is None or g.user.is_authenticated==False:
+    if g.user is None or g.user.is_authenticated == False:
         return redirect(url_for('login'))
     user = g.user
     form = SearchForm()
-
     if form.validate_on_submit():
         video = Searcher().youtube_search_all(form.search_field.data)
         p = SearchHistory(body=form.search_field.data, timestamp=datetime.datetime.utcnow(), author=user)
         db.session.add(p)
         db.session.commit()
-
         return render_template('index.html',
-                        title='Home',
-                        form=form,
-                        user=user,
-                        video=video,
-                        video_count=len(video))
-
+                               title='Home',
+                               form=form,
+                               user=user,
+                               video=video,
+                               video_count=len(video))
     return render_template('index.html',
                            title='Home',
                            form=form,
@@ -40,23 +37,18 @@ def index():
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
-
     if g.user is not None and g.user.is_authenticated:
         return redirect(url_for('index'))
-
     user = g.user
     login_email_form = LoginEmailForm()
-
     if login_email_form.validate_on_submit():
         user = User.query.filter_by(email=login_email_form.login_email.data).first()
         password = user.password
-
         if user and login_email_form.login_password.data == password:
             login_user(user)
             return redirect(url_for('index'))
         else:
             flash('Email or password is incorrect.')
-
     return render_template('login.html',
                            title='Sign In',
                            login_email_form=login_email_form)
@@ -69,10 +61,16 @@ def register():
     nickname = form.email.data
     password = form.password.data
     if form.validate_on_submit():
-        user = User(nickname=nickname.split('@')[0], email=form.email.data, password=password, role=ROLE_USER)
-        db.session.add(user)
-        db.session.commit()
-        return redirect(url_for('index'))
+        if User.query.filter_by(email=form.email.data).first() is None:
+            import ipdb
+            ipdb.set_trace()
+            user = User(nickname=nickname.split('@')[0], email=form.email.data, password=password, role=ROLE_USER)
+            db.session.add(user)
+            db.session.commit()
+            login_user(user)
+            return redirect(url_for('index'))
+        else:
+            flash("You are already register on our site")
     return render_template('register.html',
                            title='Sign In',
                            form=form)
@@ -104,14 +102,12 @@ def logout():
 @app.route('/user/<nickname>')
 @login_required
 def user(nickname):
-    user = User.query.filter_by(nickname = nickname).first()
-
-    posts = SearchHistory.query.filter_by(user_id = user.id).all()
-
-    if user == None:
+    user = User.query.filter_by(nickname=nickname).first()
+    posts = SearchHistory.query.filter_by(user_id=user.id).all()
+    if user is None:
         flash('User ' + nickname + ' not found.')
         return redirect(url_for('index'))
-
     return render_template('user.html',
-        user = user,
-        posts = posts)
+                           user=user,
+                           posts=posts)
+
