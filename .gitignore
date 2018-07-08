@@ -6,3 +6,4 @@
 *pylintrc
 *\flask
 *.db
+*\test

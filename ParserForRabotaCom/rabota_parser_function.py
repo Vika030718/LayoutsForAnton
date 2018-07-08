@@ -40,6 +40,9 @@ def parser(query):
     number_of_pages = count_pages(driver)
 
     job_info = {}
+    """page_counter = 3 because the first element in list is the hiden field,
+    the socond is the first page - no need to click on it.
+    So we need to start clicking only from 3 page."""
     page_counter = 3
     for _i in range(number_of_pages):
 
@@ -56,8 +59,8 @@ def parser(query):
             Logger().log_writer(job_info)
         pages_xpath_start = "//dl[contains(@id, 'ctl00_content_vacancyList_gridList_ctl23_pagerInnerTable')]/dd["
         pages_xpath_end = "]/a[contains(@class, 'f-always-blue')]"
-        pages_xpath = pages_xpath_start + str(page_counter) + pages_xpath_end
-        page_number = driver.find_element_by_xpath(pages_xpath)
+        pages_xpath = '{}{}{}'.format(pages_xpath_start, page_counter, pages_xpath_end)
+        page_number = driver.wait.until(EC.presence_of_element_located((By.ID, "ctl00_content_vacancyList_Breadcrumb1_breadcrumbs"))).find_element_by_xpath(pages_xpath)
         page_counter += 1
         page_number.click()
 
