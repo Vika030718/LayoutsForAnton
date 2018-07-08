@@ -11,7 +11,7 @@ class User(db.Model):
     nickname = db.Column(db.String(64), index=True, unique=True)
     email = db.Column(db.String(120), index=True, unique=True)
     role = db.Column(db.SmallInteger, default=ROLE_USER)
-    password = db.Column(db.String(64), index=True, unique=True)
+    password = db.Column(db.String(64), index=True)
     SearchHistory = db.relationship('SearchHistory', backref='author')
 
     @property
